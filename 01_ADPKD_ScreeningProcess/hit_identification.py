@@ -562,7 +562,7 @@ data_modelling = (
 if npihit_distance == 1.5:
     distance_metric = "Default"
 
-hit_id_dir =  (dataset_root.parent / f"identified_hits").exists():
+hit_id_dir = dataset_root.parent / "identified_hits"
 if not hit_id_dir.exists():
     hit_id_dir.mkdir()
 
