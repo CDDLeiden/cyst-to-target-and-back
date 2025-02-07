@@ -2,10 +2,14 @@
 Repository with the scripts used for the paper XXXX
 
 Install:
+```shell
 micromamba env create -n cystToTarget python=3.10 -c conda-forge 
 micromamba activate cystToTarget
 python -m pip install qsprpred==3.0.2
 python -m pip install statsmodels venn chembl_webresource_client pubchempy
+
+python -m pip install papyrus-scripts==1.0.2 papyrus-structure-pipeline==0.0.4
+```
 
 # Structure
 
