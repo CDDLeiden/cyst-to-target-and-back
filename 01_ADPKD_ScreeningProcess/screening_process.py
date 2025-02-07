@@ -285,7 +285,7 @@ class selleck_chem:
         self.name = "selleckchem"
         self.root_dir = Path(__file__).absolute().parents[1]
         self.file_root = self.root_dir / "data/adpkd_screening/screening_data"
-        print("    ", self.file_root)
+        print(f"    Loading {self.name} screening under: {self.file_root}")
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
         self.chemstructs = None
         self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.smi"
@@ -819,6 +819,143 @@ class selleck_chem:
             self.normalization_type = "z-score"
         self.normalization_method = method
         return norm_df
+
+    def b_score_normalize(
+        self, max_iter: int, tol: float, which: str = "df", hide_progress: bool = True
+    ) -> pd.DataFrame:
+        """
+        Function to perform the B-score normalization of the feature
+        values. This normalization is performed using the iterative
+        algorithm described in the paper "Improved Statistical Methods for
+        Hit Selection in High-Throughput Screening" by Brideau et al. (2003).
+
+        For the calculation of the score, a two-way fitted median polish
+        is applied to the values. The obtained residuals are then divided
+        by the median absolute deviation of the plate.
+
+        The following implementation was inspired on the code from:
+        https://github.com/borisvish/Median-Polish/blob/master/AdditiveModelFitByMedianPolish.py
+        https://sparkrma.readthedocs.io/en/latest/_modules/spark_rma/median_polish.html
+
+
+        Args:
+            max_iter: maximun number of median polish iterations.
+            tol: tolerance value for the median polish algorithm.
+            which: whether to apply it to `self.df` or `self.norm_df`.
+            Defaults to "df".
+            hide_progress: hides the progress bar. Defaults to True.
+
+        Raises:
+            AttributeError: value `which` is not "df" or "norm_df".
+
+        Returns:
+            plate_dict(dict), new_df(pd.Dataframe), containing the b-scored
+            feature values.
+        """
+        if which not in ["norm_df", "df"]:
+            raise AttributeError("Attribute unavailable. Should be either `norm_df` or `df`")
+
+        if which == "norm_df":
+            df = self.norm_df.copy()
+        elif which == "df":
+            df = self.df.copy()
+
+        # Need to think about what to do with the nans
+        df = df.fillna(0).sort_values(by=["PlateID", "PlateRow", "PlateColumn"]).reset_index(drop=True)
+        vals = self.desired_cols
+
+        def update_row(series, grouped_median):
+            subset = grouped_median.loc[series["PlateRow"], :]
+            return series[vals] - subset[vals]
+
+        def update_col(series, grouped_median):
+            subset = grouped_median.loc[series["PlateColumn"], :]
+            return series[vals] - subset[vals]
+
+        plate_dict = {p: {} for p in df["PlateID"].unique()}
+
+        # Labels for initializing the median polish
+        row_labels = sorted(df["PlateRow"].unique())
+        col_labels = sorted(df["PlateColumn"].unique())
+
+        for pnumber in df["PlateID"].unique():
+            plate_df = df.query(f"PlateID == {pnumber}").copy()
+
+            grand_effect = pd.Series(0, index=vals, dtype=np.float64)
+            # Initializing median row effect -> one value per feature!
+            median_row_effects = pd.Series(0, index=vals, dtype=np.float64)
+            # Initializing median column effect -> one value per feature!
+            median_col_effects = pd.Series(0, index=vals, dtype=np.float64)
+
+            # Initializing row effect -> one value per row
+            row_effects = pd.DataFrame(0, columns=vals, index=row_labels, dtype=np.float64)
+            # Initializing column effect -> one value per column
+            col_effects = pd.DataFrame(0, columns=vals, index=col_labels, dtype=np.float64)
+
+            for i in tqdm(range(0, max_iter), disable=hide_progress):
+
+                row_medians = plate_df.loc[:, vals + ["PlateRow"]].groupby("PlateRow").median()[vals]
+                # return row_effects, row_medians
+                row_effects += row_medians
+                median_row_effects = row_effects.median()
+
+                grand_effect += median_row_effects
+                row_effects -= median_row_effects
+
+                # Perform the median scrape on each row and update the residuals
+                plate_df.loc[:, vals] = plate_df.apply(
+                    partial(update_row, grouped_median=row_medians), axis=1
+                )
+
+                col_medians = plate_df.loc[:, vals + ["PlateColumn"]].groupby("PlateColumn").median()[vals]
+                col_effects += col_medians
+                median_col_effects = col_effects.median()
+
+                # Perform the median scrape on each column and update the residuals
+                plate_df.loc[:, vals] = plate_df.apply(
+                    partial(update_col, grouped_median=col_medians), axis=1
+                )
+                grand_effect += median_col_effects
+
+                # if any of the values in the row/col effects are less than the tolerance, stop
+                conditions = [
+                    row_effects.abs().max().any() < tol,
+                    col_effects.abs().max().any() < tol,
+                ]
+                if any(conditions):
+                    print(f"Plate {pnumber} converged after {i} iterations")
+                    break
+
+            # Calculating the median absolute deviation of each feature within the plate
+            feature_mads = plate_df[vals].apply(median_abs_deviation, axis=0)
+            b_scores = plate_df[vals].div(feature_mads)
+            plate_dict[pnumber].update(
+                {
+                    "grand_effect": grand_effect,
+                    "row_effects": row_effects,
+                    "col_effects": col_effects,
+                    "residuals": plate_df[vals],
+                    "original": df.query(f"PlateID == {pnumber}"),
+                    "feature_mads": feature_mads,
+                    "b_score": b_scores,
+                }
+            )
+
+        new_df = pd.DataFrame(columns=["Compound"] + self.id_cols + self.desired_cols)
+        for n in range(1, len(plate_dict) + 1):
+            new_plate_df = pd.concat(
+                [
+                    plate_dict[n]["original"].loc[:, ["Compound"] + self.id_cols],
+                    plate_dict[n]["b_score"],
+                ],
+                axis=1,
+            )
+            new_df = pd.concat([new_df, new_plate_df], axis=0)
+        new_df.reset_index(drop=True, inplace=True)
+        self.norm_df = new_df
+        self.normalization_type = "b-score"
+        self.normalization_method = "median-polish"
+        return plate_dict, new_df
 
     def save_data(self, which: str) -> None:
         """
@@ -1399,8 +1536,11 @@ class selleck_chem:
             .assign(Identifier=identifier_func())
         )
         controls_dict = dict()
-        controls = df.query('TreatmentType in ["pos_control", "neg_control"]').groupby(
-            ["Compound", "PlateID"]
+        _idcols = ["Compound", "PlateID"]
+        controls = (
+            df.query('TreatmentType in ["pos_control", "neg_control"]')
+            .loc[:, _idcols + ["obj.Mean(area)"]]
+            .groupby(_idcols)
         )
         if method == "median":
             m_dict = controls.median()["obj.Mean(area)"].to_dict()
@@ -1411,8 +1551,18 @@ class selleck_chem:
         controls_dict.update({"m": m_dict, "dev": dev_dict})
 
         # Hitflagging based solely on the cyst size
-        median_vals = df.groupby("Identifier").median().to_dict()["obj.Mean(area)"]
-        mad_vals = df.groupby("Identifier")["obj.Mean(area)"].apply(median_abs_deviation).to_dict()
+        median_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")
+            .median()
+            .to_dict()["obj.Mean(area)"]
+        )
+        mad_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")["obj.Mean(area)"]
+            .apply(median_abs_deviation)
+            .to_dict()
+        )
 
         df = df.assign(
             Median_cystsize=df["Identifier"].map(median_vals),
@@ -1471,8 +1621,11 @@ class selleck_chem:
             .assign(Identifier=identifier_func())
         )
         controls_dict = dict()
-        controls = df.query('TreatmentType in ["pos_control", "neg_control"]').groupby(
-            ["Compound", "PlateID"]
+        _idcols = ["Compound", "PlateID"]
+        controls = (
+            df.query('TreatmentType in ["pos_control", "neg_control"]')
+            .loc[:, _idcols + ["obj.Mean(area)"]]
+            .groupby(_idcols)
         )
         if method == "median":
             m_dict = controls.median()["obj.Mean(area)"].to_dict()
@@ -1483,8 +1636,18 @@ class selleck_chem:
         controls_dict.update({"m": m_dict, "dev": dev_dict})
 
         # Hitflagging based solely on the cyst size
-        median_vals = df.groupby("Identifier").median().to_dict()["obj.Mean(area)"]
-        mad_vals = df.groupby("Identifier")["obj.Mean(area)"].apply(median_abs_deviation).to_dict()
+        median_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")
+            .median()
+            .to_dict()["obj.Mean(area)"]
+        )
+        mad_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")["obj.Mean(area)"]
+            .apply(median_abs_deviation)
+            .to_dict()
+        )
 
         df = df.assign(
             Median_cystsize=df["Identifier"].map(median_vals),
@@ -1512,6 +1675,192 @@ class selleck_chem:
         final_df = pd.concat(flagged_dfs, ignore_index=True).reset_index(drop=True)
         self.norm_df = final_df
         return final_df
+
+    def bscore_hitflagging(self, hit_rate: float = 0.01, perplate=False):
+        """
+        Function to perform the hit flagging on the results from `bscore_normalize`.
+        Note that differently from NPI and Z-Score hitpicking, this function will take
+        the x% top or bottom scoring compounds based on the `hit_rate` parameter. Since
+        we observe lower amount of cyst-enhancing compounds in this assay, the hit_rate
+        for the identification of enhancers is set to 10% of the actual hit_rate.
+
+        Args:
+            method: Which method to apply the standard deviation. Defaults to "median".
+            hit_rate: Top or bottom % of compounds to be flagged as hits.
+                Defaults to 0.01.
+
+        Raises:
+            AttributeError: If the b-score normalization was not calculated before
+
+        Returns:
+            pd.Dataframe containing hit_flagging columns, which is also assigned to self.norm_df
+        """
+
+        def b_hitpicking(df, hit_type: str, n_compounds: int, hit_rate: float):
+            """
+            Function to organize the dataframe and extract the top or the
+            lowest % of compounds based on the hit rate.
+
+            Returns the `Identifier` of the compounds (list)
+            """
+            # Dataframe will have top scoring compounds as first indexes
+            if hit_type == "enhancer":
+                ascending = False
+            elif hit_type == "reducer":
+                ascending = True
+            identifiers = (
+                df.sort_values("Median_cystsize", ascending=ascending)
+                .reset_index(drop=True)
+                .loc[: round(n_compounds * hit_rate)]["Identifier"]
+                .unique()
+                .tolist()
+            )
+            return identifiers
+
+        assert self.normalization_type == "b-score", "Should apply b-score normalization first."
+
+        if self.norm_df is None:
+            raise AttributeError("self.norm_df is not defined." "Hit flagging requires normalization")
+        df = (
+            self.norm_df.query('QC == "OK"')
+            .reset_index(drop=True)
+            .copy()
+            .assign(Identifier=identifier_func())
+        )
+        # Aggregate values observed for replicates using the median
+        median_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")
+            .median()
+            .to_dict()["obj.Mean(area)"]
+        )
+        df = df.assign(Median_cystsize=df["Identifier"].map(median_vals))
+
+        comps_to_flag = {
+            "reducer": [],
+            "enhancer": [],
+        }
+        if perplate:
+            for plate, sub_df in df.groupby("PlateID"):
+                n_compounds = sub_df.query('TreatmentType == "treatment"')["Compound"].nunique()
+                treats = sub_df.query('TreatmentType == "treatment"').drop_duplicates("Identifier")
+                reducing_treats = b_hitpicking(treats, "reducer", n_compounds, hit_rate)
+                enhancing_treats = b_hitpicking(treats, "enhancer", n_compounds, hit_rate / 10)
+                comps_to_flag["reducer"].extend(reducing_treats)
+                comps_to_flag["enhancer"].extend(enhancing_treats)
+        else:
+            n_compounds = df.query('TreatmentType == "treatment"')["Compound"].nunique()
+            treats = df.query('TreatmentType == "treatment"').drop_duplicates("Identifier")
+            reducing_treats = b_hitpicking(treats, "reducer", n_compounds, hit_rate)
+            enhancing_treats = b_hitpicking(treats, "enhancer", n_compounds, hit_rate)
+            comps_to_flag["reducer"].extend(reducing_treats)
+            comps_to_flag["enhancer"].extend(enhancing_treats)
+
+        conditions = [
+            df["Identifier"].isin(comps_to_flag["reducer"]),
+            df["Identifier"].isin(comps_to_flag["enhancer"]),
+        ]
+        choices = ["reducer", "enhancer"]
+        df = df.assign(BScore_hitflag=np.select(conditions, choices, default="inactive"))
+        self.norm_df = df
+        return df
+
+    def top_percent_hitpicking(self, hit_rate: float = 0.01, perplate=False):
+        """
+        Function to perform the same hit flagging as the `bscore_hitflagging` function,
+        but implemented to work with the top % of compounds based on the `obj.Mean(area)`
+        regardless of the normalization method.
+
+        This function will take the x% top or bottom scoring compounds based on the
+        `hit_rate` parameter. Since we observe lower amount of cyst-enhancing compounds
+        in this assay, the hit_rate for the identification of enhancers is set to 10% of
+        the actual hit_rate.
+
+        Args:
+            method: Which method to apply the standard deviation. Defaults to "median".
+            hit_rate: Top or bottom % of compounds to be flagged as hits.
+                Defaults to 0.01.
+
+        Raises:
+            AttributeError: If the b-score normalization was not calculated before
+
+        Returns:
+            pd.Dataframe containing hit_flagging columns, which is also assigned to self.norm_df
+        """
+
+        def top_percent_picking(df, hit_type: str, n_compounds: int, hit_rate: float):
+            """
+            Function to organize the dataframe and extract the top or the
+            lowest % of compounds based on the hit rate.
+
+            Returns the `Identifier` of the compounds (list)
+            """
+            # Dataframe will have top scoring compounds as first indexes
+            if hit_type == "enhancer":
+                ascending = False
+            elif hit_type == "reducer":
+                ascending = True
+            identifiers = (
+                df.sort_values("Median_cystsize", ascending=ascending)
+                .reset_index(drop=True)
+                .loc[: round(n_compounds * hit_rate)]["Identifier"]
+                .unique()
+                .tolist()
+            )
+            return identifiers
+
+        assert self.normalization_type in [
+            "z-score",
+            "z-score_booij",
+            "npi",
+        ], "Make sure that the dataset is already normalized."
+
+        if self.norm_df is None:
+            raise AttributeError("self.norm_df is not defined." "Hit flagging requires normalization")
+        df = (
+            self.norm_df.query('QC == "OK"')
+            .reset_index(drop=True)
+            .copy()
+            .assign(Identifier=identifier_func())
+        )
+        # Aggregate values observed for replicates using the median
+        median_vals = (
+            df.loc[:, ["Identifier", "obj.Mean(area)"]]
+            .groupby("Identifier")
+            .median()
+            .to_dict()["obj.Mean(area)"]
+        )
+        df = df.assign(Median_cystsize=df["Identifier"].map(median_vals))
+
+        comps_to_flag = {
+            "reducer": [],
+            "enhancer": [],
+        }
+        if perplate:
+            for plate, sub_df in df.groupby("PlateID"):
+                n_compounds = sub_df.query('TreatmentType == "treatment"')["Compound"].nunique()
+                treats = sub_df.query('TreatmentType == "treatment"').drop_duplicates("Identifier")
+                reducing_treats = top_percent_picking(treats, "reducer", n_compounds, hit_rate)
+                enhancing_treats = top_percent_picking(treats, "enhancer", n_compounds, hit_rate / 10)
+                comps_to_flag["reducer"].extend(reducing_treats)
+                comps_to_flag["enhancer"].extend(enhancing_treats)
+        else:
+            n_compounds = df.query('TreatmentType == "treatment"')["Compound"].nunique()
+            treats = df.query('TreatmentType == "treatment"').drop_duplicates("Identifier")
+            reducing_treats = top_percent_picking(treats, "reducer", n_compounds, hit_rate)
+            enhancing_treats = top_percent_picking(treats, "enhancer", n_compounds, hit_rate)
+            comps_to_flag["reducer"].extend(reducing_treats)
+            comps_to_flag["enhancer"].extend(enhancing_treats)
+
+        conditions = [
+            df["Identifier"].isin(comps_to_flag["reducer"]),
+            df["Identifier"].isin(comps_to_flag["enhancer"]),
+        ]
+        choices = ["reducer", "enhancer"]
+        norm_name = self.normalization_type.replace("_", "")
+        df = df.assign(Top_percent=np.select(conditions, choices, default="inactive"))
+        self.norm_df = df
+        return df
 
     def get_antineoplastic_from_chembl(self):
         """
