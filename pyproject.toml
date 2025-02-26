@@ -1,0 +1,111 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "papyrus-bioactivity-linker"
+dynamic = ["version"]
+description = "A package to link a protein/small molecule activity dataset to HTS data using papyrus"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+keywords = ["cheminformatics", "target identification", "protein", "small molecule"]
+authors = [{ name = "David Araripe", email = "david.araripe17@gmail.com" }]
+maintainers = [{ name = "David Araripe", email = "david.araripe17@gmail.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.7",
+]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "papyrus-scripts",
+    "papyrus-structure-pipeline",
+    "venn",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "uniprot-id-mapper",
+    "rdkit",
+    "scipy",
+    "chembl-structure-pipeline>=1.2.0",
+    "chembl-webresource-client>=0.10.8",
+    "chem-filters @ git+https://github.com/David-Araripe/chemFilters.git#master",
+    ]
+
+[project.optional-dependencies]
+dev = ["tox", "ruff", "isort", "black"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "papyrusBioactivityLinker.__version__" }
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+required-version = '23.1.0'
+exclude = '''
+(
+    asv_bench/env
+  | \.egg
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)
+'''
+
+[tool.ruff]
+# Enable the pycodestyle (`E`) and Pyflakes (`F`) rules.
+select = ["E", "F", "B", "W"]
+ignore = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+line-length = 110
+
+# Assume Python 3.9.
+target-version = "py39"
