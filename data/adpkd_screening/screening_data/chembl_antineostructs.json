@@ -1,0 +1,797 @@
+{
+ "HYDROXYUREA": {
+  "chembl_id": "CHEMBL467",
+  "iso_smiles": "NC(=O)NO",
+  "noniso_smiles": "NC(=O)NO"
+ },
+ "FLUOROURACIL": {
+  "chembl_id": "CHEMBL185",
+  "iso_smiles": "O=c1[nH]cc(F)c(=O)[nH]1",
+  "noniso_smiles": "O=c1[nH]cc(F)c(=O)[nH]1"
+ },
+ "AMINOLEVULINIC ACID": {
+  "chembl_id": "CHEMBL601",
+  "iso_smiles": "NCC(=O)CCC(=O)O",
+  "noniso_smiles": "NCC(=O)CCC(=O)O"
+ },
+ "METHYL AMINOLEVULINATE": {
+  "chembl_id": "CHEMBL1096562",
+  "iso_smiles": "COC(=O)CCC(=O)CN",
+  "noniso_smiles": "COC(=O)CCC(=O)CN"
+ },
+ "MECHLORETHAMINE": {
+  "chembl_id": "CHEMBL427",
+  "iso_smiles": "CN(CCCl)CCCl",
+  "noniso_smiles": "CN(CCCl)CCCl"
+ },
+ "THIOGUANINE": {
+  "chembl_id": "CHEMBL727",
+  "iso_smiles": "Nc1nc2[nH]cnc2c(=S)[nH]1",
+  "noniso_smiles": "Nc1nc2[nH]cnc2c(=S)[nH]1"
+ },
+ "SILVER NITRATE": {
+  "chembl_id": "CHEMBL177367",
+  "iso_smiles": "O=[N+]([O-])[O-].[Ag+]",
+  "noniso_smiles": "O=[N+]([O-])[O-].[Ag+]"
+ },
+ "DACARBAZINE": {
+  "chembl_id": "CHEMBL476",
+  "iso_smiles": "CN(C)/N=N/c1[nH]cnc1C(N)=O",
+  "noniso_smiles": "CN(C)N=Nc1[nH]cnc1C(N)=O"
+ },
+ "THIOTEPA": {
+  "chembl_id": "CHEMBL671",
+  "iso_smiles": "S=P(N1CC1)(N1CC1)N1CC1",
+  "noniso_smiles": "S=P(N1CC1)(N1CC1)N1CC1"
+ },
+ "TEMOZOLOMIDE": {
+  "chembl_id": "CHEMBL810",
+  "iso_smiles": "Cn1nnc2c(C(N)=O)ncn2c1=O",
+  "noniso_smiles": "Cn1nnc2c(C(N)=O)ncn2c1=O"
+ },
+ "TEGAFUR": {
+  "chembl_id": "CHEMBL20883",
+  "iso_smiles": "O=c1[nH]c(=O)n(C2CCCO2)cc1F",
+  "noniso_smiles": "O=c1[nH]c(=O)n(C2CCCO2)cc1F"
+ },
+ "ALTRETAMINE": {
+  "chembl_id": "CHEMBL1455",
+  "iso_smiles": "CN(C)c1nc(N(C)C)nc(N(C)C)n1",
+  "noniso_smiles": "CN(C)c1nc(N(C)C)nc(N(C)C)n1"
+ },
+ "CARMUSTINE": {
+  "chembl_id": "CHEMBL513",
+  "iso_smiles": "O=NN(CCCl)C(=O)NCCCl",
+  "noniso_smiles": "O=NN(CCCl)C(=O)NCCCl"
+ },
+ "PROCARBAZINE": {
+  "chembl_id": "CHEMBL1321",
+  "iso_smiles": "CNNCc1ccc(C(=O)NC(C)C)cc1",
+  "noniso_smiles": "CNNCc1ccc(C(=O)NC(C)C)cc1"
+ },
+ "DECITABINE": {
+  "chembl_id": "CHEMBL1201129",
+  "iso_smiles": "Nc1ncn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)n1",
+  "noniso_smiles": "Nc1ncn(C2CC(O)C(CO)O2)c(=O)n1"
+ },
+ "LOMUSTINE": {
+  "chembl_id": "CHEMBL514",
+  "iso_smiles": "O=NN(CCCl)C(=O)NC1CCCCC1",
+  "noniso_smiles": "O=NN(CCCl)C(=O)NC1CCCCC1"
+ },
+ "CYTARABINE": {
+  "chembl_id": "CHEMBL803",
+  "iso_smiles": "Nc1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@@H]2O)c(=O)n1",
+  "noniso_smiles": "Nc1ccn(C2OC(CO)C(O)C2O)c(=O)n1"
+ },
+ "AZACITIDINE": {
+  "chembl_id": "CHEMBL1489",
+  "iso_smiles": "Nc1ncn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)n1",
+  "noniso_smiles": "Nc1ncn(C2OC(CO)C(O)C2O)c(=O)n1"
+ },
+ "FLOXURIDINE": {
+  "chembl_id": "CHEMBL917",
+  "iso_smiles": "O=c1[nH]c(=O)n([C@H]2C[C@H](O)[C@@H](CO)O2)cc1F",
+  "noniso_smiles": "O=c1[nH]c(=O)n(C2CC(O)C(CO)O2)cc1F"
+ },
+ "BUSULFAN": {
+  "chembl_id": "CHEMBL820",
+  "iso_smiles": "CS(=O)(=O)OCCCCOS(C)(=O)=O",
+  "noniso_smiles": "CS(=O)(=O)OCCCCOS(C)(=O)=O"
+ },
+ "URACIL MUSTARD": {
+  "chembl_id": "CHEMBL1488",
+  "iso_smiles": "O=c1[nH]cc(N(CCCl)CCCl)c(=O)[nH]1",
+  "noniso_smiles": "O=c1[nH]cc(N(CCCl)CCCl)c(=O)[nH]1"
+ },
+ "ANAGRELIDE": {
+  "chembl_id": "CHEMBL760",
+  "iso_smiles": "O=C1CN2Cc3c(ccc(Cl)c3Cl)N=C2N1",
+  "noniso_smiles": "O=C1CN2Cc3c(ccc(Cl)c3Cl)N=C2N1"
+ },
+ "IFOSFAMIDE": {
+  "chembl_id": "CHEMBL1024",
+  "iso_smiles": "O=P1(NCCCl)OCCCN1CCCl",
+  "noniso_smiles": "O=P1(NCCCl)OCCCN1CCCl"
+ },
+ "ETOGLUCID": {
+  "chembl_id": "CHEMBL460287",
+  "iso_smiles": "C(COCCOCC1CO1)OCCOCC1CO1",
+  "noniso_smiles": "C(COCCOCC1CO1)OCCOCC1CO1"
+ },
+ "GEMCITABINE": {
+  "chembl_id": "CHEMBL888",
+  "iso_smiles": "Nc1ccn([C@@H]2O[C@H](CO)[C@@H](O)C2(F)F)c(=O)n1",
+  "noniso_smiles": "Nc1ccn(C2OC(CO)C(O)C2(F)F)c(=O)n1"
+ },
+ "VORINOSTAT": {
+  "chembl_id": "CHEMBL98",
+  "iso_smiles": "O=C(CCCCCCC(=O)Nc1ccccc1)NO",
+  "noniso_smiles": "O=C(CCCCCCC(=O)Nc1ccccc1)NO"
+ },
+ "STREPTOZOCIN": {
+  "chembl_id": "CHEMBL1651906",
+  "iso_smiles": "CN(N=O)C(=O)N[C@H]1C(O)O[C@H](CO)[C@@H](O)[C@@H]1O",
+  "noniso_smiles": "CN(N=O)C(=O)NC1C(O)OC(CO)C(O)C1O"
+ },
+ "PENTOSTATIN": {
+  "chembl_id": "CHEMBL1580",
+  "iso_smiles": "OC[C@H]1O[C@@H](n2cnc3c2N=CNC[C@H]3O)C[C@@H]1O",
+  "noniso_smiles": "OCC1OC(n2cnc3c2N=CNCC3O)CC1O"
+ },
+ "TREOSULFAN": {
+  "chembl_id": "CHEMBL455186",
+  "iso_smiles": "CS(=O)(=O)OC[C@H](O)[C@@H](O)COS(C)(=O)=O",
+  "noniso_smiles": "CS(=O)(=O)OCC(O)C(O)COS(C)(=O)=O"
+ },
+ "CLADRIBINE": {
+  "chembl_id": "CHEMBL1619",
+  "iso_smiles": "Nc1nc(Cl)nc2c1ncn2[C@H]1C[C@H](O)[C@@H](CO)O1",
+  "noniso_smiles": "Nc1nc(Cl)nc2c1ncn2C1CC(O)C(CO)O1"
+ },
+ "TRIFLURIDINE": {
+  "chembl_id": "CHEMBL1129",
+  "iso_smiles": "O=c1[nH]c(=O)n([C@H]2C[C@H](O)[C@@H](CO)O2)cc1C(F)(F)F",
+  "noniso_smiles": "O=c1[nH]c(=O)n(C2CC(O)C(CO)O2)cc1C(F)(F)F"
+ },
+ "NELARABINE": {
+  "chembl_id": "CHEMBL1201112",
+  "iso_smiles": "COc1nc(N)nc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1O",
+  "noniso_smiles": "COc1nc(N)nc2c1ncn2C1OC(CO)C(O)C1O"
+ },
+ "ALITRETINOIN": {
+  "chembl_id": "CHEMBL705",
+  "iso_smiles": "CC1=C(/C=C/C(C)=C\\C=C\\C(C)=C\\C(=O)O)C(C)(C)CCC1",
+  "noniso_smiles": "CC(C=CC1=C(C)CCCC1(C)C)=CC=CC(C)=CC(=O)O"
+ },
+ "TRETINOIN": {
+  "chembl_id": "CHEMBL38",
+  "iso_smiles": "CC1=C(/C=C/C(C)=C/C=C/C(C)=C/C(=O)O)C(C)(C)CCC1",
+  "noniso_smiles": "CC(C=CC1=C(C)CCCC1(C)C)=CC=CC(C)=CC(=O)O"
+ },
+ "MASOPROCOL": {
+  "chembl_id": "CHEMBL313972",
+  "iso_smiles": "C[C@@H](Cc1ccc(O)c(O)c1)[C@H](C)Cc1ccc(O)c(O)c1",
+  "noniso_smiles": "CC(Cc1ccc(O)c(O)c1)C(C)Cc1ccc(O)c(O)c1"
+ },
+ "CLOFARABINE": {
+  "chembl_id": "CHEMBL1750",
+  "iso_smiles": "Nc1nc(Cl)nc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1F",
+  "noniso_smiles": "Nc1nc(Cl)nc2c1ncn2C1OC(CO)C(O)C1F"
+ },
+ "CHLORAMBUCIL": {
+  "chembl_id": "CHEMBL515",
+  "iso_smiles": "O=C(O)CCCc1ccc(N(CCCl)CCCl)cc1",
+  "noniso_smiles": "O=C(O)CCCc1ccc(N(CCCl)CCCl)cc1"
+ },
+ "MELPHALAN": {
+  "chembl_id": "CHEMBL852",
+  "iso_smiles": "N[C@@H](Cc1ccc(N(CCCl)CCCl)cc1)C(=O)O",
+  "noniso_smiles": "NC(Cc1ccc(N(CCCl)CCCl)cc1)C(=O)O"
+ },
+ "RUXOLITINIB": {
+  "chembl_id": "CHEMBL1789941",
+  "iso_smiles": "N#CC[C@H](C1CCCC1)n1cc(-c2ncnc3[nH]ccc23)cn1",
+  "noniso_smiles": "N#CCC(C1CCCC1)n1cc(-c2ncnc3[nH]ccc23)cn1"
+ },
+ "MITOBRONITOL": {
+  "chembl_id": "CHEMBL447629",
+  "iso_smiles": "O[C@H](CBr)[C@@H](O)[C@H](O)[C@H](O)CBr",
+  "noniso_smiles": "OC(CBr)C(O)C(O)C(O)CBr"
+ },
+ "BELINOSTAT": {
+  "chembl_id": "CHEMBL408513",
+  "iso_smiles": "O=C(/C=C/c1cccc(S(=O)(=O)Nc2ccccc2)c1)NO",
+  "noniso_smiles": "O=C(C=Cc1cccc(S(=O)(=O)Nc2ccccc2)c1)NO"
+ },
+ "MITOTANE": {
+  "chembl_id": "CHEMBL1670",
+  "iso_smiles": "Clc1ccc(C(c2ccccc2Cl)C(Cl)Cl)cc1",
+  "noniso_smiles": "Clc1ccc(C(c2ccccc2Cl)C(Cl)Cl)cc1"
+ },
+ "NIRAPARIB": {
+  "chembl_id": "CHEMBL1094636",
+  "iso_smiles": "NC(=O)c1cccc2cn(-c3ccc([C@@H]4CCCNC4)cc3)nc12",
+  "noniso_smiles": "NC(=O)c1cccc2cn(-c3ccc(C4CCCNC4)cc3)nc12"
+ },
+ "RUCAPARIB": {
+  "chembl_id": "CHEMBL1173055",
+  "iso_smiles": "CNCc1ccc(-c2[nH]c3cc(F)cc4c3c2CCNC4=O)cc1",
+  "noniso_smiles": "CNCc1ccc(-c2[nH]c3cc(F)cc4c3c2CCNC4=O)cc1"
+ },
+ "PIXANTRONE": {
+  "chembl_id": "CHEMBL167731",
+  "iso_smiles": "NCCNc1ccc(NCCN)c2c1C(=O)c1ccncc1C2=O",
+  "noniso_smiles": "NCCNc1ccc(NCCN)c2c1C(=O)c1ccncc1C2=O"
+ },
+ "MITOMYCIN": {
+  "chembl_id": "CHEMBL105",
+  "iso_smiles": "CO[C@@]12[C@H](COC(N)=O)C3=C(C(=O)C(C)=C(N)C3=O)N1C[C@@H]1N[C@@H]12",
+  "noniso_smiles": "COC12C(COC(N)=O)C3=C(C(=O)C(C)=C(N)C3=O)N1CC1NC12"
+ },
+ "SULPIRIDE": {
+  "chembl_id": "CHEMBL26",
+  "iso_smiles": "CCN1CCCC1CNC(=O)c1cc(S(N)(=O)=O)ccc1OC",
+  "noniso_smiles": "CCN1CCCC1CNC(=O)c1cc(S(N)(=O)=O)ccc1OC"
+ },
+ "BEXAROTENE": {
+  "chembl_id": "CHEMBL1023",
+  "iso_smiles": "C=C(c1ccc(C(=O)O)cc1)c1cc2c(cc1C)C(C)(C)CCC2(C)C",
+  "noniso_smiles": "C=C(c1ccc(C(=O)O)cc1)c1cc2c(cc1C)C(C)(C)CCC2(C)C"
+ },
+ "PANOBINOSTAT": {
+  "chembl_id": "CHEMBL483254",
+  "iso_smiles": "Cc1[nH]c2ccccc2c1CCNCc1ccc(/C=C/C(=O)NO)cc1",
+  "noniso_smiles": "Cc1[nH]c2ccccc2c1CCNCc1ccc(C=CC(=O)NO)cc1"
+ },
+ "PIPOBROMAN": {
+  "chembl_id": "CHEMBL1585",
+  "iso_smiles": "O=C(CCBr)N1CCN(C(=O)CCBr)CC1",
+  "noniso_smiles": "O=C(CCBr)N1CCN(C(=O)CCBr)CC1"
+ },
+ "BENDAMUSTINE": {
+  "chembl_id": "CHEMBL487253",
+  "iso_smiles": "Cn1c(CCCC(=O)O)nc2cc(N(CCCl)CCCl)ccc21",
+  "noniso_smiles": "Cn1c(CCCC(=O)O)nc2cc(N(CCCl)CCCl)ccc21"
+ },
+ "CAPECITABINE": {
+  "chembl_id": "CHEMBL1773",
+  "iso_smiles": "CCCCCOC(=O)Nc1nc(=O)n([C@@H]2O[C@H](C)[C@@H](O)[C@H]2O)cc1F",
+  "noniso_smiles": "CCCCCOC(=O)Nc1nc(=O)n(C2OC(C)C(O)C2O)cc1F"
+ },
+ "IXAZOMIB": {
+  "chembl_id": "CHEMBL2141296",
+  "iso_smiles": "CC(C)C[C@H](NC(=O)CNC(=O)c1cc(Cl)ccc1Cl)B(O)O",
+  "noniso_smiles": "CC(C)CC(NC(=O)CNC(=O)c1cc(Cl)ccc1Cl)B(O)O"
+ },
+ "FLUDARABINE PHOSPHATE": {
+  "chembl_id": "CHEMBL1096882",
+  "iso_smiles": "Nc1nc(F)nc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@@H]1O",
+  "noniso_smiles": "Nc1nc(F)nc2c1ncn2C1OC(COP(=O)(O)O)C(O)C1O"
+ },
+ "GLASDEGIB": {
+  "chembl_id": "CHEMBL2043437",
+  "iso_smiles": "CN1CC[C@@H](NC(=O)Nc2ccc(C#N)cc2)C[C@@H]1c1nc2ccccc2[nH]1",
+  "noniso_smiles": "CN1CCC(NC(=O)Nc2ccc(C#N)cc2)CC1c1nc2ccccc2[nH]1"
+ },
+ "TALAZOPARIB": {
+  "chembl_id": "CHEMBL3137320",
+  "iso_smiles": "Cn1ncnc1[C@H]1c2n[nH]c(=O)c3cc(F)cc(c23)N[C@@H]1c1ccc(F)cc1",
+  "noniso_smiles": "Cn1ncnc1C1c2n[nH]c(=O)c3cc(F)cc(c23)NC1c1ccc(F)cc1"
+ },
+ "CELECOXIB": {
+  "chembl_id": "CHEMBL118",
+  "iso_smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+  "noniso_smiles": "Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1"
+ },
+ "BORTEZOMIB": {
+  "chembl_id": "CHEMBL325041",
+  "iso_smiles": "CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1cnccn1)B(O)O",
+  "noniso_smiles": "CC(C)CC(NC(=O)C(Cc1ccccc1)NC(=O)c1cnccn1)B(O)O"
+ },
+ "AXITINIB": {
+  "chembl_id": "CHEMBL1289926",
+  "iso_smiles": "CNC(=O)c1ccccc1Sc1ccc2c(/C=C/c3ccccn3)n[nH]c2c1",
+  "noniso_smiles": "CNC(=O)c1ccccc1Sc1ccc2c(C=Cc3ccccn3)n[nH]c2c1"
+ },
+ "ERLOTINIB": {
+  "chembl_id": "CHEMBL553",
+  "iso_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+  "noniso_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1"
+ },
+ "AMSACRINE": {
+  "chembl_id": "CHEMBL43",
+  "iso_smiles": "COc1cc(NS(C)(=O)=O)ccc1Nc1c2ccccc2nc2ccccc12",
+  "noniso_smiles": "COc1cc(NS(C)(=O)=O)ccc1Nc1c2ccccc2nc2ccccc12"
+ },
+ "ARSENIC TRIOXIDE": {
+  "chembl_id": "CHEMBL2362016",
+  "iso_smiles": "O1[As]2O[As]3O[As]1O[As](O2)O3",
+  "noniso_smiles": "O1[As]2O[As]3O[As]1O[As](O2)O3"
+ },
+ "SUNITINIB": {
+  "chembl_id": "CHEMBL535",
+  "iso_smiles": "CCN(CC)CCNC(=O)c1c(C)[nH]c(/C=C2\\C(=O)Nc3ccc(F)cc32)c1C",
+  "noniso_smiles": "CCN(CC)CCNC(=O)c1c(C)[nH]c(C=C2C(=O)Nc3ccc(F)cc32)c1C"
+ },
+ "LORLATINIB": {
+  "chembl_id": "CHEMBL3286830",
+  "iso_smiles": "C[C@H]1Oc2cc(cnc2N)-c2c(nn(C)c2C#N)CN(C)C(=O)c2ccc(F)cc21",
+  "noniso_smiles": "CC1Oc2cc(cnc2N)-c2c(nn(C)c2C#N)CN(C)C(=O)c2ccc(F)cc21"
+ },
+ "CAPMATINIB": {
+  "chembl_id": "CHEMBL3188267",
+  "iso_smiles": "CNC(=O)c1ccc(-c2cnc3ncc(Cc4ccc5ncccc5c4)n3n2)cc1F",
+  "noniso_smiles": "CNC(=O)c1ccc(-c2cnc3ncc(Cc4ccc5ncccc5c4)n3n2)cc1F"
+ },
+ "IDELALISIB": {
+  "chembl_id": "CHEMBL2216870",
+  "iso_smiles": "CC[C@H](Nc1ncnc2[nH]cnc12)c1nc2cccc(F)c2c(=O)n1-c1ccccc1",
+  "noniso_smiles": "CCC(Nc1ncnc2[nH]cnc12)c1nc2cccc(F)c2c(=O)n1-c1ccccc1"
+ },
+ "DUVELISIB": {
+  "chembl_id": "CHEMBL3039502",
+  "iso_smiles": "C[C@H](Nc1ncnc2nc[nH]c12)c1cc2cccc(Cl)c2c(=O)n1-c1ccccc1",
+  "noniso_smiles": "CC(Nc1ncnc2nc[nH]c12)c1cc2cccc(Cl)c2c(=O)n1-c1ccccc1"
+ },
+ "PEXIDARTINIB": {
+  "chembl_id": "CHEMBL3813873",
+  "iso_smiles": "FC(F)(F)c1ccc(CNc2ccc(Cc3c[nH]c4ncc(Cl)cc34)cn2)cn1",
+  "noniso_smiles": "FC(F)(F)c1ccc(CNc2ccc(Cc3c[nH]c4ncc(Cl)cc34)cn2)cn1"
+ },
+ "VISMODEGIB": {
+  "chembl_id": "CHEMBL473417",
+  "iso_smiles": "CS(=O)(=O)c1ccc(C(=O)Nc2ccc(Cl)c(-c3ccccn3)c2)c(Cl)c1",
+  "noniso_smiles": "CS(=O)(=O)c1ccc(C(=O)Nc2ccc(Cl)c(-c3ccccn3)c2)c(Cl)c1"
+ },
+ "TOPOTECAN": {
+  "chembl_id": "CHEMBL84",
+  "iso_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1",
+  "noniso_smiles": "CCC1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(CN(C)C)c(O)ccc3nc2-1"
+ },
+ "LENVATINIB": {
+  "chembl_id": "CHEMBL1289601",
+  "iso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)c2cc1C(N)=O",
+  "noniso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)c2cc1C(N)=O"
+ },
+ "PEMETREXED": {
+  "chembl_id": "CHEMBL225072",
+  "iso_smiles": "Nc1nc2[nH]cc(CCc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)c2c(=O)[nH]1",
+  "noniso_smiles": "Nc1nc2[nH]cc(CCc3ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc3)c2c(=O)[nH]1"
+ },
+ "LAROTRECTINIB": {
+  "chembl_id": "CHEMBL3889654",
+  "iso_smiles": "O=C(Nc1cnn2ccc(N3CCC[C@@H]3c3cc(F)ccc3F)nc12)N1CC[C@H](O)C1",
+  "noniso_smiles": "O=C(Nc1cnn2ccc(N3CCCC3c3cc(F)ccc3F)nc12)N1CCC(O)C1"
+ },
+ "OLAPARIB": {
+  "chembl_id": "CHEMBL521686",
+  "iso_smiles": "O=C(c1cc(Cc2n[nH]c(=O)c3ccccc23)ccc1F)N1CCN(C(=O)C2CC2)CC1",
+  "noniso_smiles": "O=C(c1cc(Cc2n[nH]c(=O)c3ccccc23)ccc1F)N1CCN(C(=O)C2CC2)CC1"
+ },
+ "RIBOCICLIB SUCCINATE": {
+  "chembl_id": "CHEMBL3707266",
+  "iso_smiles": "CN(C)C(=O)c1cc2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n1C1CCCC1.O=C(O)CCC(=O)O",
+  "noniso_smiles": "CN(C)C(=O)c1cc2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n1C1CCCC1.O=C(O)CCC(=O)O"
+ },
+ "PAZOPANIB": {
+  "chembl_id": "CHEMBL477772",
+  "iso_smiles": "Cc1ccc(Nc2nccc(N(C)c3ccc4c(C)n(C)nc4c3)n2)cc1S(N)(=O)=O",
+  "noniso_smiles": "Cc1ccc(Nc2nccc(N(C)c3ccc4c(C)n(C)nc4c3)n2)cc1S(N)(=O)=O"
+ },
+ "BINIMETINIB": {
+  "chembl_id": "CHEMBL3187723",
+  "iso_smiles": "Cn1cnc2c(F)c(Nc3ccc(Br)cc3F)c(C(=O)NOCCO)cc21",
+  "noniso_smiles": "Cn1cnc2c(F)c(Nc3ccc(Br)cc3F)c(C(=O)NOCCO)cc21"
+ },
+ "ALPELISIB": {
+  "chembl_id": "CHEMBL2396661",
+  "iso_smiles": "Cc1nc(NC(=O)N2CCC[C@H]2C(N)=O)sc1-c1ccnc(C(C)(C)C(F)(F)F)c1",
+  "noniso_smiles": "Cc1nc(NC(=O)N2CCCC2C(N)=O)sc1-c1ccnc(C(C)(C)C(F)(F)F)c1"
+ },
+ "SELINEXOR": {
+  "chembl_id": "CHEMBL3545185",
+  "iso_smiles": "O=C(/C=C\\n1cnc(-c2cc(C(F)(F)F)cc(C(F)(F)F)c2)n1)NNc1cnccn1",
+  "noniso_smiles": "O=C(C=Cn1cnc(-c2cc(C(F)(F)F)cc(C(F)(F)F)c2)n1)NNc1cnccn1"
+ },
+ "MITOXANTRONE": {
+  "chembl_id": "CHEMBL58",
+  "iso_smiles": "O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21",
+  "noniso_smiles": "O=C1c2c(O)ccc(O)c2C(=O)c2c(NCCNCCO)ccc(NCCNCCO)c21"
+ },
+ "ERDAFITINIB": {
+  "chembl_id": "CHEMBL3545376",
+  "iso_smiles": "COc1cc(OC)cc(N(CCNC(C)C)c2ccc3ncc(-c4cnn(C)c4)nc3c2)c1",
+  "noniso_smiles": "COc1cc(OC)cc(N(CCNC(C)C)c2ccc3ncc(-c4cnn(C)c4)nc3c2)c1"
+ },
+ "GEFITINIB": {
+  "chembl_id": "CHEMBL939",
+  "iso_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+  "noniso_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1"
+ },
+ "PALBOCICLIB": {
+  "chembl_id": "CHEMBL189963",
+  "iso_smiles": "CC(=O)c1c(C)c2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n(C2CCCC2)c1=O",
+  "noniso_smiles": "CC(=O)c1c(C)c2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n(C2CCCC2)c1=O"
+ },
+ "CRIZOTINIB": {
+  "chembl_id": "CHEMBL601719",
+  "iso_smiles": "C[C@@H](Oc1cc(-c2cnn(C3CCNCC3)c2)cnc1N)c1c(Cl)ccc(F)c1Cl",
+  "noniso_smiles": "CC(Oc1cc(-c2cnn(C3CCNCC3)c2)cnc1N)c1c(Cl)ccc(F)c1Cl"
+ },
+ "METHOTREXATE": {
+  "chembl_id": "CHEMBL34259",
+  "iso_smiles": "CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc1",
+  "noniso_smiles": "CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1"
+ },
+ "TIVOZANIB": {
+  "chembl_id": "CHEMBL1289494",
+  "iso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)Nc4cc(C)on4)c(Cl)c3)c2cc1OC",
+  "noniso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)Nc4cc(C)on4)c(Cl)c3)c2cc1OC"
+ },
+ "SELUMETINIB": {
+  "chembl_id": "CHEMBL1614701",
+  "iso_smiles": "Cn1cnc2c(F)c(Nc3ccc(Br)cc3Cl)c(C(=O)NOCCO)cc21",
+  "noniso_smiles": "Cn1cnc2c(F)c(Nc3ccc(Br)cc3Cl)c(C(=O)NOCCO)cc21"
+ },
+ "RALTITREXED": {
+  "chembl_id": "CHEMBL225071",
+  "iso_smiles": "Cc1nc(=O)c2cc(CN(C)c3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)s3)ccc2[nH]1",
+  "noniso_smiles": "Cc1nc(=O)c2cc(CN(C)c3ccc(C(=O)NC(CCC(=O)O)C(=O)O)s3)ccc2[nH]1"
+ },
+ "SORAFENIB": {
+  "chembl_id": "CHEMBL1336",
+  "iso_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1",
+  "noniso_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1"
+ },
+ "DACOMITINIB": {
+  "chembl_id": "CHEMBL2110732",
+  "iso_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1NC(=O)/C=C/CN1CCCCC1",
+  "noniso_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1NC(=O)C=CCN1CCCCC1"
+ },
+ "ENASIDENIB": {
+  "chembl_id": "CHEMBL3989908",
+  "iso_smiles": "CC(C)(O)CNc1nc(Nc2ccnc(C(F)(F)F)c2)nc(-c2cccc(C(F)(F)F)n2)n1",
+  "noniso_smiles": "CC(C)(O)CNc1nc(Nc2ccnc(C(F)(F)F)c2)nc(-c2cccc(C(F)(F)F)n2)n1"
+ },
+ "VANDETANIB": {
+  "chembl_id": "CHEMBL24828",
+  "iso_smiles": "COc1cc2c(Nc3ccc(Br)cc3F)ncnc2cc1OCC1CCN(C)CC1",
+  "noniso_smiles": "COc1cc2c(Nc3ccc(Br)cc3F)ncnc2cc1OCC1CCN(C)CC1"
+ },
+ "PRALATREXATE": {
+  "chembl_id": "CHEMBL1201746",
+  "iso_smiles": "C#CCC(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc1",
+  "noniso_smiles": "C#CCC(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1"
+ },
+ "TUCATINIB": {
+  "chembl_id": "CHEMBL3989868",
+  "iso_smiles": "Cc1cc(Nc2ncnc3ccc(NC4=NC(C)(C)CO4)cc23)ccc1Oc1ccn2ncnc2c1",
+  "noniso_smiles": "Cc1cc(Nc2ncnc3ccc(NC4=NC(C)(C)CO4)cc23)ccc1Oc1ccn2ncnc2c1"
+ },
+ "COPANLISIB": {
+  "chembl_id": "CHEMBL3218576",
+  "iso_smiles": "COc1c(OCCCN2CCOCC2)ccc2c1N=C(NC(=O)c1cnc(N)nc1)N1CCN=C21",
+  "noniso_smiles": "COc1c(OCCCN2CCOCC2)ccc2c1N=C(NC(=O)c1cnc(N)nc1)N1CCN=C21"
+ },
+ "ALECTINIB": {
+  "chembl_id": "CHEMBL1738797",
+  "iso_smiles": "CCc1cc2c(cc1N1CCC(N3CCOCC3)CC1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O",
+  "noniso_smiles": "CCc1cc2c(cc1N1CCC(N3CCOCC3)CC1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O"
+ },
+ "REGORAFENIB": {
+  "chembl_id": "CHEMBL1946170",
+  "iso_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)c(F)c2)ccn1",
+  "noniso_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)c(F)c2)ccn1"
+ },
+ "SONIDEGIB": {
+  "chembl_id": "CHEMBL2105737",
+  "iso_smiles": "Cc1c(C(=O)Nc2ccc(N3C[C@H](C)O[C@H](C)C3)nc2)cccc1-c1ccc(OC(F)(F)F)cc1",
+  "noniso_smiles": "Cc1c(C(=O)Nc2ccc(N3CC(C)OC(C)C3)nc2)cccc1-c1ccc(OC(F)(F)F)cc1"
+ },
+ "AFATINIB": {
+  "chembl_id": "CHEMBL1173655",
+  "iso_smiles": "CN(C)C/C=C/C(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1O[C@H]1CCOC1",
+  "noniso_smiles": "CN(C)CC=CC(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1OC1CCOC1"
+ },
+ "PEMIGATINIB": {
+  "chembl_id": "CHEMBL4297522",
+  "iso_smiles": "CCN1C(=O)N(c2c(F)c(OC)cc(OC)c2F)Cc2cnc3[nH]c(CN4CCOCC4)cc3c21",
+  "noniso_smiles": "CCN1C(=O)N(c2c(F)c(OC)cc(OC)c2F)Cc2cnc3[nH]c(CN4CCOCC4)cc3c21"
+ },
+ "DASATINIB": {
+  "chembl_id": "CHEMBL1421",
+  "iso_smiles": "Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1",
+  "noniso_smiles": "Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1"
+ },
+ "VEMURAFENIB": {
+  "chembl_id": "CHEMBL1229517",
+  "iso_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c1F",
+  "noniso_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c1F"
+ },
+ "TEPOTINIB": {
+  "chembl_id": "CHEMBL3402762",
+  "iso_smiles": "CN1CCC(COc2cnc(-c3cccc(Cn4nc(-c5cccc(C#N)c5)ccc4=O)c3)nc2)CC1",
+  "noniso_smiles": "CN1CCC(COc2cnc(-c3cccc(Cn4nc(-c5cccc(C#N)c5)ccc4=O)c3)nc2)CC1"
+ },
+ "IMATINIB": {
+  "chembl_id": "CHEMBL941",
+  "iso_smiles": "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1",
+  "noniso_smiles": "Cc1ccc(NC(=O)c2ccc(CN3CCN(C)CC3)cc2)cc1Nc1nccc(-c2cccnc2)n1"
+ },
+ "IDARUBICIN": {
+  "chembl_id": "CHEMBL1117",
+  "iso_smiles": "CC(=O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](N)[C@H](O)[C@H](C)O2)C1)C(=O)c1ccccc1C3=O",
+  "noniso_smiles": "CC(=O)C1(O)Cc2c(O)c3c(c(O)c2C(OC2CC(N)C(O)C(C)O2)C1)C(=O)c1ccccc1C3=O"
+ },
+ "AVAPRITINIB": {
+  "chembl_id": "CHEMBL4204794",
+  "iso_smiles": "Cn1cc(-c2cc3c(N4CCN(c5ncc([C@@](C)(N)c6ccc(F)cc6)cn5)CC4)ncnn3c2)cn1",
+  "noniso_smiles": "Cn1cc(-c2cc3c(N4CCN(c5ncc(C(C)(N)c6ccc(F)cc6)cn5)CC4)ncnn3c2)cn1"
+ },
+ "OSIMERTINIB": {
+  "chembl_id": "CHEMBL3353410",
+  "iso_smiles": "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C",
+  "noniso_smiles": "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C"
+ },
+ "CABOZANTINIB": {
+  "chembl_id": "CHEMBL2105717",
+  "iso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)C4(C(=O)Nc5ccc(F)cc5)CC4)cc3)c2cc1OC",
+  "noniso_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)C4(C(=O)Nc5ccc(F)cc5)CC4)cc3)c2cc1OC"
+ },
+ "ABEMACICLIB": {
+  "chembl_id": "CHEMBL3301610",
+  "iso_smiles": "CCN1CCN(Cc2ccc(Nc3ncc(F)c(-c4cc(F)c5nc(C)n(C(C)C)c5c4)n3)nc2)CC1",
+  "noniso_smiles": "CCN1CCN(Cc2ccc(Nc3ncc(F)c(-c4cc(F)c5nc(C)n(C(C)C)c5c4)n3)nc2)CC1"
+ },
+ "IXABEPILONE": {
+  "chembl_id": "CHEMBL1201752",
+  "iso_smiles": "C/C(=C\\c1csc(C)n1)[C@@H]1C[C@@H]2O[C@]2(C)CCC[C@H](C)[C@H](O)[C@@H](C)C(=O)C(C)(C)[C@@H](O)CC(=O)N1",
+  "noniso_smiles": "CC(=Cc1csc(C)n1)C1CC2OC2(C)CCCC(C)C(O)C(C)C(=O)C(C)(C)C(O)CC(=O)N1"
+ },
+ "RIPRETINIB": {
+  "chembl_id": "CHEMBL4216467",
+  "iso_smiles": "CCn1c(=O)c(-c2cc(NC(=O)Nc3ccccc3)c(F)cc2Br)cc2cnc(NC)cc21",
+  "noniso_smiles": "CCn1c(=O)c(-c2cc(NC(=O)Nc3ccccc3)c(F)cc2Br)cc2cnc(NC)cc21"
+ },
+ "IXAZOMIB CITRATE": {
+  "chembl_id": "CHEMBL3545432",
+  "iso_smiles": "CC(C)C[C@H](NC(=O)CNC(=O)c1cc(Cl)ccc1Cl)B1OC(=O)C(CC(=O)O)(CC(=O)O)O1",
+  "noniso_smiles": "CC(C)CC(NC(=O)CNC(=O)c1cc(Cl)ccc1Cl)B1OC(=O)C(CC(=O)O)(CC(=O)O)O1"
+ },
+ "DABRAFENIB": {
+  "chembl_id": "CHEMBL2028663",
+  "iso_smiles": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2F)c(-c2ccnc(N)n2)s1",
+  "noniso_smiles": "CC(C)(C)c1nc(-c2cccc(NS(=O)(=O)c3c(F)cccc3F)c2F)c(-c2ccnc(N)n2)s1"
+ },
+ "ESTRAMUSTINE PHOSPHATE SODIUM": {
+  "chembl_id": "CHEMBL1200721",
+  "iso_smiles": "C[C@]12CC[C@@H]3c4ccc(OC(=O)N(CCCl)CCCl)cc4CC[C@H]3[C@@H]1CC[C@@H]2OP(=O)([O-])[O-].[Na+].[Na+]",
+  "noniso_smiles": "CC12CCC3c4ccc(OC(=O)N(CCCl)CCCl)cc4CCC3C1CCC2OP(=O)([O-])[O-].[Na+].[Na+]"
+ },
+ "FEDRATINIB": {
+  "chembl_id": "CHEMBL1287853",
+  "iso_smiles": "Cc1cnc(Nc2ccc(OCCN3CCCC3)cc2)nc1Nc1cccc(S(=O)(=O)NC(C)(C)C)c1",
+  "noniso_smiles": "Cc1cnc(Nc2ccc(OCCN3CCCC3)cc2)nc1Nc1cccc(S(=O)(=O)NC(C)(C)C)c1"
+ },
+ "DAUNORUBICIN": {
+  "chembl_id": "CHEMBL178",
+  "iso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(C)=O)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1",
+  "noniso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)CC(O)(C(C)=O)CC3OC1CC(N)C(O)C(C)O1"
+ },
+ "NILOTINIB": {
+  "chembl_id": "CHEMBL255863",
+  "iso_smiles": "Cc1cn(-c2cc(NC(=O)c3ccc(C)c(Nc4nccc(-c5cccnc5)n4)c3)cc(C(F)(F)F)c2)cn1",
+  "noniso_smiles": "Cc1cn(-c2cc(NC(=O)c3ccc(C)c(Nc4nccc(-c5cccnc5)n4)c3)cc(C(F)(F)F)c2)cn1"
+ },
+ "BOSUTINIB": {
+  "chembl_id": "CHEMBL288441",
+  "iso_smiles": "COc1cc(Nc2c(C#N)cnc3cc(OCCCN4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl",
+  "noniso_smiles": "COc1cc(Nc2c(C#N)cnc3cc(OCCCN4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl"
+ },
+ "COBIMETINIB": {
+  "chembl_id": "CHEMBL2146883",
+  "iso_smiles": "O=C(c1ccc(F)c(F)c1Nc1ccc(I)cc1F)N1CC(O)([C@@H]2CCCCN2)C1",
+  "noniso_smiles": "O=C(c1ccc(F)c(F)c1Nc1ccc(I)cc1F)N1CC(O)(C2CCCCN2)C1"
+ },
+ "PONATINIB": {
+  "chembl_id": "CHEMBL1171837",
+  "iso_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1C#Cc1cnc2cccnn12",
+  "noniso_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1C#Cc1cnc2cccnn12"
+ },
+ "NINTEDANIB": {
+  "chembl_id": "CHEMBL502835",
+  "iso_smiles": "COC(=O)c1ccc2c(c1)NC(=O)/C2=C(\\Nc1ccc(N(C)C(=O)CN2CCN(C)CC2)cc1)c1ccccc1",
+  "noniso_smiles": "COC(=O)c1ccc2c(c1)NC(=O)C2=C(Nc1ccc(N(C)C(=O)CN2CCN(C)CC2)cc1)c1ccccc1"
+ },
+ "ENCORAFENIB": {
+  "chembl_id": "CHEMBL3301612",
+  "iso_smiles": "COC(=O)N[C@@H](C)CNc1nccc(-c2cn(C(C)C)nc2-c2cc(Cl)cc(NS(C)(=O)=O)c2F)n1",
+  "noniso_smiles": "COC(=O)NC(C)CNc1nccc(-c2cn(C(C)C)nc2-c2cc(Cl)cc(NS(C)(=O)=O)c2F)n1"
+ },
+ "ROMIDEPSIN": {
+  "chembl_id": "CHEMBL343448",
+  "iso_smiles": "C/C=C1\\NC(=O)[C@H]2CSSCC/C=C/[C@H](CC(=O)N[C@H](C(C)C)C(=O)N2)OC(=O)[C@H](C(C)C)NC1=O",
+  "noniso_smiles": "CC=C1NC(=O)C2CSSCCC=CC(CC(=O)NC(C(C)C)C(=O)N2)OC(=O)C(C(C)C)NC1=O"
+ },
+ "DOXORUBICIN": {
+  "chembl_id": "CHEMBL53463",
+  "iso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1",
+  "noniso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)CC(O)(C(=O)CO)CC3OC1CC(N)C(O)C(C)O1"
+ },
+ "EPIRUBICIN": {
+  "chembl_id": "CHEMBL417",
+  "iso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@@H](O)[C@H](C)O1",
+  "noniso_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)CC(O)(C(=O)CO)CC3OC1CC(N)C(O)C(C)O1"
+ },
+ "OMACETAXINE MEPESUCCINATE": {
+  "chembl_id": "CHEMBL46286",
+  "iso_smiles": "COC(=O)C[C@](O)(CCCC(C)(C)O)C(=O)O[C@@H]1C(OC)=C[C@]23CCCN2CCc2cc4c(cc2[C@H]13)OCO4",
+  "noniso_smiles": "COC(=O)CC(O)(CCCC(C)(C)O)C(=O)OC1C(OC)=CC23CCCN2CCc2cc4c(cc2C13)OCO4"
+ },
+ "GILTERITINIB": {
+  "chembl_id": "CHEMBL3301622",
+  "iso_smiles": "CCc1nc(C(N)=O)c(Nc2ccc(N3CCC(N4CCN(C)CC4)CC3)c(OC)c2)nc1NC1CCOCC1",
+  "noniso_smiles": "CCc1nc(C(N)=O)c(Nc2ccc(N3CCC(N4CCN(C)CC4)CC3)c(OC)c2)nc1NC1CCOCC1"
+ },
+ "NERATINIB": {
+  "chembl_id": "CHEMBL180022",
+  "iso_smiles": "CCOc1cc2ncc(C#N)c(Nc3ccc(OCc4ccccn4)c(Cl)c3)c2cc1NC(=O)/C=C/CN(C)C",
+  "noniso_smiles": "CCOc1cc2ncc(C#N)c(Nc3ccc(OCc4ccccn4)c(Cl)c3)c2cc1NC(=O)C=CCN(C)C"
+ },
+ "CERITINIB": {
+  "chembl_id": "CHEMBL2403108",
+  "iso_smiles": "Cc1cc(Nc2ncc(Cl)c(Nc3ccccc3S(=O)(=O)C(C)C)n2)c(OC(C)C)cc1C1CCNCC1",
+  "noniso_smiles": "Cc1cc(Nc2ncc(Cl)c(Nc3ccccc3S(=O)(=O)C(C)C)n2)c(OC(C)C)cc1C1CCNCC1"
+ },
+ "ENTRECTINIB": {
+  "chembl_id": "CHEMBL1983268",
+  "iso_smiles": "CN1CCN(c2ccc(C(=O)Nc3n[nH]c4ccc(Cc5cc(F)cc(F)c5)cc34)c(NC3CCOCC3)c2)CC1",
+  "noniso_smiles": "CN1CCN(c2ccc(C(=O)Nc3n[nH]c4ccc(Cc5cc(F)cc(F)c5)cc34)c(NC3CCOCC3)c2)CC1"
+ },
+ "MIDOSTAURIN": {
+  "chembl_id": "CHEMBL608533",
+  "iso_smiles": "CO[C@@H]1[C@H](N(C)C(=O)c2ccccc2)C[C@H]2O[C@]1(C)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4",
+  "noniso_smiles": "COC1C(N(C)C(=O)c2ccccc2)CC2OC1(C)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(=O)NC4"
+ },
+ "LAPATINIB": {
+  "chembl_id": "CHEMBL554",
+  "iso_smiles": "CS(=O)(=O)CCNCc1ccc(-c2ccc3ncnc(Nc4ccc(OCc5cccc(F)c5)c(Cl)c4)c3c2)o1",
+  "noniso_smiles": "CS(=O)(=O)CCNCc1ccc(-c2ccc3ncnc(Nc4ccc(OCc5cccc(F)c5)c(Cl)c4)c3c2)o1"
+ },
+ "IVOSIDENIB": {
+  "chembl_id": "CHEMBL3989958",
+  "iso_smiles": "N#Cc1ccnc(N2C(=O)CC[C@H]2C(=O)N(c2cncc(F)c2)[C@H](C(=O)NC2CC(F)(F)C2)c2ccccc2Cl)c1",
+  "noniso_smiles": "N#Cc1ccnc(N2C(=O)CCC2C(=O)N(c2cncc(F)c2)C(C(=O)NC2CC(F)(F)C2)c2ccccc2Cl)c1"
+ },
+ "BRIGATINIB": {
+  "chembl_id": "CHEMBL3545311",
+  "iso_smiles": "COc1cc(N2CCC(N3CCN(C)CC3)CC2)ccc1Nc1ncc(Cl)c(Nc2ccccc2P(C)(C)=O)n1",
+  "noniso_smiles": "COc1cc(N2CCC(N3CCN(C)CC3)CC2)ccc1Nc1ncc(Cl)c(Nc2ccccc2P(C)(C)=O)n1"
+ },
+ "IRINOTECAN": {
+  "chembl_id": "CHEMBL481",
+  "iso_smiles": "CCc1c2c(nc3ccc(OC(=O)N4CCC(N5CCCCC5)CC4)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC",
+  "noniso_smiles": "CCc1c2c(nc3ccc(OC(=O)N4CCC(N5CCCCC5)CC4)cc13)-c1cc3c(c(=O)n1C2)COC(=O)C3(O)CC"
+ },
+ "ETOPOSIDE": {
+  "chembl_id": "CHEMBL44657",
+  "iso_smiles": "COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](C)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O",
+  "noniso_smiles": "COc1cc(C2c3cc4c(cc3C(OC3OC5COC(C)OC5C(O)C3O)C3COC(=O)C23)OCO4)cc(OC)c1O"
+ },
+ "TRAMETINIB": {
+  "chembl_id": "CHEMBL2103875",
+  "iso_smiles": "CC(=O)Nc1cccc(-n2c(=O)n(C3CC3)c(=O)c3c(Nc4ccc(I)cc4F)n(C)c(=O)c(C)c32)c1",
+  "noniso_smiles": "CC(=O)Nc1cccc(-n2c(=O)n(C3CC3)c(=O)c3c(Nc4ccc(I)cc4F)n(C)c(=O)c(C)c32)c1"
+ },
+ "TENIPOSIDE": {
+  "chembl_id": "CHEMBL452231",
+  "iso_smiles": "COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](c6cccs6)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1O",
+  "noniso_smiles": "COc1cc(C2c3cc4c(cc3C(OC3OC5COC(c6cccs6)OC5C(O)C3O)C3COC(=O)C23)OCO4)cc(OC)c1O"
+ },
+ "ETOPOSIDE PHOSPHATE": {
+  "chembl_id": "CHEMBL1200645",
+  "iso_smiles": "COc1cc([C@@H]2c3cc4c(cc3[C@@H](O[C@@H]3O[C@@H]5CO[C@@H](C)O[C@H]5[C@H](O)[C@H]3O)[C@H]3COC(=O)[C@H]23)OCO4)cc(OC)c1OP(=O)(O)O",
+  "noniso_smiles": "COc1cc(C2c3cc4c(cc3C(OC3OC5COC(C)OC5C(O)C3O)C3COC(=O)C23)OCO4)cc(OC)c1OP(=O)(O)O"
+ },
+ "TEMOPORFIN": {
+  "chembl_id": "CHEMBL383675",
+  "iso_smiles": "Oc1cccc(-c2c3nc(c(-c4cccc(O)c4)c4ccc([nH]4)c(-c4cccc(O)c4)c4ccc([nH]4)c(-c4cccc(O)c4)c4nc2CC4)C=C3)c1",
+  "noniso_smiles": "Oc1cccc(-c2c3nc(c(-c4cccc(O)c4)c4ccc([nH]4)c(-c4cccc(O)c4)c4ccc([nH]4)c(-c4cccc(O)c4)c4nc2CC4)C=C3)c1"
+ },
+ "CARFILZOMIB": {
+  "chembl_id": "CHEMBL451887",
+  "iso_smiles": "CC(C)C[C@H](NC(=O)[C@H](CCc1ccccc1)NC(=O)CN1CCOCC1)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)[C@@]1(C)CO1",
+  "noniso_smiles": "CC(C)CC(NC(=O)C(CCc1ccccc1)NC(=O)CN1CCOCC1)C(=O)NC(Cc1ccccc1)C(=O)NC(CC(C)C)C(=O)C1(C)CO1"
+ },
+ "VALRUBICIN": {
+  "chembl_id": "CHEMBL1096885",
+  "iso_smiles": "CCCCC(=O)OCC(=O)[C@]1(O)Cc2c(O)c3c(c(O)c2[C@@H](O[C@H]2C[C@H](NC(=O)C(F)(F)F)[C@H](O)[C@H](C)O2)C1)C(=O)c1c(OC)cccc1C3=O",
+  "noniso_smiles": "CCCCC(=O)OCC(=O)C1(O)Cc2c(O)c3c(c(O)c2C(OC2CC(NC(=O)C(F)(F)F)C(O)C(C)O2)C1)C(=O)c1c(OC)cccc1C3=O"
+ },
+ "ERIBULIN": {
+  "chembl_id": "CHEMBL1683590",
+  "iso_smiles": "C=C1C[C@@H]2CC[C@@]34C[C@H]5O[C@H]6[C@@H](O3)[C@H]3O[C@H](CC[C@@H]3O[C@H]6[C@H]5O4)CC(=O)C[C@H]3[C@H](C[C@H]4O[C@@H](CC[C@@H]1O2)C[C@@H](C)C4=C)O[C@H](C[C@H](O)CN)[C@@H]3OC",
+  "noniso_smiles": "C=C1CC2CCC34CC5OC6C(OC7CCC(CC(=O)CC8C(CC9OC(CCC1O2)CC(C)C9=C)OC(CC(O)CN)C8OC)OC7C6O3)C5O4"
+ },
+ "VINDESINE": {
+  "chembl_id": "CHEMBL238071",
+  "iso_smiles": "CC[C@]1(O)C[C@@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@](O)(C(N)=O)[C@H](O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1",
+  "noniso_smiles": "CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3cc4c(cc3OC)N(C)C3C(O)(C(N)=O)C(O)C5(CC)C=CCN6CCC43C65)C2)C1"
+ },
+ "TRABECTEDIN": {
+  "chembl_id": "CHEMBL450449",
+  "iso_smiles": "COc1cc2c(cc1O)CCN[C@]21CS[C@@H]2c3c(OC(C)=O)c(C)c4c(c3[C@H](COC1=O)N1[C@@H](O)[C@@H]3Cc5cc(C)c(OC)c(O)c5[C@H]([C@H]21)N3C)OCO4",
+  "noniso_smiles": "COc1cc2c(cc1O)CCNC21CSC2c3c(OC(C)=O)c(C)c4c(c3C(COC1=O)N1C(O)C3Cc5cc(C)c(OC)c(O)c5C(C21)N3C)OCO4"
+ },
+ "VINORELBINE": {
+  "chembl_id": "CHEMBL553025",
+  "iso_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+  "noniso_smiles": "CCC1=CC2CN(C1)Cc1c([nH]c3ccccc13)C(C(=O)OC)(c1cc3c(cc1OC)N(C)C1C(O)(C(=O)OC)C(OC(C)=O)C4(CC)C=CCN5CCC31C54)C2"
+ },
+ "LURBINECTEDIN": {
+  "chembl_id": "CHEMBL4297516",
+  "iso_smiles": "COc1ccc2[nH]c3c(c2c1)CCN[C@]31CS[C@@H]2c3c(OC(C)=O)c(C)c4c(c3[C@H](COC1=O)N1[C@@H](O)[C@@H]3Cc5cc(C)c(OC)c(O)c5[C@H]([C@H]21)N3C)OCO4",
+  "noniso_smiles": "COc1ccc2[nH]c3c(c2c1)CCNC31CSC2c3c(OC(C)=O)c(C)c4c(c3C(COC1=O)N1C(O)C3Cc5cc(C)c(OC)c(O)c5C(C21)N3C)OCO4"
+ },
+ "DOCETAXEL": {
+  "chembl_id": "CHEMBL3545252",
+  "iso_smiles": "CC(=O)O[C@@]12CO[C@@H]1C[C@H](O)[C@@]1(C)C(=O)[C@H](O)C3=C(C)[C@@H](OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)c4ccccc4)C[C@@](O)([C@@H](OC(=O)c4ccccc4)[C@@H]12)C3(C)C.O.O.O",
+  "noniso_smiles": "CC(=O)OC12COC1CC(O)C1(C)C(=O)C(O)C3=C(C)C(OC(=O)C(O)C(NC(=O)OC(C)(C)C)c4ccccc4)CC(O)(C(OC(=O)c4ccccc4)C21)C3(C)C.O.O.O"
+ },
+ "VINBLASTINE": {
+  "chembl_id": "CHEMBL159",
+  "iso_smiles": "CC[C@]1(O)C[C@@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C)[C@H]3[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1",
+  "noniso_smiles": "CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3cc4c(cc3OC)N(C)C3C(O)(C(=O)OC)C(OC(C)=O)C5(CC)C=CCN6CCC43C65)C2)C1"
+ },
+ "VINFLUNINE": {
+  "chembl_id": "CHEMBL2110725",
+  "iso_smiles": "CC[C@]12C=CCN3CC[C@@]4(c5cc([C@@]6(C(=O)OC)C[C@@H]7C[C@@H](C(C)(F)F)CN(Cc8c6[nH]c6ccccc86)C7)c(OC)cc5N(C)[C@H]4[C@@](O)(C(=O)OC)[C@@H]1OC(C)=O)[C@@H]32",
+  "noniso_smiles": "CCC12C=CCN3CCC4(c5cc(C6(C(=O)OC)CC7CC(C(C)(F)F)CN(Cc8c6[nH]c6ccccc86)C7)c(OC)cc5N(C)C4C(O)(C(=O)OC)C1OC(C)=O)C32"
+ },
+ "VINCRISTINE": {
+  "chembl_id": "CHEMBL90555",
+  "iso_smiles": "CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C(=O)OC)(c3cc4c(cc3OC)N(C=O)[C@H]3[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]5(CC)C=CCN6CC[C@]43[C@@H]65)C2)C1",
+  "noniso_smiles": "CCC1(O)CC2CN(CCc3c([nH]c4ccccc34)C(C(=O)OC)(c3cc4c(cc3OC)N(C=O)C3C(O)(C(=O)OC)C(OC(C)=O)C5(CC)C=CCN6CCC43C65)C2)C1"
+ },
+ "CABAZITAXEL": {
+  "chembl_id": "CHEMBL1201748",
+  "iso_smiles": "CO[C@H]1C[C@H]2OC[C@@]2(OC(C)=O)[C@H]2[C@H](OC(=O)c3ccccc3)[C@]3(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)c4ccccc4)C(C)=C([C@@H](OC)C(=O)[C@]12C)C3(C)C",
+  "noniso_smiles": "COC1C(=O)C2(C)C(OC)CC3OCC3(OC(C)=O)C2C(OC(=O)c2ccccc2)C2(O)CC(OC(=O)C(O)C(NC(=O)OC(C)(C)C)c3ccccc3)C(C)=C1C2(C)C"
+ },
+ "PACLITAXEL": {
+  "chembl_id": "CHEMBL428647",
+  "iso_smiles": "CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](O)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)c3ccccc3)c3ccccc3)C(C)=C1C2(C)C",
+  "noniso_smiles": "CC(=O)OC1C(=O)C2(C)C(O)CC3OCC3(OC(C)=O)C2C(OC(=O)c2ccccc2)C2(O)CC(OC(=O)C(O)C(NC(=O)c3ccccc3)c3ccccc3)C(C)=C1C2(C)C"
+ },
+ "VENETOCLAX": {
+  "chembl_id": "CHEMBL3137309",
+  "iso_smiles": "CC1(C)CCC(CN2CCN(c3ccc(C(=O)NS(=O)(=O)c4ccc(NCC5CCOCC5)c([N+](=O)[O-])c4)c(Oc4cnc5[nH]ccc5c4)c3)CC2)=C(c2ccc(Cl)cc2)C1",
+  "noniso_smiles": "CC1(C)CCC(CN2CCN(c3ccc(C(=O)NS(=O)(=O)c4ccc(NCC5CCOCC5)c([N+](=O)[O-])c4)c(Oc4cnc5[nH]ccc5c4)c3)CC2)=C(c2ccc(Cl)cc2)C1"
+ },
+ "EVEROLIMUS": {
+  "chembl_id": "CHEMBL1908360",
+  "iso_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OCCO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+  "noniso_smiles": "COC1CC2CCC(C)C(O)(O2)C(=O)C(=O)N2CCCCC2C(=O)OC(C(C)CC2CCC(OCCO)C(OC)C2)CC(=O)C(C)C=C(C)C(O)C(OC)C(=O)C(C)CC(C)C=CC=CC=C1C"
+ },
+ "TEMSIROLIMUS": {
+  "chembl_id": "CHEMBL1201182",
+  "iso_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OC(=O)C(C)(CO)CO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+  "noniso_smiles": "COC1CC2CCC(C)C(O)(O2)C(=O)C(=O)N2CCCCC2C(=O)OC(C(C)CC2CCC(OC(=O)C(C)(CO)CO)C(OC)C2)CC(=O)C(C)C=C(C)C(O)C(OC)C(=O)C(C)CC(C)C=CC=CC=C1C"
+ },
+ "PLICAMYCIN": {
+  "chembl_id": "CHEMBL1237054",
+  "iso_smiles": "CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)[C@@H]1Cc2cc3cc(O[C@H]4C[C@@H](O[C@@H]5C[C@@H](O)[C@H](O)[C@@H](C)O5)[C@H](O)[C@@H](C)O4)c(C)c(O)c3c(O)c2C(=O)[C@H]1O[C@H]1C[C@@H](O[C@@H]2C[C@@H](O)[C@@H](O[C@@H]3C[C@](C)(O)[C@H](O)[C@@H](C)O3)[C@@H](C)O2)[C@H](O)[C@@H](C)O1",
+  "noniso_smiles": "COC(C(=O)C(O)C(C)O)C1Cc2cc3cc(OC4CC(OC5CC(O)C(O)C(C)O5)C(O)C(C)O4)c(C)c(O)c3c(O)c2C(=O)C1OC1CC(OC2CC(O)C(OC3CC(C)(O)C(O)C(C)O3)C(C)O2)C(O)C(C)O1"
+ },
+ "DACTINOMYCIN": {
+  "chembl_id": "CHEMBL1554",
+  "iso_smiles": "Cc1c2oc3c(C)ccc(C(=O)N[C@@H]4C(=O)N[C@H](C(C)C)C(=O)N5CCC[C@H]5C(=O)N(C)CC(=O)N(C)[C@@H](C(C)C)C(=O)O[C@@H]4C)c3nc-2c(C(=O)N[C@@H]2C(=O)N[C@H](C(C)C)C(=O)N3CCC[C@H]3C(=O)N(C)CC(=O)N(C)[C@@H](C(C)C)C(=O)O[C@@H]2C)c(N)c1=O",
+  "noniso_smiles": "Cc1c2oc3c(C)ccc(C(=O)NC4C(=O)NC(C(C)C)C(=O)N5CCCC5C(=O)N(C)CC(=O)N(C)C(C(C)C)C(=O)OC4C)c3nc-2c(C(=O)NC2C(=O)NC(C(C)C)C(=O)N3CCCC3C(=O)N(C)CC(=O)N(C)C(C(C)C)C(=O)OC2C)c(N)c1=O"
+ },
+ "BLEOMYCIN": {
+  "chembl_id": "CHEMBL403664",
+  "iso_smiles": "Cc1c(N)nc([C@H](CC(N)=O)NC[C@H](N)C(N)=O)nc1C(=O)N[C@H](C(=O)N[C@H](C)[C@@H](O)[C@H](C)C(=O)N[C@H](C(=O)NCCc1nc(-c2nc(C(=O)NCCC[S+](C)C)cs2)cs1)[C@@H](C)O)[C@@H](O[C@@H]1O[C@@H](CO)[C@@H](O)[C@H](O)[C@@H]1O[C@H]1O[C@H](CO)[C@@H](O)[C@H](OC(N)=O)[C@@H]1O)c1c[nH]cn1",
+  "noniso_smiles": "Cc1c(N)nc(C(CC(N)=O)NCC(N)C(N)=O)nc1C(=O)NC(C(=O)NC(C)C(O)C(C)C(=O)NC(C(=O)NCCc1nc(-c2nc(C(=O)NCCC[S+](C)C)cs2)cs1)C(C)O)C(OC1OC(CO)C(O)C(O)C1OC1OC(CO)C(O)C(OC(N)=O)C1O)c1c[nH]cn1"
+ }
+}
