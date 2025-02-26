@@ -281,12 +281,12 @@ class selleck_chem:
     `Compound`, `Concentration`, `PlateID`, `PlateColumn`, `PlateRow`
     """
 
-    def __init__(self) -> None:
-        self.name = "selleckchem"
+    def __init__(self, name: str = "selleckchem") -> None:
+        self.name = name
         self.root_dir = Path(__file__).absolute().parents[1]
         self.file_root = self.root_dir / "data/adpkd_screening/screening_data"
-        print(f"    Loading {self.name} screening under: {self.file_root}")
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
+        print(f"    Loading {self.name} screening under: {self.file_path}")
         self.chemstructs = None
         self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.smi"
         self.dropped_comps = dict()
@@ -2744,9 +2744,8 @@ class spectrum(selleck_chem):
     Class for processing the spectrum screening data
     """
 
-    def __init__(self) -> None:
-        super().__init__()  # __init__ content from selleck_chem class
-        self.name = "spectrum"
+    def __init__(self, name="spectrum") -> None:
+        super().__init__(name=name)  # __init__ content from selleck_chem class
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
         self.chemstructs_path = (
             self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
@@ -2946,9 +2945,8 @@ class spectrum_validation(spectrum):
     Class for processing the spectrum screening data
     """
 
-    def __init__(self) -> None:
-        super().__init__()  # __init__ content from selleck_chem class
-        self.name = "spectrum-validation"
+    def __init__(self, name="spectrum-validation") -> None:
+        super().__init__(name=name)  # __init__ content from selleck_chem class
         self.chemstructs_path = (
             self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
         )

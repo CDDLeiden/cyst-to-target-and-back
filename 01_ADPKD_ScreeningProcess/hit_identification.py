@@ -30,12 +30,6 @@ from tqdm import tqdm
 from venn import venn
 
 
-def smi_to_connectivity(smi):
-    mol = Chem.MolFromSmiles(smi)
-    connectivity = Chem.MolToInchiKey(mol).split("-")[0]
-    return connectivity
-
-
 def chiral_ECFP4(mol):
     return AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=4096, useChirality=True)
 
@@ -220,7 +214,7 @@ smiles_type = "as-is"
 # If desired to compare the top % hits of each normalized dataset
 top_compare = True
 # If desired to save the final dataset with the identified hits
-wanna_save = True
+save = True
 
 all_medians_datasets = []
 all_hits_by_identifier = {
@@ -553,12 +547,7 @@ comps_to_rm = [
 todrop_idxs = data_modelling.query("Compound in @comps_to_rm").index
 print("dropped the following compounds:")
 print(data_modelling.loc[todrop_idxs].Compound.values)
-data_modelling = (
-    data_modelling.drop(index=todrop_idxs)
-    .drop(columns=["Name_Activity"])
-    .assign(Connectivity=lambda x: x.SMILES.apply(smi_to_connectivity))
-    .reset_index(drop=True)
-)
+data_modelling = data_modelling.drop(index=todrop_idxs).drop(columns=["Name_Activity"]).reset_index(drop=True)
 if npihit_distance == 1.5:
     distance_metric = "Default"
 
@@ -566,7 +555,7 @@ hit_id_dir = dataset_root.parent / "identified_hits"
 if not hit_id_dir.exists():
     hit_id_dir.mkdir()
 
-if wanna_save:
+if save:
     data_modelling.to_csv(
         hit_id_dir / f"pkd_HitCompounds_NPI-{npihit_method}"
         f"-{distance_metric}Distance-hitflag_{smiles_type}SMILES"
