@@ -16,10 +16,16 @@ import pubchempy as pcp
 import seaborn as sns
 from chembl_structure_pipeline import standardizer
 from PIL import Image, ImageDraw, ImageFont
-from rdkit import Chem, RDConfig, RDLogger
-from rdkit.Chem import AllChem, DataStructs, Draw, PandasTools, rdMolDescriptors
+from rdkit import Chem, RDLogger
+from rdkit.Chem import (
+    AllChem,
+    DataStructs,
+    Draw,
+    PandasTools,
+    rdFingerprintGenerator,
+    rdMolDescriptors,
+)
 from rdkit.Chem.SaltRemover import SaltRemover
-from rdkit.SimDivFilters import rdSimDivPickers
 from tqdm import tqdm
 
 try:
@@ -470,15 +476,11 @@ def smi_to_fp(smi: str, fp_name):
     Returns:
         RDKit fingerprint object.
     """
+    morgan_gen = rdFingerprintGenerator.GetMorganGenerator(radius=2, fpSize=8192, includeChirality=False)
     fp_dictionary = {
         "rdkpattern": Chem.rdmolops.RDKFingerprint,
         "atompair": rdMolDescriptors.GetHashedTopologicalTorsionFingerprintAsBitVect,
-        "ecfp4": partial(
-            AllChem.GetMorganFingerprintAsBitVect,
-            radius=2,
-            nBits=8192,
-            useChirality=False,
-        ),
+        "ecfp4": morgan_gen.GetFingerprint,
     }
     fingerprint_function = fp_dictionary[fp_name]
     mol = Chem.MolFromSmiles(smi)

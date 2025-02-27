@@ -40,7 +40,6 @@ except:  # noqa: E722
 from data_prepare import (
     chembl_mol_standardizer,
     chembl_smi_standardizer,
-    encode_check,
     rd_shut_the_hell_up,
     sanitize_smiles,
     smi_to_fp,
@@ -288,7 +287,7 @@ class selleck_chem:
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
         print(f"    Loading {self.name} screening under: {self.file_path}")
         self.chemstructs = None
-        self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.smi"
+        self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.tsv"
         self.dropped_comps = dict()
         self.comp_mapping = dict()
         self.df = pd.read_csv(self.file_path)
@@ -1251,14 +1250,7 @@ class selleck_chem:
             iso_ParentSmiles, non_iso_ParentSmiles, Screening]
 
         """
-        e = encode_check(filename=self.chemstructs_path, verbose=verbose)
-
-        selchem_df = pd.read_csv(
-            self.chemstructs_path,
-            sep="\t",
-            lineterminator="\r",
-            encoding=e,
-        )
+        selchem_df = pd.read_csv(self.chemstructs_path, sep="\t")
 
         parent_smiles = list()
         idx_problem_mols = list()
