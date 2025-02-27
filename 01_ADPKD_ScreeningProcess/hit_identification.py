@@ -231,7 +231,7 @@ all_hits_by_identifier = {
 }
 
 # dataset_idx will be used to access z_scored_datasets
-for dataset_idx, data in enumerate(datasets):
+for data in datasets:
     data.drop_cols()
     # The only dataset requiring this function (TODO: change this)
     if data.name == "selleckchem":
@@ -316,7 +316,7 @@ for dataset_idx, data in enumerate(datasets):
         npiscored_obj_Mean_area=npi_series["npiscored_obj_Mean_area"],
         BScore_hitflag=b_score_series["BScore_hitflag"],
         bscored_obj_Mean_area=b_score_series["bscored_obj_Mean_area"],
-        Screening=lambda x: [data.name] * len(x),
+        Screening=lambda x, data=data: [data.name] * len(x),
     )
     all_medians_datasets.append(df)
 

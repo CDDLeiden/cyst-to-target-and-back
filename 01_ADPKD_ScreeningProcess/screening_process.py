@@ -284,7 +284,7 @@ class selleck_chem:
         self.name = name
         self.root_dir = Path(__file__).absolute().parents[1]
         self.file_root = self.root_dir / "data/adpkd_screening/screening_data"
-        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
+        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         print(f"    Loading {self.name} screening under: {self.file_path}")
         self.chemstructs = None
         self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.tsv"
@@ -336,11 +336,11 @@ class selleck_chem:
         """
         Drops undersired columns from self.df
         """
-        remove_pattern = re.compile("path|name|\.tif|\.csv|code|folder|^row$|root")
+        remove_pattern = re.compile(r"path|name|\.tif|\.csv|code|folder|^row$|root")
         to_drop_cols = [c for c in self.df.columns if remove_pattern.findall(c)]
         self.df.drop(columns=to_drop_cols, inplace=True)
 
-        rename_pattern = re.compile("plate\.layout\.info\.")
+        rename_pattern = re.compile(r"plate\.layout\.info\.")
         to_rename = {  # Removing this prefix as we don't need it
             key: value
             for key, value in zip(
@@ -2738,7 +2738,7 @@ class spectrum(selleck_chem):
 
     def __init__(self, name="spectrum") -> None:
         super().__init__(name=name)  # __init__ content from selleck_chem class
-        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
+        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         self.chemstructs_path = (
             self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
         )
@@ -2774,11 +2774,11 @@ class spectrum(selleck_chem):
         Drops undersired columns from self.df
         """
         # Need to keep the column plate.folder
-        remove_pattern = re.compile("path|name|\.tif|\.csv|code|folder|^row$|root")
+        remove_pattern = re.compile(r"path|name|\.tif|\.csv|code|folder|^row$|root")
         to_drop_cols = [c for c in self.df.columns if all([remove_pattern.findall(c), c != "plate.folder"])]
         self.df.drop(columns=to_drop_cols, inplace=True)
 
-        rename_pattern = re.compile("plate\.layout\.info\.")
+        rename_pattern = re.compile(r"plate\.layout\.info\.")
         to_rename = {  # Removing this prefix as we don't need it
             key: value
             for key, value in zip(
@@ -2942,7 +2942,7 @@ class spectrum_validation(spectrum):
         self.chemstructs_path = (
             self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
         )
-        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv"))[0]
+        self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         self.df = pd.read_csv(self.file_path)
         # id_cols are not the same; there's only available compound concentration.
         self.control_treatments = [
