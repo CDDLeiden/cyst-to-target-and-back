@@ -7,7 +7,7 @@ Install:
 micromamba env create -n cystToTarget python=3.10 -c conda-forge 
 micromamba activate cystToTarget
 python -m pip install qsprpred==3.0.2
-python -m pip install statsmodels venn chembl_webresource_client pubchempy
+python -m pip install statsmodels venn chembl_webresource_client pubchempy statannotations
 python -m pip install papyrus-scripts==1.0.2 papyrus-structure-pipeline==0.0.4
 python -m pip install -e .
 ```
@@ -77,12 +77,15 @@ To reproduce the results and analysis, follow the steps in the notebook [papyrus
 
 ## 03_Target_Validation
 
-TODO
+This directory contains the notebook used to visualize the results from the ADPKD cystic spheroid target validation experiment. The input data for this notebook is the `data/target_validation/ADPKD-TargetValidationScreen_Batch3791_and_Batch3753.csv` file. The generated figures are the following:
+
+1. Boxplots with Mann-Whitney U test results for the different distributions of the treatment and double treatment groups along the three concentration points (0.001, 0.1, and 1 µM).
+2. Point plots with the 95% confidence intervals of the treatment groups along the three concentration points (0.001, 0.1, and 1 µM).
 
 ## 04_Virtual_Screening
 
 TODO
 
-## 05_Adenosine_Receptor_Screening
+## 05_A1R_Screening
 
 TODO
