@@ -62,7 +62,7 @@ def clean_treatment_string(text, single_treatment: bool = False):
     if single_treatment:
         return re.sub(r"\s\d\.\d+µM", "", text)
     else:
-        return re.sub(r"([A-Za-z]+)\s\d\.\d+µM(?=.+)", r"\1", text)
+        return re.sub(r"([A-Za-z0-9]+)\s\d\.\d+µM(?=.+)", r"\1", text)
 
 
 def plot_with_curves(
@@ -72,15 +72,17 @@ def plot_with_curves(
     stim_dose=2.5,
     single_treatment: bool = False,
     plot_normalized=True,
+    target=None,
     savefig=True,
     figs_root=None,
 ):
     # Some variables...
     spheresize_col = f"obj.Mean(area).um2.meas{'_norm' if plot_normalized else ''}"
     rm_fsk_pattern = re.compile(r"\s\+\sFSK \d\.\d+µM")
+    target_str = f"-{target}" if target is not None else ""
 
     # prepare the data by cleaning the treatment strings as we want  them for the plot
-    df = df.query(f"plate_id == {plate_id}").drop(columns=["Name", "QC_problems"])
+    df = df.query(f"plate_id == {plate_id}")
     df = (
         df.replace({"uM": "µM", "pct": "%"})
         .rename(
@@ -190,7 +192,7 @@ def plot_with_curves(
             figs_root = Path(__file__).parents[1] / "figures"
         fig.savefig(
             figs_root
-            / f"lineplot-plate{plate_id}_{toplot_compound}_FSK{str(stim_dose).replace('.', '-')}_{single_treatment}.png",
+            / f"lineplot-plate{plate_id}{target_str}_{toplot_compound}_FSK{str(stim_dose).replace('.', '-')}.png",
             dpi=300,
             bbox_inches="tight",
             facecolor="white",
@@ -206,8 +208,10 @@ def box_mann_whitney_u(
     stimulant_dose,
     savefig=True,
     plot_normalized=True,
+    target=None,
     figs_root=None,
 ):
+    target_str = f"-{target}" if target is not None else ""
     readout = "obj.Mean(area).um2.meas_norm" if plot_normalized else "obj.Mean(area).um2.meas"
     subset = df.query(f"plate_id == {plate_number}")
     other_dose_idxs = subset[
@@ -351,7 +355,10 @@ def box_mann_whitney_u(
                 figs_root = Path(__file__).parents[1] / "figures"
             fig.savefig(
                 figs_root
-                / f"boxplot-MannWhitneyU-plate{plate_number}_{cpd}_FSK{str(stimulant_dose).replace('.', '-')}_{double_treat_cpd}.png",
+                / (
+                    f"boxplot-MannWhitneyU-plate{plate_number}{target_str}_{cpd}"
+                    f"_FSK{str(stimulant_dose).replace('.', '-')}_{double_treat_cpd}.png"
+                ),
                 dpi=300,
                 bbox_inches="tight",
                 facecolor="white",
@@ -361,9 +368,17 @@ def box_mann_whitney_u(
 
 
 def box_mann_whitney_u_no_dt(
-    df, compounds, plate_number, stimulant_dose, savefig=True, plot_normalized=True, figs_root=None
+    df,
+    compounds,
+    plate_number,
+    stimulant_dose,
+    savefig=True,
+    plot_normalized=True,
+    target=None,
+    figs_root=None,
 ):
     """Similar to box_mann_whitney_u but without double treatment comparisons"""
+    target_str = f"-{target}" if target is not None else ""
     readout = "obj.Mean(area).um2.meas_norm" if plot_normalized else "obj.Mean(area).um2.meas"
     subset = df.query(f"plate_id == {plate_number}")
     other_dose_idxs = subset[
@@ -477,7 +492,10 @@ def box_mann_whitney_u_no_dt(
                 figs_root = Path(__file__).parents[1] / "figures"
             fig.savefig(
                 figs_root
-                / f"boxplot-MannWhitneyU-plate{plate_number}_{cpd}_FSK{str(stimulant_dose).replace('.', '-')}.png",
+                / (
+                    f"boxplot-MannWhitneyU-plate{plate_number}{target_str}_{cpd}"
+                    f"_FSK{str(stimulant_dose).replace('.', '-')}.png"
+                ),
                 dpi=300,
                 bbox_inches="tight",
                 facecolor="white",
