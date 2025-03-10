@@ -55,7 +55,7 @@ version = { attr = "papyrusBioactivityLinker.__version__" }
 profile = "black"
 
 [tool.black]
-line-length = 88
+line-length = 110
 target-version = ['py38']
 required-version = '23.1.0'
 exclude = '''
