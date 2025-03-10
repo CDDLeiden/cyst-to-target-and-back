@@ -254,9 +254,7 @@ def sanitize_smiles(smi: str) -> str:
     return smi
 
 
-def get_smiles_from_name(
-    comp_name: str, smi_type: str, verbose: bool = False
-) -> str or bool:
+def get_smiles_from_name(comp_name: str, smi_type: str, verbose: bool = False) -> str or bool:
     """
     Gets the list of compounds fetched with PubChemPy for the compound
     name provided. Will return false if no compounds are retrieved. Smiles
@@ -350,16 +348,12 @@ def chembl_smi_standardizer(smi: str) -> tuple:
     mol = Chem.MolFromSmiles(smi)
 
     standard_mol = standardizer.standardize_mol(mol)
-    result = standardizer.get_parent_mol(
-        standard_mol
-    )  # Tuple with molecule in #0 and Boolean in #1
+    result = standardizer.get_parent_mol(standard_mol)  # Tuple with molecule in #0 and Boolean in #1
     # Boolean states whether there was an exclusion flag. For more details, check:
     # https://github.com/chembl/ChEMBL_Structure_Pipeline/wiki/Exclusion-Flag
 
     parent_mol = result[0]
-    parent_smi = Chem.MolToSmiles(
-        parent_mol, kekuleSmiles=False, canonical=True, isomericSmiles=True
-    )
+    parent_smi = Chem.MolToSmiles(parent_mol, kekuleSmiles=False, canonical=True, isomericSmiles=True)
 
     if result[1]:
         return parent_smi, True
@@ -381,9 +375,7 @@ def chembl_mol_standardizer(mol):
         Stardardized parent smiles.
     """
     standard_mol = standardizer.standardize_mol(mol)
-    result = standardizer.get_parent_mol(
-        standard_mol
-    )  # Tuple with molecule in #0 and Boolean in #1
+    result = standardizer.get_parent_mol(standard_mol)  # Tuple with molecule in #0 and Boolean in #1
     # Boolean states whether there was an exclusion flag. For more details, check:
     # https://github.com/chembl/ChEMBL_Structure_Pipeline/wiki/Exclusion-Flag
 
@@ -592,7 +584,7 @@ class DataPrepare:
     def __init__(self):
         self.path = Path(__file__).parents[0]  # Path to the current file
         self.dataframe = None
-        self.chemstructs_path = self.path / "chem_structurs"
+        self.chemstructs_path = self.path / "chemical_structures"
         self.raw_selchemstruct_path = self.chemstructs_path / "sel_chem_structures.smi"
         self.raw_spectrumstruc_path = self.chemstructs_path / "SP-2400_utf8.sdf"
         self.screening_path = self.path / "data/1_bioactivity_data/screening_data"
@@ -653,7 +645,9 @@ class DataPrepare:
         flags = [True if idx in antineo_idx else False for idx in sell_chem_df.index]
 
         # Renaming and dropping some of the columns
-        sell_chem_df = sell_chem_df.rename(columns={"Item Name": "MoleculeName"},).drop(
+        sell_chem_df = sell_chem_df.rename(
+            columns={"Item Name": "MoleculeName"},
+        ).drop(
             columns=[
                 "Catalog Number",
                 "Concentration",
@@ -678,9 +672,7 @@ class DataPrepare:
             notiso_smi = Chem.MolToSmiles(mol, isomericSmiles=False)
             standardized_smiles.append(notiso_smi)
 
-        updated_mol_names = [
-            molname_clean(molname) for molname in sell_chem_df["MoleculeName"].tolist()
-        ]
+        updated_mol_names = [molname_clean(molname) for molname in sell_chem_df["MoleculeName"].tolist()]
 
         sell_chem_df.assign(
             Screening=["SelleckChem"] * len(sell_chem_df),
@@ -787,9 +779,7 @@ class DataPrepare:
 
         return spectrum_df
 
-    def df_get_chemical_structures(
-        self, bioactivity_df: pd.DataFrame, structures_df: pd.DataFrame
-    ):
+    def df_get_chemical_structures(self, bioactivity_df: pd.DataFrame, structures_df: pd.DataFrame):
         """
         This function standardizes the molecule names of the two datasets and
         fetches the SMILES from the structures dataframe. Note that no object will
@@ -809,13 +799,8 @@ class DataPrepare:
             NameError: Whene the dataframe doesn't have the column "MoleculeName".
         """
         # Standard should be compound names under ['MoleculeName']
-        if (
-            "MoleculeName" not in bioactivity_df.columns
-            or "MoleculeName" not in structures_df
-        ):
-            raise NameError(
-                "column 'MoleculeName' not present in one of the dataframes"
-            )
+        if "MoleculeName" not in bioactivity_df.columns or "MoleculeName" not in structures_df:
+            raise NameError("column 'MoleculeName' not present in one of the dataframes")
 
         antineo_flags = list()
         stand_smiles = list()
@@ -830,15 +815,9 @@ class DataPrepare:
                     .values[0]
                 )
                 parent_smi = (
-                    structures_df[structures_df["MoleculeName"] == molname]
-                    .get("iso_ParentSmiles")
-                    .values[0]
+                    structures_df[structures_df["MoleculeName"] == molname].get("iso_ParentSmiles").values[0]
                 )
-                flag = (
-                    structures_df[structures_df["MoleculeName"] == molname]
-                    .get("Antineoplastic")
-                    .values[0]
-                )
+                flag = structures_df[structures_df["MoleculeName"] == molname].get("Antineoplastic").values[0]
             except:
                 stand_smi = get_smiles_from_name(molname, smi_type="non_isomeric")
                 parent_smi = get_smiles_from_name(molname, smi_type="parent")
@@ -865,12 +844,9 @@ class DataPrepare:
 
         try:
             todrop = bioactivity_df[
-                (bioactivity_df["StandardizedSmiles"].isna())
-                & (bioactivity_df["MoleculeName"] != "DMSO+FSK")
+                (bioactivity_df["StandardizedSmiles"].isna()) & (bioactivity_df["MoleculeName"] != "DMSO+FSK")
             ].index
-            bioactivity_df.drop(index=todrop, inplace=True).reset_index(
-                inplace=True, drop=True
-            )
+            bioactivity_df.drop(index=todrop, inplace=True).reset_index(inplace=True, drop=True)
         except AttributeError:
             print("No NaN StandardizedSmiles detected")
 
@@ -897,9 +873,7 @@ class DataPrepare:
         Returns:
             treatments_df(pd.DataFrame) -> with hit molecules.
         """
-        treatments_df = bioactivity_df[bioactivity_df["Control"] == "Treatment"].copy(
-            deep=True
-        )
+        treatments_df = bioactivity_df[bioactivity_df["Control"] == "Treatment"].copy(deep=True)
         treatments_df.reset_index(inplace=True, drop=True)
 
         mean_SDs = list(
@@ -911,11 +885,8 @@ class DataPrepare:
 
         # activities = ["A" if i in threshold_idx else "N" for i in treatments_df.index]
         with Pool(5) as pool:
-
             activities = pool.map(
-                partial(
-                    activity_to_categorical, R_thresh=R_threshold, E_thresh=E_threshold
-                ),
+                partial(activity_to_categorical, R_thresh=R_threshold, E_thresh=E_threshold),
                 mean_SDs,
             )
 
@@ -978,9 +949,7 @@ class DataPrepare:
         picked = []
         for r in repeats_df["Repeats"].unique():
             subset_df = repeats_df[repeats_df["Repeats"] == r]
-            activeonly = subset_df[
-                subset_df["Activity"] != "N"
-            ]  ## modified (do I get errors?)
+            activeonly = subset_df[subset_df["Activity"] != "N"]  ## modified (do I get errors?)
             haveonly = subset_df[subset_df["Ihave"] == True]
             if len(activeonly) == 1:
                 picked.append(activeonly.iloc[0]["MoleculeName"])
@@ -1008,15 +977,11 @@ class DataPrepare:
 
         def get_noniso_smiles(smi):
             mol = Chem.MolFromSmiles(smi)
-            noniso_smi = Chem.MolToSmiles(
-                mol, kekuleSmiles=False, canonical=True, isomericSmiles=False
-            )
+            noniso_smi = Chem.MolToSmiles(mol, kekuleSmiles=False, canonical=True, isomericSmiles=False)
             return noniso_smi
 
         molecule = new_client.molecule
-        approved_drugs = molecule.filter(max_phase=4).order_by(
-            "molecule_properties__mw_freebase"
-        )
+        approved_drugs = molecule.filter(max_phase=4).order_by("molecule_properties__mw_freebase")
         approved_drugs.set_format("json")
 
         # L01 referes to the atc antineoplastic class, such as described in:
@@ -1025,7 +990,6 @@ class DataPrepare:
         drug_dict = dict()
 
         for drug in approved_drugs:
-
             name = drug["pref_name"]
 
             try:
@@ -1062,9 +1026,7 @@ class DataPrepare:
                 antineo_drugs[key] = dict()
                 antineo_drugs[key]["chembl_id"] = drug_dict[key]["chembl_id"]
                 antineo_drugs[key]["iso_smiles"] = drug_dict[key]["smiles"]
-                antineo_drugs[key]["noniso_smiles"] = get_noniso_smiles(
-                    drug_dict[key]["smiles"]
-                )
+                antineo_drugs[key]["noniso_smiles"] = get_noniso_smiles(drug_dict[key]["smiles"])
         return antineo_drugs
 
     def flag_antineoplastic_compounds(
@@ -1086,18 +1048,14 @@ class DataPrepare:
 
         known_flags = screening_df["Antineoplastic"].values
         # Antineoplastic compounds from ChEMBL
-        antineo_smiles = [
-            antineo_drugs[key]["noniso_smiles"] for key in antineo_drugs.keys()
-        ]
+        antineo_smiles = [antineo_drugs[key]["noniso_smiles"] for key in antineo_drugs.keys()]
         # Antineoplastic compounds from dataset
         for idx, flag in enumerate(known_flags):
             if flag:
                 antineo_smiles.append(screening_df.iloc[idx]["StandardizedSmiles"])
 
         with Pool(5) as pool:
-            antineo_fp_arr = pool.map(
-                partial(smi_to_fp, fp_name=fingerprint), antineo_smiles
-            )
+            antineo_fp_arr = pool.map(partial(smi_to_fp, fp_name=fingerprint), antineo_smiles)
             data_fp_arr = pool.map(
                 partial(smi_to_fp, fp_name=fingerprint),
                 screening_df["StandardizedSmiles"],
@@ -1117,9 +1075,7 @@ class DataPrepare:
 
         antineo_flag = list(set(antineo_flag))
         print(f"{len(antineo_flag)} antineoplastic compounds identified in the dataset")
-        antineo_flag = [
-            True if idx in antineo_flag else False for idx in screening_df.index
-        ]
+        antineo_flag = [True if idx in antineo_flag else False for idx in screening_df.index]
         screening_df["Antineoplastic"] = antineo_flag
 
     @staticmethod
@@ -1168,9 +1124,7 @@ class DataPrepare:
         if method == "fp_similarity":
             with Pool(5) as pool:
                 my_fps = pool.map(partial(smi_to_fp, fp_name=fingerprint), my_smis)
-                toquery_fps = pool.map(
-                    partial(smi_to_fp, fp_name=fingerprint), data_smis
-                )
+                toquery_fps = pool.map(partial(smi_to_fp, fp_name=fingerprint), data_smis)
                 # Compare fingerprints from my dataset to Papyrus
                 for idx, fp in enumerate(tqdm(my_fps)):
                     for i, f in enumerate(toquery_fps):
@@ -1195,9 +1149,7 @@ class DataPrepare:
 
         elif method == "same_substructure":
             with Pool(8) as pool:
-                my_smiles_to_name_dict = {
-                    smi: name for smi, name in zip(my_smis, names)
-                }
+                my_smiles_to_name_dict = {smi: name for smi, name in zip(my_smis, names)}
                 combination_smis = list(product(my_smis, data_smis))
                 # Will return a list of bool
                 is_same = tqdm(
@@ -1211,11 +1163,7 @@ class DataPrepare:
                 same_molecules = compress(combination_smis, is_same)
                 for smi_pair in same_molecules:
                     connectivity_dict.update(
-                        {
-                            my_smiles_to_name_dict[smi_pair[0]]: smi_to_connect_dict[
-                                smi_pair[1]
-                            ]
-                        }
+                        {my_smiles_to_name_dict[smi_pair[0]]: smi_to_connect_dict[smi_pair[1]]}
                     )
 
         screening_df["Connectivity"] = [
@@ -1232,18 +1180,13 @@ class DataPrepare:
 
         output: the dataframe with the proteins
         """
-        papyrus_path = (
-            Path(__file__).home()
-            / ".data/papyrus/05.5/05.5_combined_set_protein_targets.tsv.xz"
-        )
+        papyrus_path = Path(__file__).home() / ".data/papyrus/05.5/05.5_combined_set_protein_targets.tsv.xz"
         papyrus_proteins = pd.read_csv(
             papyrus_path,
             sep="\t",
             keep_default_na=False,
         )
-        result_subset = papyrus_proteins[
-            papyrus_proteins["target_id"].isin(input_df["target_id"])
-        ]
+        result_subset = papyrus_proteins[papyrus_proteins["target_id"].isin(input_df["target_id"])]
         return result_subset
 
     @staticmethod
@@ -1264,12 +1207,8 @@ class DataPrepare:
                 string = "Unknown"
             return string
 
-        papyrus_protein_df["Class[0]"] = papyrus_protein_df["Classification"].apply(
-            partial(get_class0)
-        )
-        papyrus_protein_df["Class[1]"] = papyrus_protein_df["Classification"].apply(
-            partial(get_class1)
-        )
+        papyrus_protein_df["Class[0]"] = papyrus_protein_df["Classification"].apply(partial(get_class0))
+        papyrus_protein_df["Class[1]"] = papyrus_protein_df["Classification"].apply(partial(get_class1))
 
         return papyrus_protein_df
 
@@ -1284,9 +1223,7 @@ class DataPrepare:
         """
 
         connect_dict = dict()
-        query_connectivities = input_df[~input_df["Connectivity"].isnull()][
-            "Connectivity"
-        ].unique()
+        query_connectivities = input_df[~input_df["Connectivity"].isnull()]["Connectivity"].unique()
         # Removing nan values (yield c==c as False):
         # query_connectivities = [c for c in query_connectivities if c == c]
 
@@ -1300,9 +1237,7 @@ class DataPrepare:
                 print(f"Exception reached for {connect}")
                 continue
 
-        mymols_papyrus_df = papyrus_df[
-            papyrus_df["connectivity"].isin(query_connectivities)
-        ].copy(deep=True)
+        mymols_papyrus_df = papyrus_df[papyrus_df["connectivity"].isin(query_connectivities)].copy(deep=True)
 
         def apply_activity_class(value, threshold):
             if value > threshold:
@@ -1314,9 +1249,9 @@ class DataPrepare:
         while True:
             if threshold > 9:
                 break
-            mymols_papyrus_df[f"Activity_{threshold:.1f}"] = mymols_papyrus_df[
-                "pchembl_value_Median"
-            ].apply(partial(apply_activity_class, threshold=threshold))
+            mymols_papyrus_df[f"Activity_{threshold:.1f}"] = mymols_papyrus_df["pchembl_value_Median"].apply(
+                partial(apply_activity_class, threshold=threshold)
+            )
 
             threshold += 0.5
 
@@ -1336,9 +1271,7 @@ class DataPrepare:
         # Updating additional information to the final dataframe
         mymols_papyrus_df["Class[0]"] = class_0
         mymols_papyrus_df["Class[1]"] = class_1
-        mymols_papyrus_df["Compond"] = [
-            connect_dict[c] for c in mymols_papyrus_df["connectivity"]
-        ]
+        mymols_papyrus_df["Compond"] = [connect_dict[c] for c in mymols_papyrus_df["connectivity"]]
         mymols_papyrus_df.reset_index(inplace=True, drop=True)
         return mymols_papyrus_df
 
@@ -1486,27 +1419,23 @@ class DataVisualize:
                 if antineo:
                     fig, ax = plt.subplots(figsize=(6, 6))
                     activ_names = actives_df[
-                        ~(actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == True)
+                        ~(actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == True)
                     ]["MoleculeName"].unique()
                 else:
                     ig, ax = plt.subplots(figsize=(6, 18))
                     activ_names = actives_df[
-                        ~(actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == False)
+                        ~(actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == False)
                     ]["MoleculeName"].unique()
             else:
                 if antineo:
                     fig, ax = plt.subplots(figsize=(6, 3))
                     activ_names = actives_df[
-                        (actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == True)
+                        (actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == True)
                     ]["MoleculeName"].unique()
                 else:
                     fig, ax = plt.subplots(figsize=(6, 6))
                     activ_names = actives_df[
-                        (actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == False)
+                        (actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == False)
                     ]["MoleculeName"].unique()
 
         sns.set_style("ticks")
@@ -1523,9 +1452,7 @@ class DataVisualize:
         )
         bioactiv_sorted_average = list(bioactiv_sorted_average["MoleculeName"].values)
         if tophits:
-            bioactiv_sorted_average = itemgetter(0, -5, -4, -3, -2, -1)(
-                bioactiv_sorted_average
-            )
+            bioactiv_sorted_average = itemgetter(0, -5, -4, -3, -2, -1)(bioactiv_sorted_average)
 
         toplot_df = pd.DataFrame(columns=norma_subset.columns)
         for molname in bioactiv_sorted_average:
@@ -1575,9 +1502,7 @@ class DataVisualize:
         if tophits:
             plt.title("SelleckChem Screen - positive control & top 5 hit compounds")
             plt.xlabel("Rhodamine Area (Z-score normalized per plate)")
-            fig.savefig(
-                "Top5_SelChem_HitComps.png", format="png", dpi=1200, bbox_inches="tight"
-            )
+            fig.savefig("Top5_SelChem_HitComps.png", format="png", dpi=1200, bbox_inches="tight")
         if allhits:
             plt.title("SelleckChem Screen\n Positive control & hit compounds")
             plt.xlabel("Rhodamine Area (Z-score normalized per plate)")
@@ -1618,31 +1543,24 @@ class DataVisualize:
                 if antineo:
                     fig, ax = plt.subplots(figsize=(6, 8))
                     activ_names = actives_df[
-                        ~(actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == True)
+                        ~(actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == True)
                     ]["MoleculeName"].unique()
                 else:
                     fig, ax = plt.subplots(figsize=(6, 9))
                     activ_names = actives_df[
-                        ~(actives_df["Connectivity"].isnull())
-                        & (actives_df["Antineoplastic"] == False)
+                        ~(actives_df["Connectivity"].isnull()) & (actives_df["Antineoplastic"] == False)
                     ]["MoleculeName"].unique()
             else:
                 if antineo:
                     fig, ax = plt.subplots(figsize=(6, 8))
-                    activ_names = actives_df[(actives_df["Antineoplastic"] == True)][
-                        "MoleculeName"
-                    ].unique()
+                    activ_names = actives_df[(actives_df["Antineoplastic"] == True)]["MoleculeName"].unique()
                 else:
                     fig, ax = plt.subplots(figsize=(6, 12))
-                    activ_names = actives_df[(actives_df["Antineoplastic"] == False)][
-                        "MoleculeName"
-                    ].unique()
+                    activ_names = actives_df[(actives_df["Antineoplastic"] == False)]["MoleculeName"].unique()
 
         sns.set_style("ticks")
         norma_subset = normaliz_df[
-            (normaliz_df["Control"] == "pos")
-            | (normaliz_df["MoleculeName"].isin(activ_names))
+            (normaliz_df["Control"] == "pos") | (normaliz_df["MoleculeName"].isin(activ_names))
         ]
 
         bioactiv_sorted_average = (
@@ -1653,9 +1571,7 @@ class DataVisualize:
         )
         bioactiv_sorted_average = list(bioactiv_sorted_average["MoleculeName"].values)
         if tophits:
-            bioactiv_sorted_average = itemgetter(0, -5, -4, -3, -2, -1)(
-                bioactiv_sorted_average
-            )
+            bioactiv_sorted_average = itemgetter(0, -5, -4, -3, -2, -1)(bioactiv_sorted_average)
 
         def capitalize_comps(comp_name):
             if "DMSO" not in comp_name:
@@ -1728,9 +1644,7 @@ class DataVisualize:
         return fig
 
     @staticmethod
-    def plot_papyrus_activ_percent(
-        my_papyrus_df: pd.DataFrame, plt_title: str, save: bool = False
-    ):
+    def plot_papyrus_activ_percent(my_papyrus_df: pd.DataFrame, plt_title: str, save: bool = False):
         """
         Params:
         my_papyrus_df -> output from papyrus_data_prepare.py.
@@ -1748,9 +1662,7 @@ class DataVisualize:
         print(f"percentage of targets with bioactivity above 6.0: {actives_over6:.3%}")
 
         actives_over6_5 = len(np.where(median_pchembl > 6.5)[0]) / len(median_pchembl)
-        print(
-            f"percentage of targets with bioactivity above 6.5: {actives_over6_5:.3%}"
-        )
+        print(f"percentage of targets with bioactivity above 6.5: {actives_over6_5:.3%}")
 
         plt.axvline(
             x=8,
@@ -1809,18 +1721,14 @@ class DataVisualize:
         ]
 
         fig, ax = plt.subplots(figsize=(8, 3))
-        plt.axhline(
-            y=negcontrol_threshold, color="blue", linestyle="--", label="DMSO mean - SD"
-        )
+        plt.axhline(y=negcontrol_threshold, color="blue", linestyle="--", label="DMSO mean - SD")
         plt.axhline(
             y=poscontrol_threshold,
             color="red",
             linestyle="--",
             label="DMSO+FSK mean - SD",
         )
-        ax = sns.violinplot(
-            x="MoleculeName", y="area_Rhodamine", data=selchem_controls_df
-        )
+        ax = sns.violinplot(x="MoleculeName", y="area_Rhodamine", data=selchem_controls_df)
         ax.set_ylabel("Area Rhodamine (Z-score)", size=12)
         ax.set_title("SelleckChem screen control treatments", size=14)
         ax.set_xlabel("Compound Name", size=12)
@@ -1853,14 +1761,10 @@ class DataVisualize:
         )
         print(negcontrol_threshold, poscontrol_threshold)
 
-        specontrol_df = spect_normal_df[
-            spect_normal_df["Control"].isin(["ControlTreatment", "pos", "neg"])
-        ]
+        specontrol_df = spect_normal_df[spect_normal_df["Control"].isin(["ControlTreatment", "pos", "neg"])]
 
         fig, ax = plt.subplots(figsize=(8, 3))
-        plt.axhline(
-            y=poscontrol_threshold, color="red", linestyle="--", label="DMSO mean - SD"
-        )
+        plt.axhline(y=poscontrol_threshold, color="red", linestyle="--", label="DMSO mean - SD")
         plt.axhline(
             y=negcontrol_threshold,
             color="blue",
