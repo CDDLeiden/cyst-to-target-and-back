@@ -11,7 +11,6 @@ from qsprpred.models.monitors import HyperparameterOptimizationMonitor
 
 
 class NewOptunaOptimization(OptunaOptimization):
-
     def __init__(
         self,
         param_grid: dict,

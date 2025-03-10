@@ -1,5 +1,6 @@
-import numpy as np
 from typing import List, Optional, Union
+
+import numpy as np
 from sklearn.neighbors import NearestNeighbors
 
 

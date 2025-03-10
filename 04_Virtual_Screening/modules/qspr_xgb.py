@@ -9,11 +9,9 @@ from qsprpred.models import SklearnModel
 from qsprpred.tasks import ModelTasks
 from sklearn.exceptions import NotFittedError
 from sklearn.utils.validation import check_is_fitted
-from xgboost import XGBClassifier
 
 
 class XGBoostModel(SklearnModel):
-
     def __init__(
         self,
         base_dir: str,

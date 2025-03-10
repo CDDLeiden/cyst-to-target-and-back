@@ -4,7 +4,7 @@ Input files patterns:
     - SelleckChem: data/adpkd_screening/screening_data/*selleckchem_Batch*.csv
     - SPECTRUM: data/adpkd_screening/screening_data/*SPECTRUM_Batch*.csv
     - SPECTRUM validation: data/adpkd_screening/screening_data/*spectrum-validation_Batch*.csv
-    
+
 Output files:
     # TODO...
 """
@@ -892,7 +892,6 @@ class selleck_chem:
             col_effects = pd.DataFrame(0, columns=vals, index=col_labels, dtype=np.float64)
 
             for i in tqdm(range(0, max_iter), disable=hide_progress):
-
                 row_medians = plate_df.loc[:, vals + ["PlateRow"]].groupby("PlateRow").median()[vals]
                 # return row_effects, row_medians
                 row_effects += row_medians
@@ -1097,7 +1096,6 @@ class selleck_chem:
                 fig, axs = plt.subplots(ncols=2, figsize=(figsize[0], figsize[1]))
 
         for ax, df in zip(axs, [z_df, npi_df]):
-
             # Subsetting desired bioactivity
             controls_only = df[df[query_col].isin(query_items)]
             id_vars = self.id_cols + ["Compound"]
@@ -1168,7 +1166,6 @@ class selleck_chem:
 
         grouped_plates = norm_df.groupby("PlateID")
         for pnumber, plate_df in grouped_plates:
-
             if method == "median":
                 neg_control_m = (
                     plate_df.set_index("Compound")
@@ -1885,7 +1882,6 @@ class selleck_chem:
         drug_dict = dict()
 
         for drug in approved_drugs:
-
             name = drug["pref_name"]
             try:  # Get only approved drugs that have known SMILES
                 drug["molecule_structures"]["canonical_smiles"]

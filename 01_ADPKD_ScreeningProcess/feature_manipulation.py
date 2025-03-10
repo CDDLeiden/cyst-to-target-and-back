@@ -160,9 +160,7 @@ def get_physchem_descriptors(
         return descriptors
     # Removing some of the descriptors that are not my interest:
     desired_descriptors = {}
-    dont_want_pattern = re.compile(
-        r"PEOE_|Kappa\d|Chi\d|BCUT2D_|Morgan\d|_VSA|TPSA|fr_"
-    )
+    dont_want_pattern = re.compile(r"PEOE_|Kappa\d|Chi\d|BCUT2D_|Morgan\d|_VSA|TPSA|fr_")
     for desc in descriptors.keys():
         if dont_want_pattern.findall(desc):
             continue
@@ -303,7 +301,7 @@ def fit_pca(
 ):
     """Fits a PCA to the dataset and returns the
     pca object and the transformed dataset.
- 
+
     Args:
         df: dataframe with the data to be projected.
         features: Features used for the dimensionalty reduction
@@ -351,16 +349,12 @@ def fit_lda(
         if df[y_encoding].dtype == "object":
             encoder = LabelEncoder().fit(df[y_encoding])
             y = encoder.transform(df[y_encoding])
-            encoding_dict = dict(
-                zip(encoder.classes_, encoder.transform(encoder.classes_))
-            )
+            encoding_dict = dict(zip(encoder.classes_, encoder.transform(encoder.classes_)))
         else:
             y = df[y_encoding].to_numpy()
             encoding_dict = None
     else:
-        raise ValueError(
-            "The `y_encoding` paramenter should be a column within the dataframe."
-        )
+        raise ValueError("The `y_encoding` paramenter should be a column within the dataframe.")
 
     X = df[features].to_numpy()
     X_stand = scale_features(X, scaling_method)
@@ -424,12 +418,8 @@ def fit_kde(df, X_pca, pca, percent=1, sign="<", show_idx=False, **kde_kwargs):
         alpha=0.4,
     )
 
-    axs[0].set_xlabel(
-        f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%"
-    )
-    axs[0].set_ylabel(
-        f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%"
-    )
+    axs[0].set_xlabel(f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%")
+    axs[0].set_ylabel(f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%")
     axs[0].set_title(
         "Outlier detection through Kernel Density Estimation:\n"
         f"Highlighted: points with exp(log_dens) {sign} {np.exp(threshold):.4f}"
@@ -568,12 +558,8 @@ def pca_scatter(
                     X_fitted_pca[idx, 1],
                     label,
                 )
-    ax.set_xlabel(
-        f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%"
-    )
-    ax.set_ylabel(
-        f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%"
-    )
+    ax.set_xlabel(f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%")
+    ax.set_ylabel(f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%")
     ax.legend(bbox_to_anchor=(1.02, 1), loc=2, borderaxespad=0.0)
     return ax, class_df_idx_dict
 
@@ -654,12 +640,8 @@ def plot_multidim_kmeans_clustering(km, y_km, X_fitted_pca, pca, ax=None):
     )
 
     ax.set_title("K-means clustering of the treatment conditions")
-    ax.set_xlabel(
-        f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%"
-    )
-    ax.set_ylabel(
-        f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%"
-    )
+    ax.set_xlabel(f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%")
+    ax.set_ylabel(f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%")
     ax.legend()
     return ax
 
@@ -759,9 +741,7 @@ def drop_corr_features(
     """
     t = corr_threshold
     if corr_method.lower() not in ["pearson", "kendall", "spearman"]:
-        raise AttributeError(
-            "Invalid corr_method. Supported methods:  'pearson', 'kendall', 'spearman'"
-        )
+        raise AttributeError("Invalid corr_method. Supported methods:  'pearson', 'kendall', 'spearman'")
 
     contains_cols = all(np.isin(np.array(feature_cols), df.columns))
     assert contains_cols, "features_cols not in df.columns"
@@ -772,9 +752,7 @@ def drop_corr_features(
     upper_bool = np.triu(np.ones(corr_matrix.shape), k=1).astype(bool)
     upper_tri = corr_matrix.where(upper_bool)
 
-    to_drop = [
-        c for c in upper_tri.columns if any((upper_tri[c] > t) | (upper_tri[c] < -t))
-    ]
+    to_drop = [c for c in upper_tri.columns if any((upper_tri[c] > t) | (upper_tri[c] < -t))]
     new_df = df.copy().drop(columns=to_drop)
     return new_df, corr_matrix
 
@@ -811,9 +789,7 @@ def outlier_flagging(
     else:
         disable = True
     subset_df = df.query(f"TreatmentType.isin(@toflag_treatments)").query("QC == 'OK'")
-    iso_forest = IsolationForest(
-        n_jobs=n_jobs, random_state=0, contamination=contamination
-    )
+    iso_forest = IsolationForest(n_jobs=n_jobs, random_state=0, contamination=contamination)
     toflag_list = []
     for t in tqdm(toflag_treatments, disable=disable):
         grouped_plates = subset_df.query(f"TreatmentType == @t").groupby("PlateID")
@@ -920,21 +896,15 @@ def multivar_kde_outlier(
         label="other samples",
     )
 
-    axs[0].set_xlabel(
-        f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%"
-    )
-    axs[0].set_ylabel(
-        f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%"
-    )
+    axs[0].set_xlabel(f"PC1, explained variance: {pca.explained_variance_ratio_[0]*100:.2f}%")
+    axs[0].set_ylabel(f"PC2, explained variance: {pca.explained_variance_ratio_[1]*100:.2f}%")
     axs[0].legend()
 
     if col4scatter is not None:
         labels = df.iloc[outliers_idx][col4scatter].values
         # rotation = 9
         for idx, label in zip(outliers_idx, labels):
-            axs[0].text(
-                X_fitted_pca[idx, 0], X_fitted_pca[idx, 1], label, rotation=0, size=8
-            )
+            axs[0].text(X_fitted_pca[idx, 0], X_fitted_pca[idx, 1], label, rotation=0, size=8)
     axs[1].hist(scores, bins=50)
     axs[1].set_ylabel("Frequency")
     axs[1].set_xlabel("$\\frac{log(density)}{norm(density)}$", fontsize=14)
@@ -1006,14 +976,10 @@ def multivar_sklearn_outlier(
             ),
         ),
         "robust covariance": EllipticEnvelope(contamination=contamination),
-        "isolation forest": IsolationForest(
-            contamination=contamination, random_state=0, n_jobs=n_jobs
-        ),
+        "isolation forest": IsolationForest(contamination=contamination, random_state=0, n_jobs=n_jobs),
         "local outlier factor scaled": make_pipeline(
             StandardScaler(),
-            LocalOutlierFactor(
-                n_neighbors=35, contamination=contamination, n_jobs=n_jobs
-            ),
+            LocalOutlierFactor(n_neighbors=35, contamination=contamination, n_jobs=n_jobs),
         ),
         "local outlier factor": LocalOutlierFactor(
             n_neighbors=35,
@@ -1041,23 +1007,17 @@ def multivar_sklearn_outlier(
     outlier_idx = np.where(y_pred == -1)[0]
     outlier_df_idx = df_index[outlier_idx]
 
-    df = df.assign(
-        Selection=["Outlier" if idx in outlier_df_idx else "Normal" for idx in df.index]
-    )
+    df = df.assign(Selection=["Outlier" if idx in outlier_df_idx else "Normal" for idx in df.index])
 
     pca, X_fitted_PCA = fit_pca(df, feature_names)
 
-    ax, class_df_idx_dict = pca_scatter(
-        df, "Selection", X_fitted_PCA, pca, cmap="coolwarm", ax=ax
-    )
+    ax, class_df_idx_dict = pca_scatter(df, "Selection", X_fitted_PCA, pca, cmap="coolwarm", ax=ax)
 
     if col4scatter is not None:
         labels = df.iloc[outlier_df_idx][col4scatter].values
         # rotation = 9
         for idx, label in zip(outlier_df_idx, labels):
-            ax.text(
-                X_fitted_PCA[idx, 0], X_fitted_PCA[idx, 1], label, rotation=0, size=8
-            )
+            ax.text(X_fitted_PCA[idx, 0], X_fitted_PCA[idx, 1], label, rotation=0, size=8)
 
     ax.set_title(f"{method.capitalize()} - {len(outlier_idx)} outlier_idx")
 
@@ -1240,8 +1200,7 @@ class feature_selector:
         # Loading the estimator for the rfecv
         if self.estimator is None:
             raise ValueError(
-                "Estimator not initialized. Use initialize_estimator()"
-                "or estimator_from_known()"
+                "Estimator not initialized. Use initialize_estimator()" "or estimator_from_known()"
             )
 
         rfecv_parameters = {
@@ -1266,9 +1225,7 @@ class feature_selector:
         self.rfecv.update({task: task_rfecv})
         self.rfecv_scoring.update({task: scoring})
         self.rfecv_folds.update({task: cv_folds})
-        self._selected_features.update(
-            {task: list(compress(self.all_features, task_rfecv.support_))}
-        )
+        self._selected_features.update({task: list(compress(self.all_features, task_rfecv.support_))})
 
         print("---Done---")
         print("Optimal number of features : %d" % task_rfecv.n_features_)
