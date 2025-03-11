@@ -19,7 +19,7 @@ ibm_colors = [
 ]
 
 rgb_colors = [mcolors.to_rgba(c) for c in ibm_colors]
-plot_colors = [rgb_colors[0], rgb_colors[2], rgb_colors[4]]
+plot_colors = [rgb_colors[0], rgb_colors[2], rgb_colors[3], rgb_colors[4]]
 
 
 def add_treatment_2(row):
@@ -211,6 +211,10 @@ def box_mann_whitney_u(
     target=None,
     figs_root=None,
 ):
+    """Method for creating the boxplots used in the paper. If you're actually reading this code,
+    I'm so sorry for the mess 🥲... The data transformation is a bit weird to get the desired plot.
+
+    But you can do it!! I believe in you!"""
     target_str = f"-{target}" if target is not None else ""
     readout = "obj.Mean(area).um2.meas_norm" if plot_normalized else "obj.Mean(area).um2.meas"
     subset = df.query(f"plate_id == {plate_number}")
@@ -288,6 +292,18 @@ def box_mann_whitney_u(
                 f"+ {x} + FSK {stimulant_dose}µM" if x not in ["Control", f"+ FSK {stimulant_dose}µM"] else x
             )
         )
+
+        def update_treatment_2(row, double_treat_cpd):
+            """Add the concentration of the double treatment!! This is for the legend only"""
+            return row["Treatment 2"].replace(
+                double_treat_cpd, f"{double_treat_cpd} {row['Treatment 2 concentration']}µM"
+            )
+
+        doubletreat_search_pattern = re.compile(f"(?=.{cpd})|(?=.{double_treat_cpd})")
+        mask = plot_data.treat_string.str.contains(doubletreat_search_pattern, regex=True)
+        plot_data.loc[mask, "Treatment 2"] = plot_data.loc[mask].apply(
+            update_treatment_2, double_treat_cpd=double_treat_cpd, axis=1
+        )
         sns.boxplot(
             data=plot_data,
             x="treat_string",
@@ -297,9 +313,13 @@ def box_mann_whitney_u(
         labels = plot_data[["treat_string", "Treatment 2"]].drop_duplicates()["Treatment 2"]
         uniq_labels = labels.drop_duplicates().tolist()
         uniq_colors = plot_colors
-        colors = [uniq_colors[0]] * 2 + [uniq_colors[1]] * 6 + [uniq_colors[2]] * 6
+        # 2 controls: DMSO, FSK
+        # 6 single treatments: 3 concentrations of cpd, 3 concentrations of double_treat_cpd
+        # 3 double treatments: 3 concentrations of cpd + double_treat_cpd 0.1µM
+        # 3 double treatments: 3 concentrations of cpd + double_treat_cpd 1µM
+        colors = [uniq_colors[0]] * 2 + [uniq_colors[1]] * 6 + [uniq_colors[3]] * 3 + [uniq_colors[2]] * 3
 
-        legend_handles = [
+        legend_handles = [  # handcrafted legend. Horrible, I know
             mpatches.Patch(facecolor=color, label=label, edgecolor="black", linewidth=0.5)
             for label, color in zip(uniq_labels, uniq_colors)
         ]
@@ -312,7 +332,6 @@ def box_mann_whitney_u(
             handles=legend_handles, bbox_to_anchor=(1.04, 0), loc="lower left", borderaxespad=0, frameon=False
         )
 
-        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
         # Prepare pairs for statistical annotation
         control_condition = f"FSK {stimulant_dose}µM"
         concentrations = ["0.001µM", "0.1µM", "1µM"]
@@ -343,11 +362,18 @@ def box_mann_whitney_u(
         )
         annotator.apply_and_annotate()
 
+        labels = [tick.get_text() for tick in ax.get_xticklabels()]
+        # get rid of the + doublee_treat_cpd <concentration> part of the string (already in the legend)
+        new_labels = [
+            re.sub(double_treat_cpd + r"\s\d\.?\d*\s?µM", "", x) if x not in labels[:6] else x for x in labels
+        ]
+        ax.set_xticklabels(new_labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
         ax.set_xlabel("")
         ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
         ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
+        ax.spines[["right", "top"]].set_visible(False)
         ax.set_axisbelow(True)
 
         if savefig:
