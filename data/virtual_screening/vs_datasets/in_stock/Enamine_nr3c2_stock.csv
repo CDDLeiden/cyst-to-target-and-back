@@ -1,0 +1,4 @@
+structure;CatalogID;Name;Storage_temp;Transport_temp;Formula;MW;LOGS;LOGP;Rotating_bonds;FISA;HB_acceptors;HB_donors;Purity;Stock_mg
+Cc1cc(=O)c(nn1c2ccccc2C(F)(F)F)C(=O)Nc3ccc(cc3)S(=O)(=O)C;"Z95680027";;;;"C20H16F3N3O4S";"451.4189496";"-4.682";"2.397";"5.0";"95.91";"6.0";"1.0";"100.0";"257"
+CS(=O)(=O)Nc1cccc(NC(=O)c2ccccc2Cc3ccccc3)c1;"Z318400112";;;;"C21H20N2O3S";"380.4601";"-5.3";"3.186";"5.0";"75.27";"3.0";"2.0";"91.0";"180"
+NS(=O)(=O)c1ccc(NC(=O)c2ccc(o2)c3ccccc3C(F)(F)F)cc1;"Z90308949";;;;"C18H13F3N2O4S";"410.3670296";"-6.052";"3.317";"5.0";"102.4";"3.0";"2.0";"90.0";"5"

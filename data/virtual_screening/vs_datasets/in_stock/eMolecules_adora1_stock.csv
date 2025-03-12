@@ -1,0 +1,91 @@
+MWT,MF,PARENT_MWT,SMILES,SUPPLIER_NAME,CATALOG_NUMBER,PRICE_CODE,CAS,CHEMICAL_NAME,MFCD,EMOLECULES_ID
+312.37,C21H16N2O,312.37,Oc1ccc(cc1)-c1nc(c([nH]1)-c1ccccc1)-c1ccccc1,ChemDiv SC,5218,,,"4-(4,5-diphenyl-1H-imidazol-2-yl)phenol",MFCD00740542,530515
+265.33,C15H11N3S,265.33,S=c1nc(-c2ccccc2)c(n[nH]1)-c1ccccc1,ChemDiv SC,2595,,,"5,6-diphenyl-1,2,4-triazine-3(2H)-thione",MFCD00431852,630953
+366.43,C18H11FN4S2,366.43,Nc1nc(SCc2ccc(F)cc2)c(C#N)c(-c2cccs2)c1C#N,ChemDiv SC,8003,,,"2-amino-6-{[(4-fluorophenyl)methyl]sulfanyl}-4-(thiophen-2-yl)pyridine-3,5-dicarbonitrile",,824745
+277.33,C17H15N3O,277.33,COc1ccc(cc1)-c1cc(nc(N)n1)-c1ccccc1,ChemDiv SC,0,,,4-(4-methoxyphenyl)-6-phenylpyrimidin-2-amine,MFCD00725984,1127982
+321.42,C24H19N,321.42,Cc1c(cc(nc1-c1ccccc1)-c1ccccc1)-c1ccccc1,ChemDiv SC,8007,,,"3-methyl-2,4,6-triphenylpyridine",MFCD00114732,1163787
+260.3,C16H12N4,260.3,Cc1nnc2c(nc3ccccc3n12)-c1ccccc1,ChemDiv SC,8010,,,"1-methyl-4-phenyl[1,2,4]triazolo[4,3-a]quinoxaline",,1237561
+222.29,C15H14N2,222.29,CCn1c(nc2ccccc12)-c1ccccc1,ChemDiv SC,0,,,1-ethyl-2-phenyl-1H-benzimidazole,MFCD00435973,1249141
+380.5,C21H17FN2S2,380.5,Fc1ccc(CSc2nc3CCCCc3c(-c3cccs3)c2C#N)cc1,ChemDiv SC,8003,,,"2-{[(4-fluorophenyl)methyl]sulfanyl}-4-(thiophen-2-yl)-5,6,7,8-tetrahydroquinoline-3-carbonitrile",,1308375
+344.39,C22H17FN2O,344.39,COc1ccc(cc1)-c1nc(c([nH]1)-c1ccc(F)cc1)-c1ccccc1,ChemDiv SC,3197,,,5-(4-fluorophenyl)-2-(4-methoxyphenyl)-4-phenyl-1H-imidazole,,1310933
+448.97,C24H21ClN4OS,448.97,CCCCOc1ccc(cc1)-c1c(C#N)c(N)nc(SCc2ccc(Cl)cc2)c1C#N,ChemDiv SC,892,,,"2-amino-4-(4-butoxyphenyl)-6-{[(4-chlorophenyl)methyl]sulfanyl}pyridine-3,5-dicarbonitrile",,1326172
+339.41,C18H17N3O2S,339.41,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccs1,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(thiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1510726
+319.36,C19H17N3O2,319.36,COC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1,ChemDiv SC,8561,,,"methyl 2-methyl-4-phenyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1511040
+333.39,C20H19N3O2,333.39,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1,ChemDiv SC,0,,,"ethyl 2-methyl-4-phenyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1511042
+349.39,C20H19N3O3,349.39,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(O)c1,ChemDiv SC,7695,,,"ethyl 4-(3-hydroxyphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1528390
+320.35,C18H16N4O2,320.35,COC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccncc1,ChemDiv SC,8137,,,"methyl 2-methyl-4-(pyridin-4-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1554183
+325.39,C17H15N3O2S,325.39,COC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccs1,ChemDiv SC,8137,,,"methyl 2-methyl-4-(thiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1554185
+342.4,C22H18N2O2,342.4,COc1ccc(cc1O)-c1nc(c([nH]1)-c1ccccc1)-c1ccccc1,ChemDiv SC,3328,,,"5-(4,5-diphenyl-1H-imidazol-2-yl)-2-methoxyphenol",,1681642
+334.42,C21H22N2O2,334.42,CCC(CC)C(=O)Nc1nc(c(o1)-c1ccccc1)-c1ccccc1,ChemDiv SC,0,,,"N-(4,5-diphenyl-1,3-oxazol-2-yl)-2-ethylbutanamide",,1823372
+323.35,C18H17N3O3,323.35,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccco1,ChemDiv SC,7695,,,"ethyl 4-(furan-2-yl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828790
+334.38,C19H18N4O2,334.38,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccncc1,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(pyridin-4-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828792
+347.42,C21H21N3O2,347.42,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(C)cc1,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(4-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828794
+347.42,C21H21N3O2,347.42,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(C)c1,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(3-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828810
+367.83,C20H18ClN3O2,367.83,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(Cl)c1,ChemDiv SC,7695,,,"ethyl 4-(3-chlorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828812
+347.42,C21H21N3O2,347.42,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1C,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(2-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828818
+367.83,C20H18ClN3O2,367.83,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1Cl,ChemDiv SC,7695,,,"ethyl 4-(2-chlorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828820
+351.38,C20H18FN3O2,351.38,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1F,ChemDiv SC,7695,,,"ethyl 4-(2-fluorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1828822
+320.35,C18H16N4O2,320.35,COC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccnc1,ChemDiv SC,8561,,,"methyl 2-methyl-4-(pyridin-3-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1833889
+339.41,C18H17N3O2S,339.41,COC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1sccc1C,ChemDiv SC,8137,,,"methyl 2-methyl-4-(3-methylthiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1833891
+334.38,C19H18N4O2,334.38,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccnc1,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(pyridin-3-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,1835088
+405.3,C22H17BrN2O,405.3,COc1ccc(cc1Br)-c1nc(c([nH]1)-c1ccccc1)-c1ccccc1,ChemDiv SC,6220,,,"2-(3-bromo-4-methoxyphenyl)-4,5-diphenyl-1H-imidazole",,1937097
+360.39,C22H17FN2O2,360.39,COc1ccc(cc1O)-c1nc(c([nH]1)-c1ccccc1)-c1ccc(F)cc1,ChemDiv SC,4394,,,5-[4-(4-fluorophenyl)-5-phenyl-1H-imidazol-2-yl]-2-methoxyphenol,,2169189
+350.22,C18H12BrN3,350.22,Nc1nc(cc(-c2cccc(Br)c2)c1C#N)-c1ccccc1,ChemDiv SC,8008,,,2-amino-4-(3-bromophenyl)-6-phenylpyridine-3-carbonitrile,,2362729
+280.35,C16H12N2OS,280.35,Nc1nc(c(s1)C(=O)c1ccccc1)-c1ccccc1,ChemDiv SC,241,,,"(2-amino-4-phenyl-1,3-thiazol-5-yl)(phenyl)methanone",MFCD00428681,2381944
+348.41,C20H20N4O2,348.41,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccnc1,ChemDiv SC,8020,,,"propan-2-yl 2-methyl-4-(pyridin-3-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,2553697
+353.44,C19H19N3O2S,353.44,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1sccc1C,ChemDiv SC,7695,,,"ethyl 2-methyl-4-(3-methylthiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,2581695
+349.39,C20H19N3O3,349.39,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(O)cc1,ChemDiv SC,7695,,,"ethyl 4-(4-hydroxyphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,2581697
+412.29,C20H18BrN3O2,412.29,CCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(Br)cc1,ChemDiv SC,0,,,"ethyl 4-(4-bromophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,2716960
+348.48,C20H16N2S2,348.48,N#Cc1c(SCc2ccccc2)nc(cc1-c1cccs1)C1CC1,ChemDiv SC,3343,,,2-(benzylsulfanyl)-6-cyclopropyl-4-(thiophen-2-yl)pyridine-3-carbonitrile,,2966955
+316.38,C16H16N2O3S,316.38,CCOC(=O)c1sc(NC(=O)C2CC2)nc1-c1ccccc1,ChemDiv SC,0,,,"ethyl 2-[(cyclopropanecarbonyl)amino]-4-phenyl-1,3-thiazole-5-carboxylate",,3539194
+367.47,C20H21N3O2S,367.47,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1sccc1C,ChemDiv SC,8561,,,"propan-2-yl 2-methyl-4-(3-methylthiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739244
+361.44,C22H23N3O2,361.44,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(C)cc1,ChemDiv SC,8561,,,"propan-2-yl 2-methyl-4-(4-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739246
+381.86,C21H20ClN3O2,381.86,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(Cl)cc1,ChemDiv SC,8561,,,"propan-2-yl 4-(4-chlorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739248
+365.41,C21H20FN3O2,365.41,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccc(F)cc1,ChemDiv SC,8561,,,"propan-2-yl 4-(4-fluorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739250
+377.44,C22H23N3O3,377.44,COc1ccc(cc1)C1C(C(=O)OC(C)C)=C(C)Nc2nc3ccccc3n12,ChemDiv SC,8016,,,"propan-2-yl 4-(4-methoxyphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739254
+375.47,C23H25N3O2,375.47,CCc1ccc(cc1)C1C(C(=O)OC(C)C)=C(C)Nc2nc3ccccc3n12,ChemDiv SC,8525,,,"propan-2-yl 4-(4-ethylphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739258
+361.44,C22H23N3O2,361.44,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(C)c1,ChemDiv SC,8525,,,"propan-2-yl 2-methyl-4-(3-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739262
+381.86,C21H20ClN3O2,381.86,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(Cl)c1,ChemDiv SC,8525,,,"propan-2-yl 4-(3-chlorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739264
+365.41,C21H20FN3O2,365.41,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(F)c1,ChemDiv SC,8525,,,"propan-2-yl 4-(3-fluorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739266
+377.44,C22H23N3O3,377.44,COc1cccc(c1)C1C(C(=O)OC(C)C)=C(C)Nc2nc3ccccc3n12,ChemDiv SC,8525,,,"propan-2-yl 4-(3-methoxyphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739268
+361.44,C22H23N3O2,361.44,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1C,ChemDiv SC,8525,,,"propan-2-yl 2-methyl-4-(2-methylphenyl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739272
+381.86,C21H20ClN3O2,381.86,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1Cl,ChemDiv SC,8525,,,"propan-2-yl 4-(2-chlorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739274
+347.42,C21H21N3O2,347.42,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccccc1,ChemDiv SC,8525,,,"propan-2-yl 2-methyl-4-phenyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739294
+383.4,C21H19F2N3O2,383.4,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cc(F)cc(F)c1,ChemDiv SC,8525,,,"propan-2-yl 4-(3,5-difluorophenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739298
+364.4,C20H20N4O3,364.4,COCCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccncc1,ChemDiv SC,8525,,,"2-methoxyethyl 2-methyl-4-(pyridin-4-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,3739308
+384.52,C23H16N2S2,384.52,N#Cc1c(SCc2ccccc2)nc(cc1-c1cccs1)-c1ccccc1,ChemDiv SC,4478,,,2-(benzylsulfanyl)-6-phenyl-4-(thiophen-2-yl)pyridine-3-carbonitrile,MFCD02025094,3759384
+348.41,C20H20N4O2,348.41,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccncc1,ChemDiv SC,8020,,,"propan-2-yl 2-methyl-4-(pyridin-4-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,4026689
+363.42,C21H21N3O3,363.42,CC(C)OC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccc(O)c1,ChemDiv SC,8525,,,"propan-2-yl 4-(3-hydroxyphenyl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,4040957
+343.43,C22H21N3O,343.43,OC(Cn1c2ccccc2n(Cc2ccccc2)c1=N)c1ccccc1,ChemDiv SC,3260,,,"2-(3-benzyl-2-imino-2,3-dihydro-1H-benzimidazol-1-yl)-1-phenylethan-1-ol",MFCD01832535,4389914
+343.43,C21H21N5,343.43,Cc1cccc(c1)-c1nnn2c1nc(NC1CCCC1)c1ccccc21,ChemDiv SC,0,,,"N-cyclopentyl-3-(3-methylphenyl)[1,2,3]triazolo[1,5-a]quinazolin-5-amine",,5506559
+422.33,C21H20BrN5,422.33,Brc1cccc(c1)-c1nnn2c1nc(NC1CCCCC1)c1ccccc21,ChemDiv SC,0,,,"3-(3-bromophenyl)-N-cyclohexyl[1,2,3]triazolo[1,5-a]quinazolin-5-amine",,5507433
+484.19,C22H16Br2N2O,484.19,COc1ccc(cc1)-c1nc(c([nH]1)-c1ccc(Br)cc1)-c1ccc(Br)cc1,ChemDiv SC,8001,,,"4,5-bis(4-bromophenyl)-2-(4-methoxyphenyl)-1H-imidazole",,6157488
+348.42,C19H16N4OS,348.42,COc1ccc(Nc2nc(SC)nc(-c3ccccc3)c2C#N)cc1,ChemDiv SC,0,,,4-(4-methoxyanilino)-2-(methylsulfanyl)-6-phenylpyrimidine-5-carbonitrile,MFCD08568140,6261097
+394.29,C19H12BrN3S,394.29,Brc1csc(c1)-c1cc(nc(n1)-c1ccccc1)-c1ccncc1,ChemDiv SC,8017,,,4-(4-bromothiophen-2-yl)-2-phenyl-6-(pyridin-4-yl)pyrimidine,,6820840
+303.38,C18H13N3S,303.38,Nc1nsc2nc(cc(-c3ccccc3)c12)-c1ccccc1,ChemDiv SC,8018,,,"4,6-diphenyl[1,2]thiazolo[5,4-b]pyridin-3-amine",MFCD00408513,9877504
+367.47,C20H21N3O2S,367.47,CCCCOC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccs1,ChemDiv SC,8018,,,"butyl 2-methyl-4-(thiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazole-3-carboxylate",,9989150
+304.35,C18H16N4O,304.35,CC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccncc1,ChemDiv SC,8019,,,"1-[2-methyl-4-(pyridin-4-yl)-1,4-dihydropyrimido[1,2-a]benzimidazol-3-yl]ethan-1-one",,10998828
+330.4,C17H18N2O3S,330.4,CCOC(=O)c1sc(NC(=O)C2CCC2)nc1-c1ccccc1,ChemDiv SC,0,,,"ethyl 2-[(cyclobutanecarbonyl)amino]-4-phenyl-1,3-thiazole-5-carboxylate",,14095224
+352.47,C19H16N2OS2,352.47,CCn1c2c(sc(=S)n2c2ccccc2c1=O)-c1cccc(C)c1,ChemDiv SC,0,,,"4-ethyl-3-(3-methylphenyl)-1-sulfanylidene-1H-[1,3]thiazolo[3,4-a]quinazolin-5(4H)-one",,16061759
+366.5,C20H18N2OS2,366.5,CCCn1c2c(sc(=S)n2c2ccccc2c1=O)-c1cccc(C)c1,ChemDiv SC,0,,,"3-(3-methylphenyl)-4-propyl-1-sulfanylidene-1H-[1,3]thiazolo[3,4-a]quinazolin-5(4H)-one",,16061761
+372.89,C18H13ClN2OS2,372.89,CCn1c2c(sc(=S)n2c2ccccc2c1=O)-c1cccc(Cl)c1,ChemDiv SC,0,,,"3-(3-chlorophenyl)-4-ethyl-1-sulfanylidene-1H-[1,3]thiazolo[3,4-a]quinazolin-5(4H)-one",,16061781
+386.91,C19H15ClN2OS2,386.91,CCCn1c2c(sc(=S)n2c2ccccc2c1=O)-c1cccc(Cl)c1,ChemDiv SC,0,,,"3-(3-chlorophenyl)-4-propyl-1-sulfanylidene-1H-[1,3]thiazolo[3,4-a]quinazolin-5(4H)-one",,16061783
+386.91,C19H15ClN2OS2,386.91,CC(C)n1c2c(sc(=S)n2c2ccccc2c1=O)-c1cccc(Cl)c1,ChemDiv SC,0,,,"3-(3-chlorophenyl)-4-(propan-2-yl)-1-sulfanylidene-1H-[1,3]thiazolo[3,4-a]quinazolin-5(4H)-one",,16061787
+281.74,C16H12ClN3,281.74,Nc1nc(cc(n1)-c1ccc(Cl)cc1)-c1ccccc1,ChemDiv SC,0,,,4-(4-chlorophenyl)-6-phenylpyrimidin-2-amine,MFCD14827877,16123037
+304.35,C18H16N4O,304.35,CC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccnc1,ChemDiv SC,8019,,,"1-[2-methyl-4-(pyridin-3-yl)-1,4-dihydropyrimido[1,2-a]benzimidazol-3-yl]ethan-1-one",,17324647
+309.39,C17H15N3OS,309.39,CC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1cccs1,ChemDiv SC,8019,,,"1-[2-methyl-4-(thiophen-2-yl)-1,4-dihydropyrimido[1,2-a]benzimidazol-3-yl]ethan-1-one",,17324649
+293.33,C17H15N3O2,293.33,CC(=O)C1=C(C)Nc2nc3ccccc3n2C1c1ccco1,ChemDiv SC,8019,,,"1-[4-(furan-2-yl)-2-methyl-1,4-dihydropyrimido[1,2-a]benzimidazol-3-yl]ethan-1-one",,17324659
+341.37,C21H15N3O2,341.37,O=C(Nc1nc(cc(n1)-c1ccccc1)-c1ccccc1)c1ccco1,ChemDiv SC,0,,,"N-(4,6-diphenylpyrimidin-2-yl)furan-2-carboxamide",,17444076
+317.41,C19H15N3S,317.41,C(Sc1nccn2nc(cc12)-c1ccccc1)c1ccccc1,ChemDiv SC,0,,,"4-(benzylsulfanyl)-2-phenylpyrazolo[1,5-a]pyrazine",MFCD11996164,22755240
+379.42,C20H21N5O3,379.42,CC(=O)N1CCN(CC1)C(=O)c1nc(-c2ccco2)n(n1)-c1cccc(C)c1,ChemDiv SC,0,,,"1-{4-[5-(furan-2-yl)-1-(3-methylphenyl)-1H-1,2,4-triazole-3-carbonyl]piperazin-1-yl}ethan-1-one",,25546637
+317.39,C20H19N3O,317.39,CCCC(=O)Nc1nc(cc(n1)-c1ccccc1)-c1ccccc1,ChemDiv SC,0,,,"N-(4,6-diphenylpyrimidin-2-yl)butanamide",,27070310
+331.42,C21H21N3O,331.42,CCCCC(=O)Nc1nc(cc(n1)-c1ccccc1)-c1ccccc1,ChemDiv SC,0,,,"N-(4,6-diphenylpyrimidin-2-yl)pentanamide",,27070312
+331.42,C21H21N3O,331.42,CC(C)CC(=O)Nc1nc(cc(n1)-c1ccccc1)-c1ccccc1,ChemDiv SC,0,,,"N-(4,6-diphenylpyrimidin-2-yl)-3-methylbutanamide",,27070322
+351.83,C20H18ClN3O,351.83,CCCC(=O)Nc1nc(cc(n1)-c1ccc(Cl)cc1)-c1ccccc1,ChemDiv SC,0,,,N-[4-(4-chlorophenyl)-6-phenylpyrimidin-2-yl]butanamide,,27070328
+347.42,C21H21N3O2,347.42,COc1ccc(cc1)-c1cc(nc(NC(=O)C(C)C)n1)-c1ccccc1,ChemDiv SC,0,,,N-[4-(4-methoxyphenyl)-6-phenylpyrimidin-2-yl]-2-methylpropanamide,,27070330
+347.42,C21H21N3O2,347.42,CCCC(=O)Nc1nc(cc(n1)-c1ccc(OC)cc1)-c1ccccc1,ChemDiv SC,0,,,N-[4-(4-methoxyphenyl)-6-phenylpyrimidin-2-yl]butanamide,,27070332
+283.29,C15H13N3O3,283.29,Cc1nc(no1)-c1cccc(c1)C(=O)NCc1ccco1,ChemDiv SC,0,,,"N-[(furan-2-yl)methyl]-3-(5-methyl-1,2,4-oxadiazol-3-yl)benzamide",,27123718
+382.42,C23H18N4O2,382.42,O=c1n(Cc2ccccc2)nc2n(Cc3ccccc3)c(=O)c3ccccc3n12,ChemDiv SC,0,,,"2,4-dibenzyl-2,4-dihydro[1,2,4]triazolo[4,3-a]quinazoline-1,5-dione",,32539788
+396.45,C24H20N4O2,396.45,O=c1n(Cc2ccccc2)nc2n(CCc3ccccc3)c(=O)c3ccccc3n12,ChemDiv SC,0,,,"2-benzyl-4-(2-phenylethyl)-2,4-dihydro[1,2,4]triazolo[4,3-a]quinazoline-1,5-dione",,32539956
+354.37,C18H18N4O4,354.37,CCOC(=O)Cn1cnc2n(-c3ccccc3)c(=O)n(CC=C)c(=O)c12,ChemDiv SC,0,,,"ethyl [2,6-dioxo-3-phenyl-1-(prop-2-en-1-yl)-1,2,3,6-tetrahydro-7H-purin-7-yl]acetate",,44609648
+398.51,C24H26N6,398.51,Cc1cccc(c1)-n1nc2nc(NC3CCCCC3)nc(-c3ccccc3)c2c1N,ChemDiv SC,0,,,"N~6~-cyclohexyl-2-(3-methylphenyl)-4-phenyl-2H-pyrazolo[3,4-d]pyrimidine-3,6-diamine",,44628744
