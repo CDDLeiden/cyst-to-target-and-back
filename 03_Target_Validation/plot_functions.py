@@ -139,7 +139,11 @@ def plot_with_curves(
                     clean_treatment_string, single_treatment=single_treatment
                 )
             )
-            .assign(hue_string=lambda x: x["hue_string"].apply(lambda s: rm_fsk_pattern.sub("", s)))
+            .assign(
+                hue_string=lambda x: x["hue_string"]
+                .apply(lambda s: rm_fsk_pattern.sub("", s))
+                .str.replace("Aldosterone", "ALD")
+            )
         ),
         x="logC",
         y=spheresize_col,
@@ -311,7 +315,7 @@ def box_mann_whitney_u(
         )
 
         labels = plot_data[["treat_string", "Treatment 2"]].drop_duplicates()["Treatment 2"]
-        uniq_labels = labels.drop_duplicates().tolist()
+        uniq_labels = labels.drop_duplicates().str.replace("Aldosterone", "ALD").tolist()
         uniq_colors = plot_colors
         # 2 controls: DMSO, FSK
         # 6 single treatments: 3 concentrations of cpd, 3 concentrations of double_treat_cpd
@@ -368,6 +372,7 @@ def box_mann_whitney_u(
             re.sub(double_treat_cpd + r"\s\d\.?\d*\s?µM", "", x) if x not in labels[:6] else x for x in labels
         ]
         ax.set_xticklabels(new_labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
+
         ax.set_xlabel("")
         ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
         ax.set_title(f"Plate {plate_number} - {cpd}")
@@ -388,6 +393,15 @@ def box_mann_whitney_u(
                 dpi=300,
                 bbox_inches="tight",
                 facecolor="white",
+            )
+            fig.savefig(
+                figs_root
+                / (
+                    f"boxplot-MannWhitneyU-plate{plate_number}{target_str}_{cpd}"
+                    f"_FSK{str(stimulant_dose).replace('.', '-')}_{double_treat_cpd}.svg"
+                ),
+                bbox_inches="tight",
+                facecolor="none",
             )
 
         plt.show()
@@ -472,6 +486,7 @@ def box_mann_whitney_u_no_dt(
             plot_data[["treat_string", "Treatment 2"]]
             .drop_duplicates()["Treatment 2"]
             .str.replace(cpd, f"+ FSK {stimulant_dose}µM")
+            .str.replace("Aldosterone", "ALD")
         )
         uniq_labels = labels.drop_duplicates().tolist()
         uniq_colors = plot_colors
@@ -511,6 +526,7 @@ def box_mann_whitney_u_no_dt(
         ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
+        ax.spines[["right", "top"]].set_visible(False)
         ax.set_axisbelow(True)
 
         if savefig:
@@ -525,6 +541,15 @@ def box_mann_whitney_u_no_dt(
                 dpi=300,
                 bbox_inches="tight",
                 facecolor="white",
+            )
+            fig.savefig(
+                figs_root
+                / (
+                    f"boxplot-MannWhitneyU-plate{plate_number}{target_str}_{cpd}"
+                    f"_FSK{str(stimulant_dose).replace('.', '-')}.svg"
+                ),
+                bbox_inches="tight",
+                facecolor="none",
             )
 
         plt.show()
