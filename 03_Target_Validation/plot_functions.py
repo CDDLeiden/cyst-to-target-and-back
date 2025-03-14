@@ -51,7 +51,7 @@ def add_treatment_2(row):
 
 def change_control_row(row):
     if row["treatment_type"] == "solvent_ctrl":
-        return "DMSO 0.1%"
+        return "DMSO 0.2%"  # two doses of DMSO 0.1%
     elif row["treatment_type"] == "stim_only":
         return f"FSK {row['Stimulant dose']}µM"
     else:
@@ -107,14 +107,14 @@ def plot_with_curves(
     rgb_colors = [mcolors.to_rgba(c) for c in colors]
 
     # Define subsets for the control groups
-    unstimulated = df.query("treat_string == 'DMSO 0.1%'").assign(whatever=1)
+    unstimulated = df.query("treat_string == 'DMSO 0.2%'").assign(whatever=1)
     stimulated = df.query("treat_string == 'FSK 2.5µM'").assign(whatever=1)
     half_stimulated = df.query("treat_string == 'FSK 0.79µM'").assign(whatever=1)
 
     controls = [unstimulated, half_stimulated, stimulated]
     control_colors = ["silver", "rosybrown", "maroon"]
 
-    fig, axs = plt.subplots(ncols=2, figsize=(6, 4), sharey=True, gridspec_kw={"width_ratios": [1, 5]})
+    fig, axs = plt.subplots(ncols=2, figsize=(5, 3), sharey=True, gridspec_kw={"width_ratios": [1, 5]})
     control_ax = axs[0]
     for control, color in zip(controls, control_colors):
         sns.boxplot(
@@ -161,7 +161,7 @@ def plot_with_curves(
     median_unstimulated = unstimulated[spheresize_col].median()
     median_stimulated = stimulated[spheresize_col].median()
     median_half_stimulated = half_stimulated[spheresize_col].median()
-    ax.axhline(median_unstimulated, color="silver", linestyle="--")  # label="median(DMSO 0.1%)")
+    ax.axhline(median_unstimulated, color="silver", linestyle="--")  # label="median(DMSO 0.2%)")
     ax.axhline(median_half_stimulated, color="rosybrown", linestyle="--")  # label="median(FSK 0.79µM)")
     ax.axhline(median_stimulated, color="maroon", linestyle="--")  # label="median(FSK 2.5µM)")
 
@@ -244,7 +244,7 @@ def box_mann_whitney_u(
     ).assign(
         treat_string=lambda x: (
             x["treat_string"]
-            .str.replace("DMSO0.1 DMSO0.1", "DMSO 0.1%")
+            .str.replace("DMSO0.1 DMSO0.1", "DMSO 0.2%")  # two doses of DMSO 0.1%
             .str.replace(f"FSK{stimulant_dose}", f"FSK {stimulant_dose}µM")
             .str.replace("DMSO0.1", "")
             .str.replace("0.001", " 0.001µM ")
@@ -315,13 +315,18 @@ def box_mann_whitney_u(
         )
 
         labels = plot_data[["treat_string", "Treatment 2"]].drop_duplicates()["Treatment 2"]
-        uniq_labels = labels.drop_duplicates().str.replace("Aldosterone", "ALD").tolist()
+        uniq_labels = (
+            labels.drop_duplicates()
+            .str.replace("Aldosterone", "ALD")
+            .str.replace(" + FSK ", "\n+ FSK ")
+            .tolist()
+        )
         uniq_colors = plot_colors
         # 2 controls: DMSO, FSK
         # 6 single treatments: 3 concentrations of cpd, 3 concentrations of double_treat_cpd
         # 3 double treatments: 3 concentrations of cpd + double_treat_cpd 0.1µM
         # 3 double treatments: 3 concentrations of cpd + double_treat_cpd 1µM
-        colors = [uniq_colors[0]] * 2 + [uniq_colors[1]] * 6 + [uniq_colors[3]] * 3 + [uniq_colors[2]] * 3
+        colors = [uniq_colors[0]] * 2 + [uniq_colors[1]] * 6 + [uniq_colors[2]] * 3 + [uniq_colors[3]] * 3
 
         legend_handles = [  # handcrafted legend. Horrible, I know
             mpatches.Patch(facecolor=color, label=label, edgecolor="black", linewidth=0.5)
@@ -333,7 +338,11 @@ def box_mann_whitney_u(
             bar.set_facecolor(color)
 
         ax.legend(
-            handles=legend_handles, bbox_to_anchor=(1.04, 0), loc="lower left", borderaxespad=0, frameon=False
+            handles=legend_handles,
+            bbox_to_anchor=(1.04, 0),
+            loc="lower left",
+            borderaxespad=0,
+            frameon=False,
         )
 
         # Prepare pairs for statistical annotation
@@ -375,7 +384,8 @@ def box_mann_whitney_u(
 
         ax.set_xlabel("")
         ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
-        ax.set_title(f"Plate {plate_number} - {cpd}")
+        ax.set_title(cpd)
+        # ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
         ax.spines[["right", "top"]].set_visible(False)
@@ -435,10 +445,12 @@ def box_mann_whitney_u_no_dt(
     subset.loc[idxs, "Treatment unit"] = "uM"
 
     subset = subset.assign(
-        treat_string=lambda x: x["Treatment"]
-        + " "
-        + x["Treatment concentration"].astype(str)
-        + x["Treatment unit"].str.replace("uM", "µM").str.replace("pct", "%")
+        treat_string=lambda x: (
+            x["Treatment"]
+            + " "
+            + x["Treatment concentration"].astype(str)
+            + x["Treatment unit"].str.replace("uM", "µM").str.replace("pct", "%")
+        ).str.replace("DMSO 0.1%", "DMSO 0.2%")
     )
 
     for cpd in compounds:
@@ -457,7 +469,7 @@ def box_mann_whitney_u_no_dt(
             .query(f"Treatment == '{cpd}'")
         )
 
-        fig, ax = plt.subplots(figsize=(6, 4))
+        fig, ax = plt.subplots(figsize=(3, 4))
         plot_data = pd.concat(
             [
                 subset_controls,
@@ -523,7 +535,8 @@ def box_mann_whitney_u_no_dt(
 
         ax.set_xlabel("")
         ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
-        ax.set_title(f"Plate {plate_number} - {cpd}")
+        ax.set_title(cpd)
+        # ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
         ax.spines[["right", "top"]].set_visible(False)
