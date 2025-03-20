@@ -1,7 +1,7 @@
 {
     "py/object": "modules.qspr_xgb.XGBoostModel",
     "py/state": {
-        "name": "optADORA1_model",
+        "name": "optADORA1_allData",
         "baseDir": ".",
         "targetProperties": [
             {
@@ -4202,6 +4202,6 @@
         "randomState": 42,
         "fit_verbose": false,
         "eval_set": null,
-        "estimator": "./optADORA1_model/optADORA1_model.json"
+        "estimator": "./optADORA1_allData/optADORA1_allData.json"
     }
 }
