@@ -76,20 +76,10 @@ class PapyrusCompoundLinker(PapyrusLinker):
         """
         if convert_to == "list":
             for col in self.linkerConfig["target_cols"]:
-                self.df[col] = (
-                    self.df[col]
-                    .fillna("")
-                    .apply(lambda x: x.split(";"))
-                    .replace({"": np.nan})
-                )
+                self.df[col] = self.df[col].fillna("").apply(lambda x: x.split(";")).replace({"": np.nan})
         if convert_to == "string":
             for col in self.linkerConfig["target_cols"]:
-                self.df[col] = (
-                    self.df[col]
-                    .fillna("")
-                    .apply(lambda x: ";".join(x))
-                    .replace({"": np.nan})
-                )
+                self.df[col] = self.df[col].fillna("").apply(lambda x: ";".join(x)).replace({"": np.nan})
 
     def applyPapyrusFilters(
         self,
@@ -145,14 +135,14 @@ class PapyrusCompoundLinker(PapyrusLinker):
             n_jobs=self.njobs,
             progress=progress,
             from_smi=True,
-            rdkit_loglevel=("critical" if not verbose else "warning")
+            rdkit_loglevel=("critical" if not verbose else "warning"),
         )
         connect_calculator = InchiHandling(
             convert_to="connectivity",
             n_jobs=self.njobs,
             progress=progress,
             from_smi=True,
-            rdkit_loglevel=("critical" if not verbose else "warning")
+            rdkit_loglevel=("critical" if not verbose else "warning"),
         )
         print("Standardizing SMILES...")
         std_smiles = standardizer(self.df[self.smiles_col].tolist())
@@ -160,9 +150,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         self.df = self.df.assign(
             papyrus_smiles=std_smiles, connectivity=connect_calculator(std_smiles)
         ).replace({None: np.NaN})
-        print(
-            f"{std_smiles.count(None)} failed to be standardized and will be dropped."
-        )
+        print(f"{std_smiles.count(None)} failed to be standardized and will be dropped.")
         todrop_idxs = self.df.query("papyrus_smiles.isna()").index.tolist()
         self.df = self.df.drop(index=todrop_idxs).reset_index(drop=True)
         return self.df
@@ -186,14 +174,11 @@ class PapyrusCompoundLinker(PapyrusLinker):
         string_type = string_type.lower()
         if string_type not in ["target_only", "with_affinity"]:
             raise AttributeError(
-                "`string_type` parameter not available."
-                "Use 'target_only' or 'with_affinity'"
+                "`string_type` parameter not available." "Use 'target_only' or 'with_affinity'"
             )
 
         papyrus_df = self.papyrusDataset
-        user_df = self.df.query(
-            'connectivity.isin(@papyrus_df["connectivity"].unique())'
-        )
+        user_df = self.df.query('connectivity.isin(@papyrus_df["connectivity"].unique())')
         th_range = np.arange(6.0, 9.5, 0.5)
         colnames = [f"Targets_{th:.1f}" for th in th_range]
         self.linkerConfig["target_cols"] = colnames
@@ -214,9 +199,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
             elif string_type == "with_affinity":
                 targets = (
                     subset.assign(
-                        id_activ=lambda x: list(
-                            x["target_id"] + "~" + x["pchembl_value_Median"].astype(str)
-                        )
+                        id_activ=lambda x: list(x["target_id"] + "~" + x["pchembl_value_Median"].astype(str))
                     )
                     .groupby("connectivity")["targ_affinity"]
                     .unique()
@@ -226,9 +209,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
             results_df = pd.merge(results_df, targets, on="connectivity", how="outer")
         # Assign bioactivity class from original dataset
         c_map = dict(zip(user_df["connectivity"], user_df[self.bioactivity_col]))
-        results_df = results_df.assign(
-            bioactivity=lambda x: x["connectivity"].map(c_map)
-        )
+        results_df = results_df.assign(bioactivity=lambda x: x["connectivity"].map(c_map))
         self.df = self.df.merge(results_df, on="connectivity", how="outer")
         self._convertTargCols(convert_to="string")
         # dropping the ones not found in the papyrus dataset
@@ -236,11 +217,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         print(f"{len(not_found)} compounds not found in papyrus dataset.")
         if drop:
             print("Dropping compounds...")
-            self.df = (
-                self.df.reset_index(drop=True)
-                .drop(index=not_found)
-                .reset_index(drop=True)
-            )
+            self.df = self.df.reset_index(drop=True).drop(index=not_found).reset_index(drop=True)
         return results_df
 
     def save(self, name: str, save_path: str = None, force=False):
@@ -254,9 +231,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         self.name = name
         targcol_regex = re.compile(r"Targets_\d+\.\d+$")
         if not self.df.columns.str.contains(targcol_regex).any():
-            raise AttributeError(
-                "No column with targets found. Please run `linkData()`"
-            )
+            raise AttributeError("No column with targets found. Please run `linkData()`")
         if save_path is None:
             save_path = Path(name).resolve()
         else:
@@ -310,9 +285,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         if config_path.is_dir():
             configs = sorted(list(config_path.glob("*_config.json")))
             if len(configs) > 1:
-                raise AttributeError(
-                    "More than one configuration file found. Please specify the file."
-                )
+                raise AttributeError("More than one configuration file found. Please specify the file.")
             else:
                 config_path = configs[0]
         if config_path.exists():
@@ -332,9 +305,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         else:
             raise AttributeError("Configuration file not found.")
 
-    def getTargetSets(
-        self, targ_col: str = "Targets_6.5", rm_mutation: bool = True
-    ) -> dict:
+    def getTargetSets(self, targ_col: str = "Targets_6.5", rm_mutation: bool = True) -> dict:
         """Take the dataframe returned by linkData() and creates sets
         that are stored as attributes. This function is a prerequisite for
         plotting the venn diagram of the bioactivities.
@@ -356,9 +327,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         targ_col = targ_col
         targ_col_regex = re.compile(r"Targets_\d+\.\d+$")
         if not self.df.columns.str.contains(targ_col_regex).any():
-            raise AttributeError(
-                "No column with targets found. Please run `linkData()`"
-            )
+            raise AttributeError("No column with targets found. Please run `linkData()`")
         df = self.df.copy().assign(bioactivity=lambda x: x[self.bioactivity_col])
         bioactivities = df["bioactivity"].unique()
         bioactiv_dict = dict()
@@ -366,9 +335,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         for bio in bioactivities:
             subset = df[(df["bioactivity"] == bio) & (~df[targ_col].isnull())]
             if rm_mutation:
-                targets = set(
-                    subset[targ_col].explode().apply(lambda x: x.split("_")[0])
-                )
+                targets = set(subset[targ_col].explode().apply(lambda x: x.split("_")[0]))
             else:
                 targets = set(subset[targ_col].explode())
             if "" in targets:
@@ -400,7 +367,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
             Tuple: Result from the UniProtRetriever and a list of failed accessions.
         """
         mapper = ProtMapper(pooling_interval, total_retries, backoff_factor)
-        result_df, failed = mapper(
+        result_df, failed = mapper.get(
             ids=self.papyrusDataset["accession"].unique(),
             fields=[
                 "protein_name",
@@ -423,11 +390,10 @@ class PapyrusCompoundLinker(PapyrusLinker):
             mainName=result_df["Protein names"].str.replace(allafter_p, "", regex=True),
             orgName=result_df["Organism"].str.findall(inside_p).str[0],
             nameOrg=lambda x: x["mainName"] + " (" + x["orgName"] + ")",
+            nameOrgID=lambda x: x["nameOrg"] + " - " + x["From"],
         ).rename(columns={"From": "accession"})
 
-        self.papyrusDataset = self.papyrusDataset.merge(
-            result_df, on="accession", how="outer"
-        )
+        self.papyrusDataset = self.papyrusDataset.merge(result_df, on="accession", how="outer")
         return result_df, failed
 
     def addConnectivityNames(self, name_col) -> dict:
@@ -437,9 +403,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
         Args:
             name_col: column with compound name on `self.df`.
         """
-        self.connectivity_name_dict = dict(
-            zip(self.df["connectivity"], self.df[name_col])
-        )
+        self.connectivity_name_dict = dict(zip(self.df["connectivity"], self.df[name_col]))
         return self.connectivity_name_dict
 
     def plotCompounsByTarget(self):
@@ -472,8 +436,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
 
         def set_ax_params(plot_df, comp_name, ax):
             ax.set_title(
-                f"{comp_name}'s targets and respective affinities\n"
-                "Median pChEMBL value - source: Papyrus"
+                f"{comp_name}'s targets and respective affinities\n" "Median pChEMBL value - source: Papyrus"
             )
             ax.grid(axis="x", alpha=0.5)
             ax.set_axisbelow(True)
@@ -486,16 +449,13 @@ class PapyrusCompoundLinker(PapyrusLinker):
             ax.set_ylabel("")
             return ax
 
-        toplot_df = self.papyrusDataset.query(
-            "connectivity == @connectivity"
-        ).set_index(label_col)[bioactivity_col]
+        toplot_df = self.papyrusDataset.query("connectivity == @connectivity").set_index(label_col)[
+            bioactivity_col
+        ]
 
         if plot_top is not None:
             if len(toplot_df) > plot_top:
-                print(
-                    f"More than {plot_top} affinities to plot."
-                    f" Will plot only the top {plot_top}"
-                )
+                print(f"More than {plot_top} affinities to plot." f" Will plot only the top {plot_top}")
                 # To take the top n values we sort it with the highest first
                 toplot_df = toplot_df.sort_values(ascending=False)[:plot_top]
         toplot_df = toplot_df.sort_values(ascending=True)
@@ -509,10 +469,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
             try:
                 self.addConnectivityNames("Compound")
             except KeyError:
-                print(
-                    "No connectivity to name mapping found. "
-                    "Run self.addConnectivityNames() first."
-                )
+                print("No connectivity to name mapping found. " "Run self.addConnectivityNames() first.")
                 return
         th = float(self.linkerConfig["papyrusThreshold"].split("_")[1])
         ax.axvline(th, color="red", linestyle="--")
@@ -614,9 +571,7 @@ class PapyrusProteinLinker(PapyrusLinker):
         filter2 = keep_quality(data=filter1, min_quality=min_quality)
         # Removed because takes too long to run
         # filter3 = keep_type(data=filter2, activity_types=activity_types)
-        filter3 = keep_contains(
-            data=filter2, column="accession", value=pattern, case=True, regex=True
-        )
+        filter3 = keep_contains(data=filter2, column="accession", value=pattern, case=True, regex=True)
         filtered_data = consume_chunks(filter3, progress=True, total=60)
         self.papyrusDataset = filtered_data
         print("Size of the Papyrus dataframe:", len(filtered_data))
@@ -644,8 +599,7 @@ class PapyrusProteinLinker(PapyrusLinker):
         string_type = string_type.lower()
         if string_type not in ["target_only", "with_affinity"]:
             raise AttributeError(
-                "`string_type` parameter not available."
-                "Use 'target_only' or 'with_affinity'"
+                "`string_type` parameter not available." "Use 'target_only' or 'with_affinity'"
             )
 
         papyrus_df = self.papyrusDataset
@@ -668,9 +622,7 @@ class PapyrusProteinLinker(PapyrusLinker):
             elif string_type == "with_affinity":
                 targets = (
                     subset.assign(
-                        id_activ=lambda x: list(
-                            x["target_id"] + "~" + x["pchembl_value_Median"].astype(str)
-                        )
+                        id_activ=lambda x: list(x["target_id"] + "~" + x["pchembl_value_Median"].astype(str))
                     )
                     .groupby("accession")["targ_affinity"]
                     .unique()
