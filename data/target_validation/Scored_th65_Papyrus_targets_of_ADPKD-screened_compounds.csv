@@ -1,4 +1,4 @@
-targets_only,antineoplastic,enhancer,inactive,reducer,total,reduc_ratio,enhanc_ratio,antineo_ratio,protein_names,organism,primary_gene_name,gene_names,ChEMBL,superfamily,family,subfamily,plot_identifier
+uniprot_id,antineoplastic,enhancer,inactive,reducer,total,reduc_ratio,enhanc_ratio,antineo_ratio,protein_names,organism,primary_gene_name,gene_names,chembl_target_id,superfamily,family,subfamily,plot_identifier
 A7MCY6,0,0,0,1,1,1.0,0.0,0.0,TANK-binding kinase 1-binding protein 1 (TBK1-binding protein 1),Human,TBKBP1,TBKBP1 KIAA0775 SINTBAD,CHEMBL4523108,,,,TBKBP1 
 Q8NEV4,0,0,0,1,1,1.0,0.0,0.0,Myosin-IIIa (EC 2.7.11.1),Human,MYO3A,MYO3A,CHEMBL5546,TRAFAC class myosin-kinesin ATPase;Protein kinase,Myosin;STE Ser/Thr protein kinase,,MYO3A - Myosin;STE Ser/Thr protein kinase
 Q4G0J3,0,0,0,1,1,1.0,0.0,0.0,La-related protein 7 (La ribonucleoprotein domain family member 7),Human,LARP7,LARP7 HDCMA18P,CHEMBL4523314,,LARP7,,LARP7 - LARP7
@@ -193,7 +193,7 @@ Q63470,0,0,1,1,2,0.5,0.0,0.0,Dual specificity tyrosine-phosphorylation-regulated
 P51955,1,0,1,2,4,0.5,0.0,0.25,Serine/threonine-protein kinase Nek2 (EC 2.7.11.1),Human,NEK2,NEK2 NEK2A NLK1,CHEMBL3835,Protein kinase,NEK Ser/Thr protein kinase,NIMA,NEK2 - NEK Ser/Thr protein kinase
 P51946,0,0,2,2,4,0.5,0.0,0.0,Cyclin-H (MO15-associated protein),Human,CCNH,CCNH,CHEMBL2165,,Cyclin,Cyclin C,CCNH - Cyclin
 Q16566,1,0,0,1,2,0.5,0.0,0.5,Calcium/calmodulin-dependent protein kinase type IV (CaMK IV),Human,CAMK4,CAMK4 CAMK CAMK-GR CAMKIV,CHEMBL2494,Protein kinase,CAMK Ser/Thr protein kinase,CaMK,CAMK4 - CAMK Ser/Thr protein kinase
-Q9UBN7,1,0,0,1,2,0.5,0.0,0.5,Histone deacetylase 6 (HD6),Human,HDAC6,HDAC6 KIAA0901 JM21,CHEMBL1865,,Histone deacetylase,HD type 2,HDAC6 - Histone deacetylase
+Q9UBN7,1,0,0,1,2,0.5,0.0,0.5,Protein deacetylase HDAC6 (EC 3.5.1.-),Human,HDAC6,HDAC6 KIAA0901 JM21,CHEMBL1865,,Histone deacetylase,HD type 2,HDAC6 - Histone deacetylase
 P50613,2,0,7,9,18,0.5,0.0,0.11,Cyclin-dependent kinase 7 (EC 2.7.11.22),Human,CDK7,CDK7 CAK CAK1 CDKN7 MO15 STK1,CHEMBL3055,Protein kinase,CMGC Ser/Thr protein kinase,CDC2/CDKX,CDK7 - CMGC Ser/Thr protein kinase
 P49761,1,0,2,3,6,0.5,0.0,0.17,Dual specificity protein kinase CLK3 (EC 2.7.12.1),Human,CLK3,CLK3,CHEMBL4226,Protein kinase,CMGC Ser/Thr protein kinase,Lammer,CLK3 - CMGC Ser/Thr protein kinase
 P15735,1,0,1,2,4,0.5,0.0,0.25,Phosphorylase b kinase gamma catalytic chain,Human,PHKG2,PHKG2,CHEMBL2349,Protein kinase,CAMK Ser/Thr protein kinase,,PHKG2 - CAMK Ser/Thr protein kinase
@@ -415,7 +415,7 @@ Q9P289,2,0,4,1,7,0.14,0.0,0.29,Serine/threonine-protein kinase 26 (EC 2.7.11.1),
 P41240,3,0,3,1,7,0.14,0.0,0.43,Tyrosine-protein kinase CSK (EC 2.7.10.2),Human,CSK,CSK,CHEMBL2634,Protein kinase,Tyr protein kinase,CSK,CSK - Tyr protein kinase
 Q9Y6E0,3,0,3,1,7,0.14,0.0,0.43,Serine/threonine-protein kinase 24 (EC 2.7.11.1),Human,STK24,STK24 MST3 STK3,CHEMBL5082,Protein kinase,STE Ser/Thr protein kinase,STE20,STK24 - STE Ser/Thr protein kinase
 P33981,1,0,5,1,7,0.14,0.0,0.14,Dual specificity protein kinase TTK (EC 2.7.12.1),Human,TTK,TTK MPS1 MPS1L1,CHEMBL3983,Protein kinase,Ser/Thr protein kinase,,TTK - Ser/Thr protein kinase
-P51151,0,0,6,1,7,0.14,0.0,0.0,Ras-related protein Rab-9A,Human,RAB9A,RAB9A RAB9,CHEMBL1293294,Small GTPase,Rab,,RAB9A - Rab
+P51151,0,0,6,1,7,0.14,0.0,0.0,Ras-related protein Rab-9A (EC 3.6.5.2),Human,RAB9A,RAB9A RAB9,CHEMBL1293294,Small GTPase,Rab,,RAB9A - Rab
 P00352,0,0,6,1,7,0.14,0.0,0.0,Aldehyde dehydrogenase 1A1 (EC 1.2.1.19),Human,ALDH1A1,ALDH1A1 ALDC ALDH1 PUMB1,CHEMBL3577,,Aldehyde dehydrogenase,,ALDH1A1 - Aldehyde dehydrogenase
 Q04912,3,0,9,2,14,0.14,0.0,0.21,Macrophage-stimulating protein receptor (MSP receptor),Human,MST1R,MST1R PTK8 RON,CHEMBL2689,Protein kinase,Tyr protein kinase,,MST1R - Tyr protein kinase
 P30530,6,0,7,2,15,0.13,0.0,0.4,Tyrosine-protein kinase receptor UFO (EC 2.7.10.1),Human,AXL,AXL UFO,CHEMBL4895,Protein kinase,Tyr protein kinase,AXL/UFO,AXL - Tyr protein kinase
@@ -843,7 +843,7 @@ P35563,0,0,2,0,2,0.0,0.0,0.0,5-hydroxytryptamine receptor 3A (5-HT3-A),Rat,Htr3a
 P19020,0,0,11,0,11,0.0,0.0,0.0,D (3),Rat,Drd3,Drd3,CHEMBL3138,,G-protein coupled receptor 1,,Drd3 - GPCR 1
 P35869,0,0,5,0,5,0.0,0.0,0.0,Aryl hydrocarbon receptor (Ah receptor),Human,AHR,AHR BHLHE76,CHEMBL3201,,,,AHR 
 P35917,1,0,0,0,1,0.0,0.0,1.0,Vascular endothelial growth factor receptor 3 (VEGFR-3),Mouse,Flt4,Flt4 Flt-4 Vegfr3,CHEMBL4758,Protein kinase,Tyr protein kinase,CSF-1/PDGF receptor,Flt4 - Tyr protein kinase
-P36544,0,0,1,0,1,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7,Human,CHRNA7,CHRNA7 NACHRA7,CHEMBL2492,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),CHRNA7 - Ligand-gated ion channel (TC 1.A.9)
+P36544,0,0,1,0,1,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7 (nAChR7),Human,CHRNA7,CHRNA7 NACHRA7,CHEMBL2492,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),CHRNA7 - Ligand-gated ion channel (TC 1.A.9)
 P36578,1,0,0,0,1,0.0,0.0,1.0,Large ribosomal subunit protein uL4 (60S ribosomal protein L1),Human,RPL4,RPL4 RPL1,,,Universal ribosomal protein uL4,,RPL4 - Universal ribosomal protein uL4
 P18901,0,0,10,0,10,0.0,0.0,0.0,D (1A),Rat,Drd1,Drd1 Drd1a,CHEMBL265,,G-protein coupled receptor 1,,Drd1 - GPCR 1
 P39748,0,0,1,0,1,0.0,0.0,0.0,Flap endonuclease 1 (FEN-1),Human,FEN1,FEN1 RAD2,CHEMBL5027,,XPG/RAD2 endonuclease,FEN1,FEN1 - XPG/RAD2 endonuclease
@@ -1000,7 +1000,7 @@ Q05513,0,0,1,0,1,0.0,0.0,0.0,Protein kinase C zeta type (EC 2.7.11.13),Human,PRK
 P0DP23,0,0,1,0,1,0.0,0.0,0.0,Calmodulin-1,Human,CALM1,CALM1 CALM CAM CAM1,CHEMBL6093,,Calmodulin,,CALM1 - Calmodulin
 Q05769,1,0,5,0,6,0.0,0.0,0.17,Prostaglandin G/H synthase 2 (EC 1.14.99.1),Mouse,Ptgs2,Ptgs2 Cox-2 Cox2 Pghs-b Tis10,CHEMBL4321,,Prostaglandin G/H synthase,,Ptgs2 - Prostaglandin G/H synthase
 Q05940,0,0,2,0,2,0.0,0.0,0.0,Synaptic vesicular amine transporter (Solute carrier family 18 member 2),Human,SLC18A2,SLC18A2 SVMT VMAT2,CHEMBL1893,Major facilitator,Vesicular transporter,,SLC18A2 - Vesicular transporter
-Q05941,0,0,2,0,2,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7,Rat,Chrna7,Chrna7 Acra7,CHEMBL4980,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),Chrna7 - Ligand-gated ion channel (TC 1.A.9)
+Q05941,0,0,2,0,2,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7 (nAChR7),Rat,Chrna7,Chrna7 Acra7,CHEMBL4980,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),Chrna7 - Ligand-gated ion channel (TC 1.A.9)
 Q06124,0,0,2,0,2,0.0,0.0,0.0,Tyrosine-protein phosphatase non-receptor type 11 (EC 3.1.3.48),Human,PTPN11,PTPN11 PTP2C SHPTP2,CHEMBL3864,,Protein-tyrosine phosphatase,Non-receptor class 2,PTPN11 - Protein-tyrosine phosphatase
 Q06210,0,0,1,0,1,0.0,0.0,0.0,Glutamine--fructose-6-phosphate aminotransferase [isomerizing] 1 (EC 2.6.1.16),Human,GFPT1,GFPT1 GFAT GFPT,CHEMBL1909481,,,,GFPT1 
 P09429,1,0,0,0,1,0.0,0.0,1.0,High mobility group protein B1 (High mobility group protein 1),Human,HMGB1,HMGB1 HMG1,CHEMBL2311236,,HMGB,,HMGB1 - HMGB
@@ -1015,7 +1015,7 @@ P62508,0,0,1,0,1,0.0,0.0,0.0,Estrogen-related receptor gamma (ERR gamma-2),Human
 P62310,0,0,1,0,1,0.0,0.0,0.0,U6 snRNA-associated Sm-like protein LSm3,Human,LSM3,LSM3 MDS017,,,SnRNP Sm proteins,,LSM3 - SnRNP Sm proteins
 P16152,0,0,3,0,3,0.0,0.0,0.0,Carbonyl reductase [NADPH] 1 (EC 1.1.1.184),Human,CBR1,CBR1 CBR CRN SDR21C1,CHEMBL5586,,Short-chain dehydrogenases/reductases (SDR),,CBR1 - Short-chain dehydrogenases/reductases (SDR)
 P15538,0,0,3,0,3,0.0,0.0,0.0,Cytochrome P450 11B1,Human,CYP11B1,CYP11B1 S11BH,CHEMBL1908,,Cytochrome P450,,CYP11B1 - Cytochrome P450
-P49582,0,0,1,0,1,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7,Mouse,Chrna7,Chrna7 Acra7,CHEMBL3365,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),Chrna7 - Ligand-gated ion channel (TC 1.A.9)
+P49582,0,0,1,0,1,0.0,0.0,0.0,Neuronal acetylcholine receptor subunit alpha-7 (nAChR7),Mouse,Chrna7,Chrna7 Acra7,CHEMBL3365,,Ligand-gated ion channel (TC 1.A.9),Acetylcholine receptor (TC 1.A.9.1),Chrna7 - Ligand-gated ion channel (TC 1.A.9)
 P15328,1,0,0,0,1,0.0,0.0,1.0,Folate receptor alpha (FR-alpha),Human,FOLR1,FOLR1 FOLR,CHEMBL2121,,Folate receptor,,FOLR1 - Folate receptor
 P15207,0,0,4,0,4,0.0,0.0,0.0,Androgen receptor (Dihydrotestosterone receptor),Rat,Ar,Ar Nr3c4,CHEMBL3072,,Nuclear hormone receptor,NR3,Ar - Nuclear hormone receptor
 P15144,0,0,1,0,1,0.0,0.0,0.0,Aminopeptidase N (AP-N),Human,ANPEP,ANPEP APN CD13 PEPN,CHEMBL1907,,Peptidase M1,,ANPEP - Peptidase M1
