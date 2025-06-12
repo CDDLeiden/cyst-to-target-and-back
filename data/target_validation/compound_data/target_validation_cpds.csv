@@ -1,0 +1,11 @@
+﻿Target;Compound Name;Pharmacology;molecule_chembl_id;Inchikey;Buy;target_chembl_id
+ADORA1;CPA;Agonist;CHEMBL68738;SQMWSBKSHWARHU-SDBHATRESA-N;https://www.medchemexpress.com/n6-cyclopentyladenosine.html;CHEMBL226
+ADORA1;DPCPX;Antagonist;CHEMBL183;FADSZUINTG-UHFFFAOYSA-N;https://www.medchemexpress.com/dpcpx.html;CHEMBL226
+ADORA1;Capadenoson;Partial agonist;CHEMBL3235279;CITWCLNVRIKQAF-UHFFFAOYSA-N;https://www.medchemexpress.com/Capadenoson.html;CHEMBL226
+NR3C2;Aldosterone;Agonist;CHEMBL273453;PQSUYGKTWSAVDQ-ZVIOFETBSA-N;https://www.medchemexpress.com/aldosterone.html;CHEMBL1994
+NR3C2;Esaxerenone;Antagonist;CHEMBL2181932;NOSNHVJANRODGR-UHFFFAOYSA-N;https://www.medchemexpress.com/Esaxerenone.html;CHEMBL1994
+NR3C2;Finerenone;Antagonist;CHEMBL2181927;BTBHLEZXCOBLCY-QGZVFWFLSA-N;https://www.medchemexpress.com/finerenone.html;CHEMBL1994
+P2X7;AZD9056;Antagonist;CHEMBL3415305;LZBBHFRRZLDHLE-UHFFFAOYSA-N;https://www.medchemexpress.com/azd9056-hydrochloride.html;CHEMBL4805
+P2X7;JNJ-47965567;Antagonist;CHEMBL2338352;XREFXUCWSYMIOG-UHFFFAOYSA-N;https://www.medchemexpress.com/jnj-47965567.html;CHEMBL4805
+SLC2A1;Z4509024390;unknown;CHEMBL3781913;UBPDZSOJWGTGPP-UHFFFAOYSA-N;https://enaminestore.com/catalog/Z4509024390;CHEMBL2535
+SLC2A1;Z211311146;unknown;CHEMBL3780785;YAJBHJCFOICLGO-UHFFFAOYSA-N;https://enaminestore.com/catalog/Z211311146;CHEMBL2535
