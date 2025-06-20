@@ -32,6 +32,29 @@
     - obj.Mean(area).um2.meas - the mean area occupied by the cystic spheroids in the respective well. **Used for hit profiling**.
     - Fraction_dead_cells - a proxy to detect cytotoxicity calculated based on nuclei signal intensity in the absence of a respective spheroid segmentation, indicating apoptosis. Staurosporine (STS) is used as positive control for cytotoxicity.
 
+## virtual_screening
+
+`modeling/`
+
+- [emolecules_sw_virtual_screening.csv](vs_datasets/emolecules_sw_virtual_screening.csv): eMolecules compounds fetched from SmallWorld database, which were used for virtual screening. This file contains the following columns:
+    - qrySmiles: the SMILES representation of the compound used to query this entry.
+    - hitSmiles: the SMILES representation of the analogue found by SmallWorld and the identifier of the compound.
+    - atomScore, atomMap, qryMappedSmiles, hitMappedSmiles: columns outlining internal atom mappings & scores used by SmallWorld to find the analogue through graph edit distances.
+    - anonIdx: anonymous graph index of the compound in the SmallWorld database.
+    - mf: molecular formula of the compound.
+    - mw: molecular weight of the compound.
+    - moleculeID (*added post-query*): ChEMBL ID of the compound used to query this entry (qrySmiles).
+    - target_id (*added post-query*): Identified of the target for which the ChEMBL compound was screened (e.g. NR3C2, ADORA1).
+    - provider (*added post-query*): The provider of the compound, which is either `emolecules` or `enamine`.
+- [enamine_sw_virtual_screening.csv](vs_datasets/enamine_sw_virtual_screening.csv) - Enamine compounds fetched from SmallWorld database, which were used for virtual screening. This file contains the same columns as `emolecules_sw_virtual_screening.csv`.
+
+_With computed properties_:
+- [screened_adora1_computed_properties.csv](vs_datasets/screened_adora1_computed_properties.csv) - Same as `emolecules_sw_virtual_screening.csv`, but for the ADORA1 target. Contains computed properties of the compounds that are used for the virtual screening.
+- [screened_nr3c2_computed_properties.csv](vs_datasets/screened_nr3c2_computed_properties.csv) - Same as `screened_adora1_computed_properties.csv`, but for the NR3C2 target. Contains computed properties of the compounds that are used for the virtual screening.
+
+_Selected from computed properties_:
+- [screened_selected_adora1_cpds.csv](vs_datasets/screened_selected_adora1_cpds.csv)
+- [screened_selected_nr3c2_cpds.csv](vs_datasets/screened_selected_nr3c2_cpds.csv)
 
 ## compound_exploration
 
