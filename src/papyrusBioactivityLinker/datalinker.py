@@ -359,12 +359,12 @@ class PapyrusCompoundLinker(PapyrusLinker):
         other UniProt crossreferences and merges that to the papyrus dataframe.
 
         Args:
-            pooling_interval: for UniProtRetriever. Defaults to 3.
-            total_retries: for UniProtRetriever. Defaults to 5.
-            backoff_factor: for UniProtRetriever. Defaults to 0.25.
+            pooling_interval: for ProtMapper class. Defaults to 3.
+            total_retries: for ProtMapper class. Defaults to 5.
+            backoff_factor: for ProtMapper class. Defaults to 0.25.
 
         Returns:
-            Tuple: Result from the UniProtRetriever and a list of failed accessions.
+            Tuple: Result from the ProtMapper.get method and a list of failed accessions.
         """
         mapper = ProtMapper(pooling_interval, total_retries, backoff_factor)
         result_df, failed = mapper.get(
@@ -381,7 +381,7 @@ class PapyrusCompoundLinker(PapyrusLinker):
             ],
         )
         if failed:
-            print(f"Failed to retrieve accessions {failed}")
+            print(f"Failed to get accessions {failed}")
         # p for parentheses
         allafter_p = re.compile(r"\s\(.*")
         inside_p = re.compile(r"\((.*?)\)")
