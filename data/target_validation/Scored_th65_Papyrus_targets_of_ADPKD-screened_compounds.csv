@@ -49,7 +49,7 @@ P57678,0,0,0,1,1,1.0,0.0,0.0,Gem-associated protein 4 (Gemin-4),Human,GEMIN4,GEM
 P62495,0,0,0,1,1,1.0,0.0,0.0,Eukaryotic peptide chain release factor subunit 1 (Eukaryotic release factor 1),Human,ETF1,ETF1 ERF1 RF1 SUP45L1,,eRF1,,Eukaryotic release factor 1,,eRF1 (Human),ETF1 - Eukaryotic release factor 1,eRF1 - Eukaryotic release factor 1
 Q14839,0,0,0,1,1,1.0,0.0,0.0,Chromodomain-helicase-DNA-binding protein 4 (CHD-4),Human,CHD4,CHD4,CHEMBL4105742,CHD-4,,SNF2/RAD54 helicase,,CHD-4 (Human),CHD4 - SNF2/RAD54 helicase,CHD-4 - SNF2/RAD54 helicase
 P70605,0,0,0,1,1,1.0,0.0,0.0,Small conductance calcium-activated potassium channel protein 3 (SK3),Rat,Kcnn3,Kcnn3,CHEMBL3780,SK3,,Potassium channel KCNN,KCa2.3/KCNN3,SK3 (Rat),Kcnn3 - Potassium channel KCNN,SK3 - Potassium channel KCNN
-P11166,0,0,0,2,2,1.0,0.0,0.0,Solute carrier family 2,Human,SLC2A1,SLC2A1 GLUT1,CHEMBL2535,GLUT-1,Major facilitator,Sugar transporter,Glucose transporter,GLUT-1 (Human),SLC2A1 - Sugar transporter,GLUT-1 - Sugar transporter
+P11166,0,0,0,2,2,1.0,0.0,0.0,Solute carrier family 2,Human,SLC2A1,SLC2A1 GLUT1,CHEMBL2535,GLUT1,Major facilitator,Sugar transporter,Glucose transporter,GLUT1 (Human),SLC2A1 - Sugar transporter,GLUT1 - Sugar transporter
 P84022,0,0,0,1,1,1.0,0.0,0.0,Mothers against decapentaplegic homolog 3 (MAD homolog 3),Human,SMAD3,SMAD3 MADH3,CHEMBL1293258,Mad3,,Dwarfin/SMAD,,Mad3 (Human),SMAD3 - Dwarfin/SMAD,Mad3 - Dwarfin/SMAD
 P98161,0,0,0,2,2,1.0,0.0,0.0,Polycystin-1 (PC1),Human,PKD1,PKD1,CHEMBL5772,PC1,,Polycystin,,PC1 (Human),PKD1 - Polycystin,PC1 - Polycystin
 Q00613,0,0,0,1,1,1.0,0.0,0.0,Heat shock factor protein 1 (HSF 1),Human,HSF1,HSF1 HSTF1,CHEMBL5869,HSF 1,,HSF,,HSF 1 (Human),HSF1 - HSF,HSF 1 - HSF
