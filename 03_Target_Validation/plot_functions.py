@@ -180,13 +180,15 @@ def plot_with_curves(
     )
 
     ax.set_xlabel(r"log$_{10}$" + f"(Concentration) {toplot_compound} [µM]")
-    ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+    # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+    ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
     plt.xticks([-3.0, -1.0, 0.0])
     ax.set_title(f"Plate {plate_id} - {toplot_compound} + FSK {stim_dose}µM")
     ax.spines[["right", "top"]].set_visible(False)
 
     control_ax.legend().set_visible(False)
-    control_ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+    # control_ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+    control_ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
     control_ax.xaxis.set_ticklabels([])
     control_ax.set_xlabel("Control Groups")
     control_ax.spines[["right", "top"]].set_visible(False)
@@ -377,13 +379,24 @@ def box_mann_whitney_u(
 
         labels = [tick.get_text() for tick in ax.get_xticklabels()]
         # get rid of the + doublee_treat_cpd <concentration> part of the string (already in the legend)
-        new_labels = [
-            re.sub(double_treat_cpd + r"\s\d\.?\d*\s?µM", "", x) if x not in labels[:6] else x for x in labels
-        ]
-        ax.set_xticklabels(new_labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
+        # new_labels = [
+        #     re.sub(double_treat_cpd + r"\s\d\.?\d*\s?µM", "", x) if x not in labels[:6] else x for x in labels
+        # ]
+        # rm_patt = re.compile(r"\s\d\.?\d+?\s?µM$")
+        if len(labels) > 6:
+            labels = [
+                label.replace(
+                    f"µM {double_treat_cpd} ", f"µM + {double_treat_cpd.replace('Aldosterone', 'ALD')} "
+                )
+                for label in labels
+            ]
+            # labels = [rm_patt.sub("", label) if label not in labels[:8] else label for label in labels]
+
+        ax.set_xticklabels(labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
 
         ax.set_xlabel("")
-        ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+        # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+        ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
         ax.set_title(cpd)
         # ax.set_title(f"Plate {plate_number} - {cpd}")
 
@@ -534,7 +547,8 @@ def box_mann_whitney_u_no_dt(
         annotator.apply_and_annotate()
 
         ax.set_xlabel("")
-        ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+        # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
+        ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
         ax.set_title(cpd)
         # ax.set_title(f"Plate {plate_number} - {cpd}")
 
