@@ -65,6 +65,30 @@ def clean_treatment_string(text, single_treatment: bool = False):
         return re.sub(r"([A-Za-z0-9]+)\s\d\.\d+µM(?=.+)", r"\1", text)
 
 
+def get_significance_symbol(pvalue):
+    """
+      Converts a p-value to a significance symbol.
+
+      ns: 5.00e-02 < p <= 1.00e+00
+       *: 1.00e-02 < p <= 5.00e-02
+      **: 1.00e-03 < p <= 1.00e-02
+     ***: 1.00e-04 < p <= 1.00e-03
+    ****: p <= 1.00e-04
+    """
+    if pvalue > 0.05:
+        return "ns"
+    elif pvalue <= 0.0001:
+        return "****"
+    elif pvalue <= 0.001:
+        return "***"
+    elif pvalue <= 0.01:
+        return "**"
+    elif pvalue <= 0.05:
+        return "*"
+    else:
+        return ""
+
+
 def plot_with_curves(
     df,
     plate_id,
@@ -270,6 +294,7 @@ def box_mann_whitney_u(
         "Finerenone": "Fin",
         "Capadenoson": "Capa",
     }
+    all_stats_results = []  # to store all the statistical results
     for cpd in compounds:
         short_cpd = short_dict.get(cpd, cpd)
         subset_controls = pd.concat(
@@ -382,7 +407,7 @@ def box_mann_whitney_u(
             loc="inside",
             hide_non_significant=True,
         )
-        annotator.apply_and_annotate()
+        _, annotations = annotator.apply_and_annotate()
 
         labels = [tick.get_text() for tick in ax.get_xticklabels()]
         # get rid of the + doublee_treat_cpd <concentration> part of the string (already in the legend)
@@ -417,7 +442,25 @@ def box_mann_whitney_u(
             f"{cpd}{' (' + short_cpd + ')' if short_cpd != cpd else ''}, "
             f"{target_mapping.get(target, target)}"
         )
-        # ax.set_title(f"Plate {plate_number} - {cpd}")
+
+        stats_results = []
+        for res in annotations:
+            stats_results.append(
+                {
+                    "group1": res.data.group1[0],
+                    "group2": res.data.group2[0],
+                    "pvalue": res.data.pvalue,
+                    "symbol": get_significance_symbol(res.data.pvalue),
+                    "test_description": res.data.test_description,
+                    "target": target_mapping.get(target, target),
+                    "plate_number": plate_number,
+                    "compound": cpd,
+                    "stimulant_dose": stimulant_dose,
+                    "double_treat_cpd": double_treat_cpd,
+                }
+            )
+        stats_df = pd.DataFrame(stats_results)
+        all_stats_results.append(stats_df)
 
         ax.grid(axis="y", alpha=0.5)
         ax.spines[["right", "top"]].set_visible(False)
@@ -447,6 +490,9 @@ def box_mann_whitney_u(
             )
 
         plt.show()
+
+    all_stats_results = pd.concat(all_stats_results, ignore_index=True)
+    return all_stats_results
 
 
 def box_mann_whitney_u_no_dt(
@@ -485,6 +531,7 @@ def box_mann_whitney_u_no_dt(
         ).str.replace("DMSO 0.1%", "DMSO 0.2%")
     )
 
+    all_stats_results = []  # to store all the statistical results
     for cpd in compounds:
         subset_controls = pd.concat(
             [
@@ -554,8 +601,17 @@ def box_mann_whitney_u_no_dt(
         control_condition = f"FSK {stimulant_dose}µM"
         concentrations = ["0.001µM", "0.1µM", "1.0µM"]
         treatment_conditions = [f"{a} {b}" for a, b in product([cpd], concentrations)]
+        # 1. add the comparisons of the stimulant control (+FSK) with all treatment conditions
         pairs = [(control_condition, cond) for cond in treatment_conditions]
-        ### Add statistical annotations
+        # 2. add comparisons of different concentrations of the treatment conditions
+        pairs.extend(  # E.g.: treatment (T) 0.001µM vs T 0.1µM, T 0.1µM vs T 1.0µM
+            [
+                (treatment_conditions[i], treatment_conditions[j])
+                for i in range(len(treatment_conditions))
+                for j in range(i + 1, len(treatment_conditions))
+            ]
+        )
+        # Add statistical annotations
         annotator = Annotator(ax, pairs, data=plot_data, x="treat_string", y=readout)
         annotator.configure(
             test="Mann-Whitney",
@@ -563,7 +619,7 @@ def box_mann_whitney_u_no_dt(
             loc="inside",
             hide_non_significant=True,
         )
-        annotator.apply_and_annotate()
+        _, annotations = annotator.apply_and_annotate()
 
         ax.set_xlabel("")
         # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
@@ -575,7 +631,25 @@ def box_mann_whitney_u_no_dt(
             "MR": "MR",
         }
         ax.set_title(f"{cpd}, {target_mapping.get(target, target)}")
-        # ax.set_title(f"Plate {plate_number} - {cpd}")
+
+        stats_results = []
+        for res in annotations:
+            stats_results.append(
+                {
+                    "group1": res.data.group1[0],
+                    "group2": res.data.group2[0],
+                    "pvalue": res.data.pvalue,
+                    "symbol": get_significance_symbol(res.data.pvalue),
+                    "test_description": res.data.test_description,
+                    "target": target_mapping.get(target, target),
+                    "plate_number": plate_number,
+                    "compound": cpd,
+                    "stimulant_dose": stimulant_dose,
+                    "double_treat_cpd": None,
+                }
+            )
+        stats_df = pd.DataFrame(stats_results)
+        all_stats_results.append(stats_df)
 
         ax.grid(axis="y", alpha=0.5)
         ax.spines[["right", "top"]].set_visible(False)
@@ -605,3 +679,6 @@ def box_mann_whitney_u_no_dt(
             )
 
         plt.show()
+
+    all_stats_results = pd.concat(all_stats_results, ignore_index=True)
+    return all_stats_results
