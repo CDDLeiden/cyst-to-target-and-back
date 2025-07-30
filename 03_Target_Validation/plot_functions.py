@@ -264,7 +264,14 @@ def box_mann_whitney_u(
     ].copy()
     single_treatment["Treatment"] = f"{double_treat_cpd}"
 
+    short_dict = {  # dictionary to abbreviate compound names
+        "Aldosterone": "ALD",
+        "Esaxerenone": "Esax",
+        "Finerenone": "Fin",
+        "Capadenoson": "Capa",
+    }
     for cpd in compounds:
+        short_cpd = short_dict.get(cpd, cpd)
         subset_controls = pd.concat(
             [
                 subset.query("treatment_type.isin(['solvent_ctrl'])"),
@@ -283,7 +290,7 @@ def box_mann_whitney_u(
             ["Treatment 2 Sort Key", "Treatment 2 concentration", "Treatment concentration"]
         ).drop(columns=["Treatment 2 Sort Key"])
 
-        fig, ax = plt.subplots(figsize=(6, 4))
+        fig, ax = plt.subplots(figsize=(6, 3.6))
         plot_data = pd.concat(
             [
                 subset_controls,
@@ -390,14 +397,26 @@ def box_mann_whitney_u(
                 )
                 for label in labels
             ]
+            labels = [label.replace("Aldosterone", "ALD") for label in labels]
             # labels = [rm_patt.sub("", label) if label not in labels[:8] else label for label in labels]
 
-        ax.set_xticklabels(labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
+        if cpd != short_cpd:
+            labels = [label.replace(cpd, short_cpd) for label in labels]
 
+        ax.set_xticklabels(labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
         ax.set_xlabel("")
         # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
         ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
-        ax.set_title(cpd)
+        target_mapping = {
+            "GLU": "GLUT1",
+            "P2RX7": "P2X7",
+            "A1R": r"$\mathrm{A}_{1}\mathrm{AR}$",
+            "MR": "MR",
+        }
+        ax.set_title(
+            f"{cpd}{' (' + short_cpd + ')' if short_cpd != cpd else ''}, "
+            f"{target_mapping.get(target, target)}"
+        )
         # ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
@@ -482,7 +501,7 @@ def box_mann_whitney_u_no_dt(
             .query(f"Treatment == '{cpd}'")
         )
 
-        fig, ax = plt.subplots(figsize=(3, 4))
+        fig, ax = plt.subplots(figsize=(3, 3.6))
         plot_data = pd.concat(
             [
                 subset_controls,
@@ -549,7 +568,13 @@ def box_mann_whitney_u_no_dt(
         ax.set_xlabel("")
         # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
         ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
-        ax.set_title(cpd)
+        target_mapping = {
+            "GLU": "GLUT1",
+            "P2RX7": "P2X7",
+            "A1R": r"$\mathrm{A}_{1}\mathrm{AR}$",
+            "MR": "MR",
+        }
+        ax.set_title(f"{cpd}, {target_mapping.get(target, target)}")
         # ax.set_title(f"Plate {plate_number} - {cpd}")
 
         ax.grid(axis="y", alpha=0.5)
