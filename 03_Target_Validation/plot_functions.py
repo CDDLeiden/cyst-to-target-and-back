@@ -604,13 +604,13 @@ def box_mann_whitney_u_no_dt(
         # 1. add the comparisons of the stimulant control (+FSK) with all treatment conditions
         pairs = [(control_condition, cond) for cond in treatment_conditions]
         # 2. add comparisons of different concentrations of the treatment conditions
-        pairs.extend(  # E.g.: treatment (T) 0.001µM vs T 0.1µM, T 0.1µM vs T 1.0µM
-            [
-                (treatment_conditions[i], treatment_conditions[j])
-                for i in range(len(treatment_conditions))
-                for j in range(i + 1, len(treatment_conditions))
-            ]
-        )
+        # pairs.extend(  # E.g.: treatment (T) 0.001µM vs T 0.1µM, T 0.1µM vs T 1.0µM
+        #     [
+        #         (treatment_conditions[i], treatment_conditions[j])
+        #         for i in range(len(treatment_conditions))
+        #         for j in range(i + 1, len(treatment_conditions))
+        #     ]
+        # )
         # Add statistical annotations
         annotator = Annotator(ax, pairs, data=plot_data, x="treat_string", y=readout)
         annotator.configure(

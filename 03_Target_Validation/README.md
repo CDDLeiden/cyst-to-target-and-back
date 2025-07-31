@@ -33,84 +33,60 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 - Results for all the statistical comparisons represented in the plots available in the notebook [ADPKD-TargetValidationScreening-analysis](ADPKD-TargetValidationScreening-analysis.ipynb).
 
 ## Z4509024390 - Simulant (FSK) dose: 2.5µM
-| group1              | group2              | pvalue                | symbol   | test_description                     | target   |
-|:--------------------|:--------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM           | Z4509024390 0.001µM | $4.46 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.001µM | Z4509024390 0.1µM   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.1µM   | Z4509024390 1.0µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM           | Z4509024390 0.1µM   | $5.21 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.001µM | Z4509024390 1.0µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM           | Z4509024390 1.0µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1    | group2              | pvalue                | symbol   | test_description                     | target   |
+|:----------|:--------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 2.5µM | Z4509024390 0.001µM | $4.46 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 2.5µM | Z4509024390 0.1µM   | $5.21 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 2.5µM | Z4509024390 1.0µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
 ## Z4509024390 - Simulant (FSK) dose: 0.79µM
-| group1              | group2              | pvalue                | symbol   | test_description                     | target   |
-|:--------------------|:--------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM          | Z4509024390 0.001µM | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.001µM | Z4509024390 0.1µM   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.1µM   | Z4509024390 1.0µM   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM          | Z4509024390 0.1µM   | $7.27 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z4509024390 0.001µM | Z4509024390 1.0µM   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM          | Z4509024390 1.0µM   | $2.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1     | group2              | pvalue                | symbol   | test_description                     | target   |
+|:-----------|:--------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 0.79µM | Z4509024390 0.001µM | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 0.79µM | Z4509024390 0.1µM   | $7.27 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 0.79µM | Z4509024390 1.0µM   | $2.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
 ## Z211311146 - Simulant (FSK) dose: 2.5µM
-| group1             | group2             | pvalue                | symbol   | test_description                     | target   |
-|:-------------------|:-------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM          | Z211311146 0.001µM | $1.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.001µM | Z211311146 0.1µM   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.1µM   | Z211311146 1.0µM   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM          | Z211311146 0.1µM   | $7.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.001µM | Z211311146 1.0µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM          | Z211311146 1.0µM   | $1.98 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1    | group2             | pvalue                | symbol   | test_description                     | target   |
+|:----------|:-------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 2.5µM | Z211311146 0.001µM | $1.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 2.5µM | Z211311146 0.1µM   | $7.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 2.5µM | Z211311146 1.0µM   | $1.98 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
 ## Z211311146 - Simulant (FSK) dose: 0.79µM
-| group1             | group2             | pvalue                | symbol   | test_description                     | target   |
-|:-------------------|:-------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM         | Z211311146 0.001µM | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.001µM | Z211311146 0.1µM   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.1µM   | Z211311146 1.0µM   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM         | Z211311146 0.1µM   | $4.61 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| Z211311146 0.001µM | Z211311146 1.0µM   | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM         | Z211311146 1.0µM   | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1     | group2             | pvalue                | symbol   | test_description                     | target   |
+|:-----------|:-------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 0.79µM | Z211311146 0.001µM | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 0.79µM | Z211311146 0.1µM   | $4.61 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| FSK 0.79µM | Z211311146 1.0µM   | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
 ## JNJ-47965567 - Simulant (FSK) dose: 2.5µM
-| group1               | group2               | pvalue                | symbol   | test_description                     | target   |
-|:---------------------|:---------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM            | JNJ-47965567 0.001µM | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.001µM | JNJ-47965567 0.1µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.1µM   | JNJ-47965567 1.0µM   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM            | JNJ-47965567 0.1µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.001µM | JNJ-47965567 1.0µM   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM            | JNJ-47965567 1.0µM   | $3.16 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1    | group2               | pvalue                | symbol   | test_description                     | target   |
+|:----------|:---------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 2.5µM | JNJ-47965567 0.001µM | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 2.5µM | JNJ-47965567 0.1µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 2.5µM | JNJ-47965567 1.0µM   | $3.16 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
 ## JNJ-47965567 - Simulant (FSK) dose: 0.79µM
-| group1               | group2               | pvalue                | symbol   | test_description                     | target   |
-|:---------------------|:---------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM           | JNJ-47965567 0.001µM | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.001µM | JNJ-47965567 0.1µM   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.1µM   | JNJ-47965567 1.0µM   | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM           | JNJ-47965567 0.1µM   | $2.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| JNJ-47965567 0.001µM | JNJ-47965567 1.0µM   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM           | JNJ-47965567 1.0µM   | $3.68 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1     | group2               | pvalue                | symbol   | test_description                     | target   |
+|:-----------|:---------------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 0.79µM | JNJ-47965567 0.001µM | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 0.79µM | JNJ-47965567 0.1µM   | $2.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 0.79µM | JNJ-47965567 1.0µM   | $3.68 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
 ## A-804598 - Simulant (FSK) dose: 2.5µM
-| group1           | group2           | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM        | A-804598 0.001µM | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.001µM | A-804598 0.1µM   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.1µM   | A-804598 1.0µM   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM        | A-804598 0.1µM   | $2.12 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.001µM | A-804598 1.0µM   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM        | A-804598 1.0µM   | $9.53 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1    | group2           | pvalue                | symbol   | test_description                     | target   |
+|:----------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 2.5µM | A-804598 0.001µM | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 2.5µM | A-804598 0.1µM   | $2.12 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 2.5µM | A-804598 1.0µM   | $9.53 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
 ## A-804598 - Simulant (FSK) dose: 0.79µM
-| group1           | group2           | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM       | A-804598 0.001µM | $1.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.001µM | A-804598 0.1µM   | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.1µM   | A-804598 1.0µM   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM       | A-804598 0.1µM   | $8.08 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| A-804598 0.001µM | A-804598 1.0µM   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM       | A-804598 1.0µM   | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1     | group2           | pvalue                | symbol   | test_description                     | target   |
+|:-----------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
+| FSK 0.79µM | A-804598 0.001µM | $1.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 0.79µM | A-804598 0.1µM   | $8.08 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| FSK 0.79µM | A-804598 1.0µM   | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
 ## DPCPX - Simulant (FSK) dose: 2.5µM
 | group1                | group2                  | pvalue                | symbol   | test_description                     | target                      |
