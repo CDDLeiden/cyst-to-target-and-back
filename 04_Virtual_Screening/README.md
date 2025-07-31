@@ -29,6 +29,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 
 - Results for all the statistical comparisons represented in the plots available in the notebook [ADPKD-ExplorationScreening-analysis](ADPKD-ExplorationScreening-analysis.ipynb).
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## DPCPX - Simulant (FSK) dose: 2.5µM
 | group1                | group2              | pvalue                | symbol   | test_description                     | target                      |
 |:----------------------|:--------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -40,6 +44,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | DPCPX 0.001µM CPA 1µM | DPCPX 1µM CPA 1µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | DPCPX 0.001µM         | DPCPX 1µM           | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM             | DPCPX 1µM           | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## Capadenoson - Simulant (FSK) dose: 2.5µM
 | group1                      | group2                    | pvalue                | symbol   | test_description                     | target                      |
@@ -53,6 +61,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Capadenoson 0.001µM         | Capadenoson 1µM           | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM                   | Capadenoson 1µM           | $1.10 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate2-A1R_MIPS521_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## MIPS521 - Simulant (FSK) dose: 2.5µM
 | group1                  | group2                | pvalue                | symbol   | test_description                     | target                      |
 |:------------------------|:----------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -64,6 +76,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | MIPS521 0.001µM CPA 1µM | MIPS521 1µM CPA 1µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | MIPS521 0.001µM         | MIPS521 1µM           | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM               | MIPS521 1µM           | $1.10 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_824745_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## 824745 - Simulant (FSK) dose: 2.5µM
 | group1                 | group2               | pvalue                | symbol   | test_description                     | target                      |
@@ -77,6 +93,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 824745 0.001µM         | 824745 1µM           | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM              | 824745 1µM           | $8.01 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_1237561_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## 1237561 - Simulant (FSK) dose: 2.5µM
 | group1                  | group2                | pvalue                | symbol   | test_description                     | target                      |
 |:------------------------|:----------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -88,6 +108,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 1237561 0.001µM CPA 1µM | 1237561 1µM CPA 1µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | 1237561 0.001µM         | 1237561 1µM           | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM               | 1237561 1µM           | $2.90 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_1249141_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## 1249141 - Simulant (FSK) dose: 2.5µM
 | group1                  | group2                | pvalue                | symbol   | test_description                     | target                      |
@@ -101,6 +125,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 1249141 0.001µM         | 1249141 1µM           | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM               | 1249141 1µM           | $2.89 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_1823372_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## 1823372 - Simulant (FSK) dose: 2.5µM
 | group1                  | group2                | pvalue                | symbol   | test_description                     | target                      |
 |:------------------------|:----------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -112,6 +140,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 1823372 0.001µM CPA 1µM | 1823372 1µM CPA 1µM   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | 1823372 0.001µM         | 1823372 1µM           | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM               | 1823372 1µM           | $2.90 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_22755240_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## 22755240 - Simulant (FSK) dose: 2.5µM
 | group1                   | group2                 | pvalue                | symbol   | test_description                     | target                      |
@@ -125,6 +157,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 22755240 0.001µM         | 22755240 1µM           | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM                | 22755240 1µM           | $9.95 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate3-A1R_27070328_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## 27070328 - Simulant (FSK) dose: 2.5µM
 | group1                   | group2                 | pvalue                | symbol   | test_description                     | target                      |
 |:-------------------------|:-----------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -136,6 +172,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | 27070328 0.001µM CPA 1µM | 27070328 1µM CPA 1µM   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | 27070328 0.001µM         | 27070328 1µM           | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | FSK 2.5µM                | 27070328 1µM           | $1.11 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Finerenone_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## Finerenone - Simulant (FSK) dose: 2.5µM
 | group1                             | group2                           | pvalue                | symbol   | test_description                     | target   |
@@ -149,6 +189,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Finerenone 0.001µM                 | Finerenone 1µM                   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                          | Finerenone 1µM                   | $1.11 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Esaxerenone_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## Esaxerenone - Simulant (FSK) dose: 2.5µM
 | group1                              | group2                            | pvalue                | symbol   | test_description                     | target   |
 |:------------------------------------|:----------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -160,6 +204,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Esaxerenone 0.001µM Aldosterone 1µM | Esaxerenone 1µM Aldosterone 1µM   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Esaxerenone 0.001µM                 | Esaxerenone 1µM                   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                           | Esaxerenone 1µM                   | $2.93 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Apararenone_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## Apararenone - Simulant (FSK) dose: 2.5µM
 | group1                              | group2                            | pvalue                | symbol   | test_description                     | target   |
@@ -173,6 +221,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Apararenone 0.001µM                 | Apararenone 1µM                   | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                           | Apararenone 1µM                   | $5.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Benidipine_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## Benidipine - Simulant (FSK) dose: 2.5µM
 | group1                             | group2                           | pvalue                | symbol   | test_description                     | target   |
 |:-----------------------------------|:---------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -184,6 +236,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Benidipine 0.001µM Aldosterone 1µM | Benidipine 1µM Aldosterone 1µM   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Benidipine 0.001µM                 | Benidipine 1µM                   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                          | Benidipine 1µM                   | $2.90 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Z318400112_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## Z318400112 - Simulant (FSK) dose: 2.5µM
 | group1                             | group2                           | pvalue                | symbol   | test_description                     | target   |
@@ -197,6 +253,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Z318400112 0.001µM                 | Z318400112 1µM                   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                          | Z318400112 1µM                   | $1.48 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Z90308949_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## Z90308949 - Simulant (FSK) dose: 2.5µM
 | group1                            | group2                          | pvalue                | symbol   | test_description                     | target   |
 |:----------------------------------|:--------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -208,6 +268,10 @@ These are the compounds selected for phenotypic screening based on the virtual s
 | Z90308949 0.001µM Aldosterone 1µM | Z90308949 1µM Aldosterone 1µM   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Z90308949 0.001µM                 | Z90308949 1µM                   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | FSK 2.5µM                         | Z90308949 1µM                   | $1.48 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
+
+<div align="center">
+  <img src="../figures/adpkd-exploration-screen/boxplot-MannWhitneyU-plate1-MR_Z95680027_FSK2-5.svg" alt="" width=480>
+</div>
 
 ## Z95680027 - Simulant (FSK) dose: 2.5µM
 | group1                            | group2                          | pvalue                | symbol   | test_description                     | target   |

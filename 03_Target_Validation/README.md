@@ -32,12 +32,20 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 
 - Results for all the statistical comparisons represented in the plots available in the notebook [ADPKD-TargetValidationScreening-analysis](ADPKD-TargetValidationScreening-analysis.ipynb).
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z4509024390_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## Z4509024390 - Simulant (FSK) dose: 2.5µM
 | group1    | group2              | pvalue                | symbol   | test_description                     | target   |
 |:----------|:--------------------|:----------------------|:---------|:-------------------------------------|:---------|
 | FSK 2.5µM | Z4509024390 0.001µM | $4.46 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 2.5µM | Z4509024390 0.1µM   | $5.21 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 2.5µM | Z4509024390 1.0µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z4509024390_FSK0-79.svg" alt="" width=480>
+</div>
 
 ## Z4509024390 - Simulant (FSK) dose: 0.79µM
 | group1     | group2              | pvalue                | symbol   | test_description                     | target   |
@@ -46,12 +54,20 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | FSK 0.79µM | Z4509024390 0.1µM   | $7.27 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 0.79µM | Z4509024390 1.0µM   | $2.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## Z211311146 - Simulant (FSK) dose: 2.5µM
 | group1    | group2             | pvalue                | symbol   | test_description                     | target   |
 |:----------|:-------------------|:----------------------|:---------|:-------------------------------------|:---------|
 | FSK 2.5µM | Z211311146 0.001µM | $1.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 2.5µM | Z211311146 0.1µM   | $7.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 2.5µM | Z211311146 1.0µM   | $1.98 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK0-79.svg" alt="" width=480>
+</div>
 
 ## Z211311146 - Simulant (FSK) dose: 0.79µM
 | group1     | group2             | pvalue                | symbol   | test_description                     | target   |
@@ -60,12 +76,20 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | FSK 0.79µM | Z211311146 0.1µM   | $4.61 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 | FSK 0.79µM | Z211311146 1.0µM   | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2X7_JNJ-47965567_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## JNJ-47965567 - Simulant (FSK) dose: 2.5µM
 | group1    | group2               | pvalue                | symbol   | test_description                     | target   |
 |:----------|:---------------------|:----------------------|:---------|:-------------------------------------|:---------|
 | FSK 2.5µM | JNJ-47965567 0.001µM | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 2.5µM | JNJ-47965567 0.1µM   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 2.5µM | JNJ-47965567 1.0µM   | $3.16 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_JNJ-47965567_FSK0-79.svg" alt="" width=480>
+</div>
 
 ## JNJ-47965567 - Simulant (FSK) dose: 0.79µM
 | group1     | group2               | pvalue                | symbol   | test_description                     | target   |
@@ -74,6 +98,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | FSK 0.79µM | JNJ-47965567 0.1µM   | $2.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 0.79µM | JNJ-47965567 1.0µM   | $3.68 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK2-5.svg" alt="" width=480>
+</div>
+
 ## A-804598 - Simulant (FSK) dose: 2.5µM
 | group1    | group2           | pvalue                | symbol   | test_description                     | target   |
 |:----------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -81,12 +109,20 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | FSK 2.5µM | A-804598 0.1µM   | $2.12 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 2.5µM | A-804598 1.0µM   | $9.53 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK0-79.svg" alt="" width=480>
+</div>
+
 ## A-804598 - Simulant (FSK) dose: 0.79µM
 | group1     | group2           | pvalue                | symbol   | test_description                     | target   |
 |:-----------|:-----------------|:----------------------|:---------|:-------------------------------------|:---------|
 | FSK 0.79µM | A-804598 0.001µM | $1.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 0.79µM | A-804598 0.1µM   | $8.08 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
 | FSK 0.79µM | A-804598 1.0µM   | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK2-5_CPA.svg" alt="" width=720>
+</div>
 
 ## DPCPX - Simulant (FSK) dose: 2.5µM
 | group1                | group2                  | pvalue                | symbol   | test_description                     | target                      |
@@ -113,6 +149,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | CPA 1µM               | DPCPX 0.1µM CPA 1µM     | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM               | DPCPX 1µM CPA 1µM       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK0-79_CPA.svg" alt="" width=720>
+</div>
+
 ## DPCPX - Simulant (FSK) dose: 0.79µM
 | group1                | group2                  | pvalue                | symbol   | test_description                     | target                      |
 |:----------------------|:------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -137,6 +177,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | DPCPX 0.001µM         | DPCPX 0.1µM CPA 1µM     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM               | DPCPX 0.1µM CPA 1µM     | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM               | DPCPX 1µM CPA 1µM       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK2-5_CPA.svg" alt="" width=720>
+</div>
 
 ## Capadenoson - Simulant (FSK) dose: 2.5µM
 | group1                      | group2                        | pvalue                | symbol   | test_description                     | target                      |
@@ -163,6 +207,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | CPA 1µM                     | Capadenoson 0.1µM CPA 1µM     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM                     | Capadenoson 1µM CPA 1µM       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK0-79_CPA.svg" alt="" width=720>
+</div>
+
 ## Capadenoson - Simulant (FSK) dose: 0.79µM
 | group1                      | group2                        | pvalue                | symbol   | test_description                     | target                      |
 |:----------------------------|:------------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
@@ -187,6 +235,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | Capadenoson 0.001µM         | Capadenoson 0.1µM CPA 1µM     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM                     | Capadenoson 0.1µM CPA 1µM     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
 | CPA 1µM                     | Capadenoson 1µM CPA 1µM       | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
+</div>
 
 ## Finerenone - Simulant (FSK) dose: 2.5µM
 | group1                             | group2                               | pvalue                | symbol   | test_description                     | target   |
@@ -213,6 +265,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | Aldosterone 1µM                    | Finerenone 0.1µM Aldosterone 1µM     | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Aldosterone 1µM                    | Finerenone 1µM Aldosterone 1µM       | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
+</div>
+
 ## Finerenone - Simulant (FSK) dose: 0.79µM
 | group1                             | group2                               | pvalue                | symbol   | test_description                     | target   |
 |:-----------------------------------|:-------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -238,6 +294,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | Aldosterone 1µM                    | Finerenone 0.1µM Aldosterone 1µM     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Aldosterone 1µM                    | Finerenone 1µM Aldosterone 1µM       | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
+</div>
+
 ## Esaxerenone - Simulant (FSK) dose: 2.5µM
 | group1                              | group2                                | pvalue                | symbol   | test_description                     | target   |
 |:------------------------------------|:--------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
@@ -262,6 +322,10 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../data/targe
 | Esaxerenone 0.001µM                 | Esaxerenone 0.1µM Aldosterone 1µM     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Aldosterone 1µM                     | Esaxerenone 0.1µM Aldosterone 1µM     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
 | Aldosterone 1µM                     | Esaxerenone 1µM Aldosterone 1µM       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
+
+<div align="center">
+  <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
+</div>
 
 ## Esaxerenone - Simulant (FSK) dose: 0.79µM
 | group1                              | group2                                | pvalue                | symbol   | test_description                     | target   |
