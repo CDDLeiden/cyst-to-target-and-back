@@ -449,11 +449,11 @@ def box_mann_whitney_u(
         for res in annotations:
             stats_results.append(
                 {
-                    "group1": f"{res.data.group1[0]}, N={count_dict.get(res.data.group1[0], 0)}",
-                    "group2": f"{res.data.group2[0]}, N={count_dict.get(res.data.group2[0], 0)}",
+                    "group1": f"{res.data.group1[0]}, ($N={count_dict.get(res.data.group1[0], 0)}$)",
+                    "group2": f"{res.data.group2[0]}, ($N={count_dict.get(res.data.group2[0], 0)}$)",
                     "pvalue": res.data.pvalue,
                     "symbol": get_significance_symbol(res.data.pvalue),
-                    "test_description": res.data.test_description,
+                    # "test_description": res.data.test_description,
                     "target": target_mapping.get(target, target),
                     "plate_number": plate_number,
                     "compound": cpd,
@@ -640,11 +640,11 @@ def box_mann_whitney_u_no_dt(
         for res in annotations:
             stats_results.append(
                 {
-                    "group1": f"{res.data.group1[0]}, N({count_dict.get(res.data.group1[0], 0)})",
-                    "group2": f"{res.data.group2[0]}, N({count_dict.get(res.data.group2[0], 0)})",
+                    "group1": f"{res.data.group1[0]}, ($N={count_dict.get(res.data.group1[0], 0)}$)",
+                    "group2": f"{res.data.group2[0]}, ($N={count_dict.get(res.data.group2[0], 0)}$)",
                     "pvalue": res.data.pvalue,
                     "symbol": get_significance_symbol(res.data.pvalue),
-                    "test_description": res.data.test_description,
+                    # "test_description": res.data.test_description,
                     "target": target_mapping.get(target, target),
                     "plate_number": plate_number,
                     "compound": cpd,

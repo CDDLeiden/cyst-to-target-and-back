@@ -37,317 +37,317 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../figures/mo
 </div>
 
 ## Z4509024390 - Simulant (FSK) dose: 2.5µM
-| group1           | group2                    | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:--------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N(12) | Z4509024390 0.001µM, N(4) | $4.46 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM, N(12) | Z4509024390 0.1µM, N(4)   | $5.21 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM, N(12) | Z4509024390 1.0µM, N(4)   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1              | group2                       | pvalue                | symbol   | target   |
+|:--------------------|:-----------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | Z4509024390 0.001µM, ($N=4$) | $4.46 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z4509024390 0.1µM, ($N=4$)   | $5.21 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z4509024390 1.0µM, ($N=4$)   | $1.32 \times 10^{-2}$ | *        | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z4509024390_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## Z4509024390 - Simulant (FSK) dose: 0.79µM
-| group1           | group2                    | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:--------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N(8) | Z4509024390 0.001µM, N(4) | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM, N(8) | Z4509024390 0.1µM, N(4)   | $7.27 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM, N(8) | Z4509024390 1.0µM, N(4)   | $2.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1              | group2                       | pvalue                | symbol   | target   |
+|:--------------------|:-----------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | Z4509024390 0.001µM, ($N=4$) | $5.70 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z4509024390 0.1µM, ($N=4$)   | $7.27 \times 10^{-2}$ | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z4509024390 1.0µM, ($N=4$)   | $2.14 \times 10^{-1}$ | ns       | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## Z211311146 - Simulant (FSK) dose: 2.5µM
-| group1           | group2                   | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N(12) | Z211311146 0.001µM, N(4) | $1.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM, N(12) | Z211311146 0.1µM, N(4)   | $7.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 2.5µM, N(12) | Z211311146 1.0µM, N(4)   | $1.98 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1              | group2                      | pvalue                | symbol   | target   |
+|:--------------------|:----------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | Z211311146 0.001µM, ($N=4$) | $1.70 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z211311146 0.1µM, ($N=4$)   | $7.70 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z211311146 1.0µM, ($N=4$)   | $1.98 \times 10^{-2}$ | *        | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## Z211311146 - Simulant (FSK) dose: 0.79µM
-| group1           | group2                   | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N(8) | Z211311146 0.001µM, N(4) | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM, N(8) | Z211311146 0.1µM, N(4)   | $4.61 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
-| FSK 0.79µM, N(8) | Z211311146 1.0µM, N(4)   | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | GLUT1    |
+| group1              | group2                      | pvalue                | symbol   | target   |
+|:--------------------|:----------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | Z211311146 0.001µM, ($N=4$) | $6.83 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z211311146 0.1µM, ($N=4$)   | $4.61 \times 10^{-1}$ | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z211311146 1.0µM, ($N=4$)   | $6.83 \times 10^{-1}$ | ns       | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_JNJ-47965567_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## JNJ-47965567 - Simulant (FSK) dose: 2.5µM
-| group1           | group2                     | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:---------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N(12) | JNJ-47965567 0.001µM, N(4) | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM, N(12) | JNJ-47965567 0.1µM, N(4)   | $1.32 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM, N(12) | JNJ-47965567 1.0µM, N(4)   | $3.16 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1              | group2                        | pvalue                | symbol   | target   |
+|:--------------------|:------------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.001µM, ($N=4$) | $8.62 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.1µM, ($N=4$)   | $1.32 \times 10^{-2}$ | *        | P2X7     |
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 1.0µM, ($N=4$)   | $3.16 \times 10^{-1}$ | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_JNJ-47965567_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## JNJ-47965567 - Simulant (FSK) dose: 0.79µM
-| group1           | group2                     | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:---------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N(8) | JNJ-47965567 0.001µM, N(4) | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM, N(8) | JNJ-47965567 0.1µM, N(4)   | $2.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM, N(8) | JNJ-47965567 1.0µM, N(4)   | $3.68 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1              | group2                        | pvalue                | symbol   | target   |
+|:--------------------|:------------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.001µM, ($N=4$) | $5.70 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.1µM, ($N=4$)   | $2.83 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 1.0µM, ($N=4$)   | $3.68 \times 10^{-1}$ | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## A-804598 - Simulant (FSK) dose: 2.5µM
-| group1           | group2                 | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-----------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N(12) | A-804598 0.001µM, N(4) | $8.62 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM, N(12) | A-804598 0.1µM, N(4)   | $2.12 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 2.5µM, N(12) | A-804598 1.0µM, N(4)   | $9.53 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1              | group2                    | pvalue                | symbol   | target   |
+|:--------------------|:--------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | A-804598 0.001µM, ($N=4$) | $8.62 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | A-804598 0.1µM, ($N=4$)   | $2.12 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | A-804598 1.0µM, ($N=4$)   | $9.53 \times 10^{-1}$ | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## A-804598 - Simulant (FSK) dose: 0.79µM
-| group1           | group2                 | pvalue                | symbol   | test_description                     | target   |
-|:-----------------|:-----------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N(8) | A-804598 0.001µM, N(4) | $1.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM, N(8) | A-804598 0.1µM, N(4)   | $8.08 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
-| FSK 0.79µM, N(8) | A-804598 1.0µM, N(4)   | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | P2X7     |
+| group1              | group2                    | pvalue                | symbol   | target   |
+|:--------------------|:--------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | A-804598 0.001µM, ($N=4$) | $1.54 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | A-804598 0.1µM, ($N=4$)   | $8.08 \times 10^{-1}$ | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | A-804598 1.0µM, ($N=4$)   | $5.70 \times 10^{-1}$ | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK2-5_CPA.svg" alt="" width=720>
 </div>
 
 ## DPCPX - Simulant (FSK) dose: 2.5µM
-| group1                     | group2                       | pvalue                | symbol   | test_description                     | target                      |
-|:---------------------------|:-----------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
-| FSK 2.5µM, N=11            | CPA 0.001µM, N=4             | $1.77 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11            | CPA 0.1µM, N=3               | $8.79 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, N=4 | DPCPX 0.001µM CPA 1µM, N=4   | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11            | CPA 1µM, N=4                 | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, N=4             | DPCPX 1µM CPA 0.1µM, N=4     | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, N=4           | DPCPX 0.1µM CPA 0.1µM, N=4   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM CPA 0.1µM, N=4   | DPCPX 1µM CPA 1µM, N=4       | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, N=4 | DPCPX 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11            | DPCPX 0.001µM, N=4           | $2.26 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, N=4         | DPCPX 0.1µM CPA 0.1µM, N=4   | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11            | DPCPX 0.1µM, N=4             | $1.04 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3             | DPCPX 0.001µM CPA 0.1µM, N=4 | $8.57 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11            | DPCPX 1µM, N=4               | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3             | DPCPX 0.1µM CPA 0.1µM, N=4   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, N=4             | DPCPX 1µM CPA 1µM, N=4       | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, N=4           | DPCPX 0.1µM CPA 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 0.001µM CPA 1µM, N=4   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3             | DPCPX 1µM CPA 0.1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, N=4         | DPCPX 0.1µM CPA 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 0.1µM CPA 1µM, N=4     | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 1µM CPA 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                         | group2                           | pvalue                | symbol   | target                      |
+|:-------------------------------|:---------------------------------|:----------------------|:---------|:----------------------------|
+| FSK 2.5µM, ($N=11$)            | CPA 0.001µM, ($N=4$)             | $1.77 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | CPA 0.1µM, ($N=3$)               | $8.79 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | CPA 1µM, ($N=4$)                 | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $4.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 0.001µM, ($N=4$)           | $2.26 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 0.1µM, ($N=4$)             | $1.04 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 1µM, ($N=4$)               | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK0-79_CPA.svg" alt="" width=720>
 </div>
 
 ## DPCPX - Simulant (FSK) dose: 0.79µM
-| group1                     | group2                       | pvalue                | symbol   | test_description                     | target                      |
-|:---------------------------|:-----------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
-| FSK 0.79µM, N=8            | CPA 0.001µM, N=3             | $4.85 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8            | CPA 0.1µM, N=4               | $2.83 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, N=4 | DPCPX 0.001µM CPA 1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8            | CPA 1µM, N=4                 | $2.83 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, N=4             | DPCPX 1µM CPA 0.1µM, N=4     | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, N=4           | DPCPX 0.1µM CPA 0.1µM, N=4   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM CPA 0.1µM, N=4   | DPCPX 1µM CPA 1µM, N=4       | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, N=4 | DPCPX 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8            | DPCPX 0.001µM, N=4           | $4.61 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, N=4         | DPCPX 0.1µM CPA 0.1µM, N=4   | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8            | DPCPX 0.1µM, N=4             | $1.09 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4             | DPCPX 0.001µM CPA 0.1µM, N=4 | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8            | DPCPX 1µM, N=4               | $8.08 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4             | DPCPX 0.1µM CPA 0.1µM, N=4   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, N=4             | DPCPX 1µM CPA 1µM, N=4       | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, N=4           | DPCPX 0.1µM CPA 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 0.001µM CPA 1µM, N=4   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4             | DPCPX 1µM CPA 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, N=4         | DPCPX 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 0.1µM CPA 1µM, N=4     | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4               | DPCPX 1µM CPA 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                         | group2                           | pvalue                | symbol   | target                      |
+|:-------------------------------|:---------------------------------|:----------------------|:---------|:----------------------------|
+| FSK 0.79µM, ($N=8$)            | CPA 0.001µM, ($N=3$)             | $4.85 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | CPA 0.1µM, ($N=4$)               | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | CPA 1µM, ($N=4$)                 | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 0.001µM, ($N=4$)           | $4.61 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 0.1µM, ($N=4$)             | $1.09 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 1µM, ($N=4$)               | $8.08 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK2-5_CPA.svg" alt="" width=720>
 </div>
 
 ## Capadenoson - Simulant (FSK) dose: 2.5µM
-| group1                           | group2                             | pvalue                | symbol   | test_description                     | target                      |
-|:---------------------------------|:-----------------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
-| FSK 2.5µM, N=11                  | CPA 0.001µM, N=4                   | $1.77 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11                  | CPA 0.1µM, N=3                     | $8.79 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, N=4 | Capadenoson 0.001µM CPA 1µM, N=4   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11                  | CPA 1µM, N=4                       | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, N=3             | Capadenoson 1µM CPA 0.1µM, N=4     | $8.57 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, N=4           | Capadenoson 0.1µM CPA 0.1µM, N=4   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM CPA 0.1µM, N=4   | Capadenoson 1µM CPA 1µM, N=4       | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, N=4 | Capadenoson 0.1µM CPA 1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11                  | Capadenoson 0.001µM, N=4           | $4.89 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, N=4         | Capadenoson 0.1µM CPA 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11                  | Capadenoson 0.1µM, N=4             | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3                   | Capadenoson 0.001µM CPA 0.1µM, N=4 | $6.29 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, N=11                  | Capadenoson 1µM, N=3               | $5.49 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3                   | Capadenoson 0.1µM CPA 0.1µM, N=4   | $6.29 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, N=3             | Capadenoson 1µM CPA 1µM, N=4       | $8.57 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, N=4           | Capadenoson 0.1µM CPA 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 0.001µM CPA 1µM, N=4   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=3                   | Capadenoson 1µM CPA 0.1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, N=4         | Capadenoson 0.1µM CPA 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 0.1µM CPA 1µM, N=4     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 1µM CPA 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                               | group2                                 | pvalue                | symbol   | target                      |
+|:-------------------------------------|:---------------------------------------|:----------------------|:---------|:----------------------------|
+| FSK 2.5µM, ($N=11$)                  | CPA 0.001µM, ($N=4$)                   | $1.77 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | CPA 0.1µM, ($N=3$)                     | $8.79 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | CPA 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.001µM, ($N=4$)           | $4.89 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.1µM, ($N=4$)             | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) | $6.29 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 1µM, ($N=3$)               | $5.49 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $6.29 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK0-79_CPA.svg" alt="" width=720>
 </div>
 
 ## Capadenoson - Simulant (FSK) dose: 0.79µM
-| group1                           | group2                             | pvalue                | symbol   | test_description                     | target                      |
-|:---------------------------------|:-----------------------------------|:----------------------|:---------|:-------------------------------------|:----------------------------|
-| FSK 0.79µM, N=8                  | CPA 0.001µM, N=3                   | $4.85 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8                  | CPA 0.1µM, N=4                     | $2.83 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, N=4 | Capadenoson 0.001µM CPA 1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8                  | CPA 1µM, N=4                       | $2.83 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, N=4             | Capadenoson 1µM CPA 0.1µM, N=4     | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, N=4           | Capadenoson 0.1µM CPA 0.1µM, N=4   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM CPA 0.1µM, N=4   | Capadenoson 1µM CPA 1µM, N=4       | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, N=4 | Capadenoson 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8                  | Capadenoson 0.001µM, N=4           | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, N=4         | Capadenoson 0.1µM CPA 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8                  | Capadenoson 0.1µM, N=4             | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4                   | Capadenoson 0.001µM CPA 0.1µM, N=4 | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, N=8                  | Capadenoson 1µM, N=4               | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4                   | Capadenoson 0.1µM CPA 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, N=4             | Capadenoson 1µM CPA 1µM, N=4       | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, N=4           | Capadenoson 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 0.001µM CPA 1µM, N=4   | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, N=4                   | Capadenoson 1µM CPA 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, N=4         | Capadenoson 0.1µM CPA 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 0.1µM CPA 1µM, N=4     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, N=4                     | Capadenoson 1µM CPA 1µM, N=4       | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                               | group2                                 | pvalue                | symbol   | target                      |
+|:-------------------------------------|:---------------------------------------|:----------------------|:---------|:----------------------------|
+| FSK 0.79µM, ($N=8$)                  | CPA 0.001µM, ($N=3$)                   | $4.85 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | CPA 0.1µM, ($N=4$)                     | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | CPA 1µM, ($N=4$)                       | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $4.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.001µM, ($N=4$)           | $5.70 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.1µM, ($N=4$)             | $4.04 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 1µM, ($N=4$)               | $4.04 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Finerenone - Simulant (FSK) dose: 2.5µM
-| group1                                  | group2                                    | pvalue                | symbol   | test_description                     | target   |
-|:----------------------------------------|:------------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N=11                         | Aldosterone 0.001µM, N=4                  | $2.93 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                         | Aldosterone 0.1µM, N=4                    | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, N=4 | Finerenone 0.001µM Aldosterone 1µM, N=4   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                         | Aldosterone 1µM, N=4                      | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM, N=4                     | Finerenone 1µM Aldosterone 0.1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM, N=3                   | Finerenone 0.1µM Aldosterone 0.1µM, N=4   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM Aldosterone 0.1µM, N=4   | Finerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, N=4 | Finerenone 0.1µM Aldosterone 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                         | Finerenone 0.001µM, N=4                   | $1.76 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.001µM, N=4                 | Finerenone 0.1µM Aldosterone 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                         | Finerenone 0.1µM, N=3                     | $2.20 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 0.001µM Aldosterone 0.1µM, N=4 | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                         | Finerenone 1µM, N=4                       | $1.77 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 0.1µM Aldosterone 0.1µM, N=4   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM, N=4                     | Finerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM, N=3                   | Finerenone 0.1µM Aldosterone 1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 0.001µM Aldosterone 1µM, N=4   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 1µM Aldosterone 0.1µM, N=4     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.001µM, N=4                 | Finerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 0.1µM Aldosterone 1µM, N=4     | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 1µM Aldosterone 1µM, N=4       | $3.43 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
+| group1                                      | group2                                        | pvalue                | symbol   | target   |
+|:--------------------------------------------|:----------------------------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.001µM, ($N=4$)                  | $2.93 \times 10^{-3}$ | **       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.1µM, ($N=4$)                    | $1.47 \times 10^{-3}$ | **       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 1µM, ($N=4$)                      | $1.47 \times 10^{-3}$ | **       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 0.001µM, ($N=4$)                   | $1.76 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 0.1µM, ($N=3$)                     | $2.20 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $3.43 \times 10^{-1}$ | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 1µM, ($N=4$)                       | $1.77 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $6.86 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $3.43 \times 10^{-1}$ | ns       | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Finerenone - Simulant (FSK) dose: 0.79µM
-| group1                                  | group2                                    | pvalue                | symbol   | test_description                     | target   |
-|:----------------------------------------|:------------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N=8                         | Aldosterone 0.001µM, N=4                  | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                         | Aldosterone 0.1µM, N=4                    | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, N=3 | Finerenone 0.001µM Aldosterone 1µM, N=4   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                         | Aldosterone 1µM, N=4                      | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM, N=4                     | Finerenone 1µM Aldosterone 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM, N=4                   | Finerenone 0.1µM Aldosterone 0.1µM, N=3   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM Aldosterone 0.1µM, N=4   | Finerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, N=3 | Finerenone 0.1µM Aldosterone 1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                         | Finerenone 0.001µM, N=4                   | $3.68 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.001µM, N=4                 | Finerenone 0.1µM Aldosterone 0.1µM, N=3   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                         | Finerenone 0.1µM, N=4                     | $1.54 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 0.001µM Aldosterone 0.1µM, N=4 | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                         | Finerenone 1µM, N=4                       | $5.70 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 0.1µM Aldosterone 0.1µM, N=3   | $1.00$                | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 1µM, N=4                     | Finerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.1µM, N=4                   | Finerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 0.001µM Aldosterone 1µM, N=4   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                  | Finerenone 1µM Aldosterone 0.1µM, N=4     | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Finerenone 0.001µM, N=4                 | Finerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 0.1µM Aldosterone 1µM, N=4     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                    | Finerenone 1µM Aldosterone 1µM, N=4       | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
+| group1                                      | group2                                        | pvalue                | symbol   | target   |
+|:--------------------------------------------|:----------------------------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.001µM, ($N=4$)                  | $6.83 \times 10^{-1}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.1µM, ($N=4$)                    | $4.04 \times 10^{-3}$ | **       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 1µM, ($N=4$)                      | $4.04 \times 10^{-3}$ | **       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 0.001µM, ($N=4$)                   | $3.68 \times 10^{-1}$ | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 0.1µM, ($N=4$)                     | $1.54 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $2.00 \times 10^{-1}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 1µM, ($N=4$)                       | $5.70 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $1.00$                | ns       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Esaxerenone - Simulant (FSK) dose: 2.5µM
-| group1                                   | group2                                     | pvalue                | symbol   | test_description                     | target   |
-|:-----------------------------------------|:-------------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 2.5µM, N=11                          | Aldosterone 0.001µM, N=4                   | $2.93 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                          | Aldosterone 0.1µM, N=4                     | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, N=4 | Esaxerenone 0.001µM Aldosterone 1µM, N=4   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                          | Aldosterone 1µM, N=4                       | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $5.71 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM Aldosterone 0.1µM, N=4   | Esaxerenone 1µM Aldosterone 1µM, N=4       | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, N=4 | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                          | Esaxerenone 0.001µM, N=4                   | $7.53 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.001µM, N=4                 | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                          | Esaxerenone 0.1µM, N=4                     | $7.77 \times 10^{-2}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 0.001µM Aldosterone 0.1µM, N=4 | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 2.5µM, N=11                          | Esaxerenone 1µM, N=4                       | $1.47 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $4.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 0.001µM Aldosterone 1µM, N=4   | $6.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 1µM Aldosterone 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.001µM, N=4                 | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
+| group1                                       | group2                                         | pvalue                | symbol   | target   |
+|:---------------------------------------------|:-----------------------------------------------|:----------------------|:---------|:---------|
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.001µM, ($N=4$)                   | $2.93 \times 10^{-3}$ | **       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.1µM, ($N=4$)                     | $1.47 \times 10^{-3}$ | **       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
+| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.001µM, ($N=4$)                   | $7.53 \times 10^{-1}$ | ns       | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.1µM, ($N=4$)                     | $7.77 \times 10^{-2}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $1.14 \times 10^{-1}$ | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $6.86 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Esaxerenone - Simulant (FSK) dose: 0.79µM
-| group1                                   | group2                                     | pvalue                | symbol   | test_description                     | target   |
-|:-----------------------------------------|:-------------------------------------------|:----------------------|:---------|:-------------------------------------|:---------|
-| FSK 0.79µM, N=8                          | Aldosterone 0.001µM, N=4                   | $6.83 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                          | Aldosterone 0.1µM, N=4                     | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, N=4 | Esaxerenone 0.001µM Aldosterone 1µM, N=4   | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                          | Aldosterone 1µM, N=4                       | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM Aldosterone 0.1µM, N=4   | Esaxerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, N=4 | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                          | Esaxerenone 0.001µM, N=4                   | $8.08 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.001µM, N=4                 | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                          | Esaxerenone 0.1µM, N=4                     | $4.85 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 0.001µM Aldosterone 0.1µM, N=4 | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| FSK 0.79µM, N=8                          | Esaxerenone 1µM, N=4                       | $4.04 \times 10^{-3}$ | **       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 0.1µM, N=4   | $2.00 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.1µM, N=4                   | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 0.001µM Aldosterone 1µM, N=4   | $8.86 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 0.1µM, N=4                   | Esaxerenone 1µM Aldosterone 0.1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Esaxerenone 0.001µM, N=4                 | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 0.1µM Aldosterone 1µM, N=4     | $1.14 \times 10^{-1}$ | ns       | Mann-Whitney-Wilcoxon test two-sided | MR       |
-| Aldosterone 1µM, N=4                     | Esaxerenone 1µM Aldosterone 1µM, N=4       | $2.86 \times 10^{-2}$ | *        | Mann-Whitney-Wilcoxon test two-sided | MR       |
+| group1                                       | group2                                         | pvalue                | symbol   | target   |
+|:---------------------------------------------|:-----------------------------------------------|:----------------------|:---------|:---------|
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.001µM, ($N=4$)                   | $6.83 \times 10^{-1}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.1µM, ($N=4$)                     | $4.04 \times 10^{-3}$ | **       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 1µM, ($N=4$)                       | $4.04 \times 10^{-3}$ | **       | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.001µM, ($N=4$)                   | $8.08 \times 10^{-1}$ | ns       | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.1µM, ($N=4$)                     | $4.85 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $8.86 \times 10^{-1}$ | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 1µM, ($N=4$)                       | $4.04 \times 10^{-3}$ | **       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
