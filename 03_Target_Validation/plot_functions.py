@@ -428,6 +428,8 @@ def box_mann_whitney_u(
         if cpd != short_cpd:
             labels = [label.replace(cpd, short_cpd) for label in labels]
 
+        count_dict = plot_data.groupby("treat_string")[readout].count().to_dict()
+
         ax.set_xticklabels(labels, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
         ax.set_xlabel("")
         # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
@@ -447,8 +449,8 @@ def box_mann_whitney_u(
         for res in annotations:
             stats_results.append(
                 {
-                    "group1": res.data.group1[0],
-                    "group2": res.data.group2[0],
+                    "group1": f"{res.data.group1[0]}, N={count_dict.get(res.data.group1[0], 0)}",
+                    "group2": f"{res.data.group2[0]}, N={count_dict.get(res.data.group2[0], 0)}",
                     "pvalue": res.data.pvalue,
                     "symbol": get_significance_symbol(res.data.pvalue),
                     "test_description": res.data.test_description,
@@ -621,6 +623,8 @@ def box_mann_whitney_u_no_dt(
         )
         _, annotations = annotator.apply_and_annotate()
 
+        count_dict = plot_data.groupby("treat_string")[readout].count().to_dict()
+
         ax.set_xlabel("")
         # ax.set_ylabel(r"Mean-Aggregated Cyst Size ($\mu$m$^2$)")
         ax.set_ylabel(r"Normalized Cyst Swelling (%)")  # If not normalized, use above
@@ -636,8 +640,8 @@ def box_mann_whitney_u_no_dt(
         for res in annotations:
             stats_results.append(
                 {
-                    "group1": res.data.group1[0],
-                    "group2": res.data.group2[0],
+                    "group1": f"{res.data.group1[0]}, N({count_dict.get(res.data.group1[0], 0)})",
+                    "group2": f"{res.data.group2[0]}, N({count_dict.get(res.data.group2[0], 0)})",
                     "pvalue": res.data.pvalue,
                     "symbol": get_significance_symbol(res.data.pvalue),
                     "test_description": res.data.test_description,
