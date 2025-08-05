@@ -37,317 +37,317 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../figures/mo
 </div>
 
 ## Z4509024390 - Simulant (FSK) dose: 2.5µM
-| group1              | group2                       | pvalue                | symbol   | target   |
-|:--------------------|:-----------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=12$) | Z4509024390 0.001µM, ($N=4$) | $4.46 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 2.5µM, ($N=12$) | Z4509024390 0.1µM, ($N=4$)   | $5.21 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 2.5µM, ($N=12$) | Z4509024390 1.0µM, ($N=4$)   | $1.32 \times 10^{-2}$ | *        | GLUT1    |
+| group1              | group2                       |   pvalue | symbol   | target   |
+|:--------------------|:-----------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | Z4509024390 0.001µM, ($N=4$) |   0.4462 | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z4509024390 0.1µM, ($N=4$)   |   0.5209 | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z4509024390 1.0µM, ($N=4$)   |   0.0132 | *        | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z4509024390_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## Z4509024390 - Simulant (FSK) dose: 0.79µM
-| group1              | group2                       | pvalue                | symbol   | target   |
-|:--------------------|:-----------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$) | Z4509024390 0.001µM, ($N=4$) | $5.70 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 0.79µM, ($N=8$) | Z4509024390 0.1µM, ($N=4$)   | $7.27 \times 10^{-2}$ | ns       | GLUT1    |
-| FSK 0.79µM, ($N=8$) | Z4509024390 1.0µM, ($N=4$)   | $2.14 \times 10^{-1}$ | ns       | GLUT1    |
+| group1              | group2                       |   pvalue | symbol   | target   |
+|:--------------------|:-----------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | Z4509024390 0.001µM, ($N=4$) |   0.5697 | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z4509024390 0.1µM, ($N=4$)   |   0.0727 | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z4509024390 1.0µM, ($N=4$)   |   0.2141 | ns       | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## Z211311146 - Simulant (FSK) dose: 2.5µM
-| group1              | group2                      | pvalue                | symbol   | target   |
-|:--------------------|:----------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=12$) | Z211311146 0.001µM, ($N=4$) | $1.70 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 2.5µM, ($N=12$) | Z211311146 0.1µM, ($N=4$)   | $7.70 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 2.5µM, ($N=12$) | Z211311146 1.0µM, ($N=4$)   | $1.98 \times 10^{-2}$ | *        | GLUT1    |
+| group1              | group2                      |   pvalue | symbol   | target   |
+|:--------------------|:----------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | Z211311146 0.001µM, ($N=4$) |   0.1703 | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z211311146 0.1µM, ($N=4$)   |   0.7703 | ns       | GLUT1    |
+| FSK 2.5µM, ($N=12$) | Z211311146 1.0µM, ($N=4$)   |   0.0198 | *        | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-GLU_Z211311146_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## Z211311146 - Simulant (FSK) dose: 0.79µM
-| group1              | group2                      | pvalue                | symbol   | target   |
-|:--------------------|:----------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$) | Z211311146 0.001µM, ($N=4$) | $6.83 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 0.79µM, ($N=8$) | Z211311146 0.1µM, ($N=4$)   | $4.61 \times 10^{-1}$ | ns       | GLUT1    |
-| FSK 0.79µM, ($N=8$) | Z211311146 1.0µM, ($N=4$)   | $6.83 \times 10^{-1}$ | ns       | GLUT1    |
+| group1              | group2                      |   pvalue | symbol   | target   |
+|:--------------------|:----------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | Z211311146 0.001µM, ($N=4$) |   0.6828 | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z211311146 0.1µM, ($N=4$)   |   0.4606 | ns       | GLUT1    |
+| FSK 0.79µM, ($N=8$) | Z211311146 1.0µM, ($N=4$)   |   0.6828 | ns       | GLUT1    |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_JNJ-47965567_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## JNJ-47965567 - Simulant (FSK) dose: 2.5µM
-| group1              | group2                        | pvalue                | symbol   | target   |
-|:--------------------|:------------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.001µM, ($N=4$) | $8.62 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.1µM, ($N=4$)   | $1.32 \times 10^{-2}$ | *        | P2X7     |
-| FSK 2.5µM, ($N=12$) | JNJ-47965567 1.0µM, ($N=4$)   | $3.16 \times 10^{-1}$ | ns       | P2X7     |
+| group1              | group2                        |   pvalue | symbol   | target   |
+|:--------------------|:------------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.001µM, ($N=4$) |   0.8615 | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 0.1µM, ($N=4$)   |   0.0132 | *        | P2X7     |
+| FSK 2.5µM, ($N=12$) | JNJ-47965567 1.0µM, ($N=4$)   |   0.3165 | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_JNJ-47965567_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## JNJ-47965567 - Simulant (FSK) dose: 0.79µM
-| group1              | group2                        | pvalue                | symbol   | target   |
-|:--------------------|:------------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.001µM, ($N=4$) | $5.70 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.1µM, ($N=4$)   | $2.83 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 0.79µM, ($N=8$) | JNJ-47965567 1.0µM, ($N=4$)   | $3.68 \times 10^{-1}$ | ns       | P2X7     |
+| group1              | group2                        |   pvalue | symbol   | target   |
+|:--------------------|:------------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.001µM, ($N=4$) |   0.5697 | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 0.1µM, ($N=4$)   |   0.2828 | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | JNJ-47965567 1.0µM, ($N=4$)   |   0.3677 | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK2-5.svg" alt="" width=480>
 </div>
 
 ## A-804598 - Simulant (FSK) dose: 2.5µM
-| group1              | group2                    | pvalue                | symbol   | target   |
-|:--------------------|:--------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=12$) | A-804598 0.001µM, ($N=4$) | $8.62 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 2.5µM, ($N=12$) | A-804598 0.1µM, ($N=4$)   | $2.12 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 2.5µM, ($N=12$) | A-804598 1.0µM, ($N=4$)   | $9.53 \times 10^{-1}$ | ns       | P2X7     |
+| group1              | group2                    |   pvalue | symbol   | target   |
+|:--------------------|:--------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=12$) | A-804598 0.001µM, ($N=4$) |   0.8615 | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | A-804598 0.1µM, ($N=4$)   |   0.2121 | ns       | P2X7     |
+| FSK 2.5µM, ($N=12$) | A-804598 1.0µM, ($N=4$)   |   0.9527 | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate1-P2RX7_A-804598_FSK0-79.svg" alt="" width=480>
 </div>
 
 ## A-804598 - Simulant (FSK) dose: 0.79µM
-| group1              | group2                    | pvalue                | symbol   | target   |
-|:--------------------|:--------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$) | A-804598 0.001µM, ($N=4$) | $1.54 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 0.79µM, ($N=8$) | A-804598 0.1µM, ($N=4$)   | $8.08 \times 10^{-1}$ | ns       | P2X7     |
-| FSK 0.79µM, ($N=8$) | A-804598 1.0µM, ($N=4$)   | $5.70 \times 10^{-1}$ | ns       | P2X7     |
+| group1              | group2                    |   pvalue | symbol   | target   |
+|:--------------------|:--------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$) | A-804598 0.001µM, ($N=4$) |   0.1535 | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | A-804598 0.1µM, ($N=4$)   |   0.8081 | ns       | P2X7     |
+| FSK 0.79µM, ($N=8$) | A-804598 1.0µM, ($N=4$)   |   0.5697 | ns       | P2X7     |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK2-5_CPA.svg" alt="" width=720>
 </div>
 
 ## DPCPX - Simulant (FSK) dose: 2.5µM
-| group1                         | group2                           | pvalue                | symbol   | target                      |
-|:-------------------------------|:---------------------------------|:----------------------|:---------|:----------------------------|
-| FSK 2.5µM, ($N=11$)            | CPA 0.001µM, ($N=4$)             | $1.77 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)            | CPA 0.1µM, ($N=3$)               | $8.79 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)            | CPA 1µM, ($N=4$)                 | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $4.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)            | DPCPX 0.001µM, ($N=4$)           | $2.26 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)            | DPCPX 0.1µM, ($N=4$)             | $1.04 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)            | DPCPX 1µM, ($N=4$)               | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                         | group2                           |   pvalue | symbol   | target                      |
+|:-------------------------------|:---------------------------------|---------:|:---------|:----------------------------|
+| FSK 2.5µM, ($N=11$)            | CPA 0.001µM, ($N=4$)             |   0.1773 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | CPA 0.1µM, ($N=3$)               |   0.0879 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | CPA 1µM, ($N=4$)                 |   0.0015 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 0.001µM, ($N=4$)           |   0.2256 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 0.1µM, ($N=4$)             |   0.104  | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)            | DPCPX 1µM, ($N=4$)               |   0.0015 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   |   0.6857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.6857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) |   0.8571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     |   0.0571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.8857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   1      | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   0.8857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     |   0.4857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_DPCPX_FSK0-79_CPA.svg" alt="" width=720>
 </div>
 
 ## DPCPX - Simulant (FSK) dose: 0.79µM
-| group1                         | group2                           | pvalue                | symbol   | target                      |
-|:-------------------------------|:---------------------------------|:----------------------|:---------|:----------------------------|
-| FSK 0.79µM, ($N=8$)            | CPA 0.001µM, ($N=3$)             | $4.85 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)            | CPA 0.1µM, ($N=4$)               | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)            | CPA 1µM, ($N=4$)                 | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)            | DPCPX 0.001µM, ($N=4$)           | $4.61 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.00$                | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)            | DPCPX 0.1µM, ($N=4$)             | $1.09 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)            | DPCPX 1µM, ($N=4$)               | $8.08 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     | $6.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                         | group2                           |   pvalue | symbol   | target                      |
+|:-------------------------------|:---------------------------------|---------:|:---------|:----------------------------|
+| FSK 0.79µM, ($N=8$)            | CPA 0.001µM, ($N=3$)             |   0.0485 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | CPA 0.1µM, ($N=4$)               |   0.0283 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | CPA 1µM, ($N=4$)                 |   0.0283 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 0.001µM, ($N=4$)           |   0.4606 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 0.1µM, ($N=4$)             |   0.1091 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)            | DPCPX 1µM, ($N=4$)               |   0.0081 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.001µM CPA 1µM, ($N=4$)   |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM CPA 0.1µM, ($N=4$) | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM CPA 0.1µM, ($N=4$)   | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.3429 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 0.001µM CPA 0.1µM, ($N=4$) |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.001µM CPA 1µM, ($N=4$)   |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.6857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)               | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   1      | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.001µM, ($N=4$)         | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 0.1µM, ($N=4$)   |   0.3429 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 0.1µM, ($N=4$)           | DPCPX 0.1µM CPA 1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 0.1µM, ($N=4$)     |   1      | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| DPCPX 1µM, ($N=4$)             | DPCPX 1µM CPA 1µM, ($N=4$)       |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK2-5_CPA.svg" alt="" width=720>
 </div>
 
 ## Capadenoson - Simulant (FSK) dose: 2.5µM
-| group1                               | group2                                 | pvalue                | symbol   | target                      |
-|:-------------------------------------|:---------------------------------------|:----------------------|:---------|:----------------------------|
-| FSK 2.5µM, ($N=11$)                  | CPA 0.001µM, ($N=4$)                   | $1.77 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)                  | CPA 0.1µM, ($N=3$)                     | $8.79 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)                  | CPA 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.001µM, ($N=4$)           | $4.89 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.1µM, ($N=4$)             | $1.47 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) | $6.29 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 2.5µM, ($N=11$)                  | Capadenoson 1µM, ($N=3$)               | $5.49 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $6.29 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       | $8.57 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=3$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                               | group2                                 |   pvalue | symbol   | target                      |
+|:-------------------------------------|:---------------------------------------|---------:|:---------|:----------------------------|
+| FSK 2.5µM, ($N=11$)                  | CPA 0.001µM, ($N=4$)                   |   0.1773 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | CPA 0.1µM, ($N=3$)                     |   0.0879 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | CPA 1µM, ($N=4$)                       |   0.0015 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.001µM, ($N=4$)           |   0.4894 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 0.1µM, ($N=4$)             |   0.0015 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 2.5µM, ($N=11$)                  | Capadenoson 1µM, ($N=3$)               |   0.0055 | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   |   0.0571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.0571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.8857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) |   0.6286 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.6286 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=3$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     |   0.0571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   |   0.3429 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     |   0.8571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=3$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.8571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate2-A1R_Capadenoson_FSK0-79_CPA.svg" alt="" width=720>
 </div>
 
 ## Capadenoson - Simulant (FSK) dose: 0.79µM
-| group1                               | group2                                 | pvalue                | symbol   | target                      |
-|:-------------------------------------|:---------------------------------------|:----------------------|:---------|:----------------------------|
-| FSK 0.79µM, ($N=8$)                  | CPA 0.001µM, ($N=3$)                   | $4.85 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)                  | CPA 0.1µM, ($N=4$)                     | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)                  | CPA 1µM, ($N=4$)                       | $2.83 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $4.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.001µM, ($N=4$)           | $5.70 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.1µM, ($N=4$)             | $4.04 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| FSK 0.79µM, ($N=8$)                  | Capadenoson 1µM, ($N=4$)               | $4.04 \times 10^{-3}$ | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   | $3.43 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 0.1µM, ($N=4$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
-| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
-| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       | $5.71 \times 10^{-2}$ | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| group1                               | group2                                 |   pvalue | symbol   | target                      |
+|:-------------------------------------|:---------------------------------------|---------:|:---------|:----------------------------|
+| FSK 0.79µM, ($N=8$)                  | CPA 0.001µM, ($N=3$)                   |   0.0485 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | CPA 0.1µM, ($N=4$)                     |   0.0283 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | CPA 1µM, ($N=4$)                       |   0.0283 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.001µM, ($N=4$)           |   0.5697 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 0.1µM, ($N=4$)             |   0.004  | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| FSK 0.79µM, ($N=8$)                  | Capadenoson 1µM, ($N=4$)               |   0.004  | **       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.001µM CPA 1µM, ($N=4$)   |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM CPA 0.1µM, ($N=4$) | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM CPA 0.1µM, ($N=4$)   | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.001µM CPA 0.1µM, ($N=4$) |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 0.1µM, ($N=4$)                   | Capadenoson 1µM CPA 0.1µM, ($N=4$)     |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.001µM CPA 1µM, ($N=4$)   |   0.3429 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| CPA 1µM, ($N=4$)                     | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.0571 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.0286 | *        | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.001µM, ($N=4$)         | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 0.1µM, ($N=4$)   |   0.8857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 0.1µM, ($N=4$)           | Capadenoson 0.1µM CPA 1µM, ($N=4$)     |   0.1143 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 0.1µM, ($N=4$)     |   0.4857 | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
+| Capadenoson 1µM, ($N=4$)             | Capadenoson 1µM CPA 1µM, ($N=4$)       |   0.2    | ns       | $\mathrm{A}_{1}\mathrm{AR}$ |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Finerenone - Simulant (FSK) dose: 2.5µM
-| group1                                      | group2                                        | pvalue                | symbol   | target   |
-|:--------------------------------------------|:----------------------------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.001µM, ($N=4$)                  | $2.93 \times 10^{-3}$ | **       | MR       |
-| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.1µM, ($N=4$)                    | $1.47 \times 10^{-3}$ | **       | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
-| FSK 2.5µM, ($N=11$)                         | Aldosterone 1µM, ($N=4$)                      | $1.47 \times 10^{-3}$ | **       | MR       |
-| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | MR       |
-| FSK 2.5µM, ($N=11$)                         | Finerenone 0.001µM, ($N=4$)                   | $1.76 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
-| FSK 2.5µM, ($N=11$)                         | Finerenone 0.1µM, ($N=3$)                     | $2.20 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $3.43 \times 10^{-1}$ | ns       | MR       |
-| FSK 2.5µM, ($N=11$)                         | Finerenone 1µM, ($N=4$)                       | $1.77 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
-| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
-| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $6.86 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $3.43 \times 10^{-1}$ | ns       | MR       |
+| group1                                      | group2                                        |   pvalue | symbol   | target   |
+|:--------------------------------------------|:----------------------------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.001µM, ($N=4$)                  |   0.0029 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 0.1µM, ($N=4$)                    |   0.0015 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Aldosterone 1µM, ($N=4$)                      |   0.0015 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 0.001µM, ($N=4$)                   |   0.0176 | *        | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 0.1µM, ($N=3$)                     |   0.022  | *        | MR       |
+| FSK 2.5µM, ($N=11$)                         | Finerenone 1µM, ($N=4$)                       |   0.1773 | ns       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.2    | ns       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.1143 | ns       | MR       |
+| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) |   0.3429 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.4857 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.2    | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.4857 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.6857 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.3429 | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0286 | *        | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0571 | ns       | MR       |
+| Finerenone 0.1µM, ($N=3$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0571 | ns       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0571 | ns       | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Finerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Finerenone - Simulant (FSK) dose: 0.79µM
-| group1                                      | group2                                        | pvalue                | symbol   | target   |
-|:--------------------------------------------|:----------------------------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.001µM, ($N=4$)                  | $6.83 \times 10^{-1}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.1µM, ($N=4$)                    | $4.04 \times 10^{-3}$ | **       | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                         | Aldosterone 1µM, ($N=4$)                      | $4.04 \times 10^{-3}$ | **       | MR       |
-| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                         | Finerenone 0.001µM, ($N=4$)                   | $3.68 \times 10^{-1}$ | ns       | MR       |
-| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                         | Finerenone 0.1µM, ($N=4$)                     | $1.54 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $2.00 \times 10^{-1}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                         | Finerenone 1µM, ($N=4$)                       | $5.70 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   | $1.00$                | ns       | MR       |
-| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | MR       |
+| group1                                      | group2                                        |   pvalue | symbol   | target   |
+|:--------------------------------------------|:----------------------------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.001µM, ($N=4$)                  |   0.6828 | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 0.1µM, ($N=4$)                    |   0.004  | **       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Aldosterone 1µM, ($N=4$)                      |   0.004  | **       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 0.001µM, ($N=4$)                   |   0.3677 | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 0.1µM, ($N=4$)                     |   0.1535 | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                         | Finerenone 1µM, ($N=4$)                       |   0.5697 | ns       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.0571 | ns       | MR       |
+| Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$) | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0571 | ns       | MR       |
+| Finerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.001µM Aldosterone 0.1µM, ($N=4$) |   0.2    | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   |   1      | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                  | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0571 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.2    | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.2    | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                    | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.1143 | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   |   0.0571 | ns       | MR       |
+| Finerenone 0.001µM, ($N=4$)                 | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 0.1µM, ($N=3$)   |   0.0571 | ns       | MR       |
+| Finerenone 0.1µM, ($N=4$)                   | Finerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Finerenone 1µM, ($N=4$)                     | Finerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK2-5_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Esaxerenone - Simulant (FSK) dose: 2.5µM
-| group1                                       | group2                                         | pvalue                | symbol   | target   |
-|:---------------------------------------------|:-----------------------------------------------|:----------------------|:---------|:---------|
-| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.001µM, ($N=4$)                   | $2.93 \times 10^{-3}$ | **       | MR       |
-| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.1µM, ($N=4$)                     | $1.47 \times 10^{-3}$ | **       | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | MR       |
-| FSK 2.5µM, ($N=11$)                          | Aldosterone 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | MR       |
-| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $5.71 \times 10^{-2}$ | ns       | MR       |
-| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $1.14 \times 10^{-1}$ | ns       | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.001µM, ($N=4$)                   | $7.53 \times 10^{-1}$ | ns       | MR       |
-| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
-| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.1µM, ($N=4$)                     | $7.77 \times 10^{-2}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $1.14 \times 10^{-1}$ | ns       | MR       |
-| FSK 2.5µM, ($N=11$)                          | Esaxerenone 1µM, ($N=4$)                       | $1.47 \times 10^{-3}$ | **       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $4.86 \times 10^{-1}$ | ns       | MR       |
-| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $6.86 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.00 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| group1                                       | group2                                         |   pvalue | symbol   | target   |
+|:---------------------------------------------|:-----------------------------------------------|---------:|:---------|:---------|
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.001µM, ($N=4$)                   |   0.0029 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 0.1µM, ($N=4$)                     |   0.0015 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Aldosterone 1µM, ($N=4$)                       |   0.0015 | **       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.001µM, ($N=4$)                   |   0.7531 | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 0.1µM, ($N=4$)                     |   0.0777 | ns       | MR       |
+| FSK 2.5µM, ($N=11$)                          | Esaxerenone 1µM, ($N=4$)                       |   0.0015 | **       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.1143 | ns       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.1143 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) |   0.1143 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.4857 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.6857 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.2    | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0286 | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0571 | ns       | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
 
 <div align="center">
   <img src="../figures/adpkd-validation-screen/boxplot-MannWhitneyU-plate3-MR_Esaxerenone_FSK0-79_Aldosterone.svg" alt="" width=720>
 </div>
 
 ## Esaxerenone - Simulant (FSK) dose: 0.79µM
-| group1                                       | group2                                         | pvalue                | symbol   | target   |
-|:---------------------------------------------|:-----------------------------------------------|:----------------------|:---------|:---------|
-| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.001µM, ($N=4$)                   | $6.83 \times 10^{-1}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.1µM, ($N=4$)                     | $4.04 \times 10^{-3}$ | **       | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $1.14 \times 10^{-1}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                          | Aldosterone 1µM, ($N=4$)                       | $4.04 \times 10^{-3}$ | **       | MR       |
-| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.001µM, ($N=4$)                   | $8.08 \times 10^{-1}$ | ns       | MR       |
-| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.86 \times 10^{-2}$ | *        | MR       |
-| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.1µM, ($N=4$)                     | $4.85 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) | $8.86 \times 10^{-1}$ | ns       | MR       |
-| FSK 0.79µM, ($N=8$)                          | Esaxerenone 1µM, ($N=4$)                       | $4.04 \times 10^{-3}$ | **       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   | $2.00 \times 10^{-1}$ | ns       | MR       |
-| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   | $8.86 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $2.86 \times 10^{-2}$ | *        | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     | $1.14 \times 10^{-1}$ | ns       | MR       |
-| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       | $2.86 \times 10^{-2}$ | *        | MR       |
+| group1                                       | group2                                         |   pvalue | symbol   | target   |
+|:---------------------------------------------|:-----------------------------------------------|---------:|:---------|:---------|
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.001µM, ($N=4$)                   |   0.6828 | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 0.1µM, ($N=4$)                     |   0.004  | **       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Aldosterone 1µM, ($N=4$)                       |   0.004  | **       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.001µM, ($N=4$)                   |   0.8081 | ns       | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 0.1µM, ($N=4$)                     |   0.0485 | *        | MR       |
+| FSK 0.79µM, ($N=8$)                          | Esaxerenone 1µM, ($N=4$)                       |   0.004  | **       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.1143 | ns       | MR       |
+| Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$) | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)   | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.001µM Aldosterone 0.1µM, ($N=4$) |   0.8857 | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.2    | ns       | MR       |
+| Aldosterone 0.1µM, ($N=4$)                   | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.001µM Aldosterone 1µM, ($N=4$)   |   0.8857 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.1143 | ns       | MR       |
+| Aldosterone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0286 | *        | MR       |
+| Esaxerenone 0.001µM, ($N=4$)                 | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 0.1µM, ($N=4$)   |   0.0286 | *        | MR       |
+| Esaxerenone 0.1µM, ($N=4$)                   | Esaxerenone 0.1µM Aldosterone 1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 0.1µM, ($N=4$)     |   0.0286 | *        | MR       |
+| Esaxerenone 1µM, ($N=4$)                     | Esaxerenone 1µM Aldosterone 1µM, ($N=4$)       |   0.0286 | *        | MR       |
