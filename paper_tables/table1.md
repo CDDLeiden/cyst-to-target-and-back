@@ -1,4 +1,4 @@
-| Target                      | Compound                                                    | Structure    | Receptor Activity   | Activity Parameter   | pChEMBL (concentration)   |
+| Target                      | Structure                                                   | Compound     | Receptor Activity   | Activity Parameter   | pChEMBL (concentration)   |
 |:----------------------------|:------------------------------------------------------------|:-------------|:--------------------|:---------------------|:--------------------------|
 | $\mathrm{A}_{1}\mathrm{AR}$ | ![CPA](../figures/mol_structures/CPA.svg)                   | CPA          | Agonist             | $\mathrm{K}_{i}$     | 8.44 (3.63 nM)            |
 | $\mathrm{A}_{1}\mathrm{AR}$ | ![Capadenoson](../figures/mol_structures/Capadenoson.svg)   | Capadenoson  | Partial Agonist     | $\mathrm{K}_{i}$     | 8.85 (1.41 nM)            |
