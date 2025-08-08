@@ -10,21 +10,22 @@ For the full data, refer to [chembl_data_validation_compounds.csv](../figures/mo
 
 | Target   | Compound Name   | img                                                         | assay_type   | standard_type   |   pchembl_value_mean |   pchembl_value_std |
 |:---------|:----------------|:------------------------------------------------------------|:-------------|:----------------|---------------------:|--------------------:|
-| ADORA1   | CPA             | ![CPA](../figures/mol_structures/CPA.svg)                   | B            | Ki              |                 8.44 |                0.55 |
+| ADORA1   | CPA             | ![CPA](../figures/mol_structures/CPA.svg)                   | B            | Ki              |                 8.41 |                0.46 |
 | ADORA1   | CPA             | ![CPA](../figures/mol_structures/CPA.svg)                   | F            | IC50            |                 8.57 |                0    |
 | ADORA1   | Capadenoson     | ![Capadenoson](../figures/mol_structures/Capadenoson.svg)   | B            | Ki              |                 8.85 |                0    |
-| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | B            | IC50            |                 8.1  |                0.57 |
-| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | B            | Ki              |                 8.5  |                0.58 |
-| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | F            | Ki              |                 9.33 |                0    |
+| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | B            | Ki              |                 8.55 |                0.5  |
+| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | B            | IC50            |                 8.46 |                0.66 |
+| ADORA1   | DPCPX           | ![DPCPX](../figures/mol_structures/DPCPX.svg)               | F            | Ki              |                 9.19 |                0.14 |
 | NR3C2    | Aldosterone     | ![Aldosterone](../figures/mol_structures/Aldosterone.svg)   | B            | IC50            |                 9.52 |                0    |
 | NR3C2    | Aldosterone     | ![Aldosterone](../figures/mol_structures/Aldosterone.svg)   | F            | IC50            |                 8.03 |                0    |
 | NR3C2    | Esaxerenone     | ![Esaxerenone](../figures/mol_structures/Esaxerenone.svg)   | B            | IC50            |                 8.03 |                0    |
 | NR3C2    | Esaxerenone     | ![Esaxerenone](../figures/mol_structures/Esaxerenone.svg)   | F            | IC50            |                 8.62 |                0    |
-| NR3C2    | Finerenone      | ![Finerenone](../figures/mol_structures/Finerenone.svg)     | B            | IC50            |                 7.5  |                0.25 |
+| NR3C2    | Finerenone      | ![Finerenone](../figures/mol_structures/Finerenone.svg)     | B            | IC50            |                 7.58 |                0.24 |
 | NR3C2    | Finerenone      | ![Finerenone](../figures/mol_structures/Finerenone.svg)     | F            | IC50            |                 7.8  |                0    |
-| P2X7     | AZD9056         | ![AZD9056](../figures/mol_structures/AZD9056.svg)           | B            | IC50            |                 9.29 |                0.94 |
-| P2X7     | JNJ-47965567    | ![JNJ-47965567](../figures/mol_structures/JNJ-47965567.svg) | B            | IC50            |                 7.57 |                0.52 |
+| P2X7     | A-804598        | ![A-804598](../figures/mol_structures/A-804598.svg)         | B            | IC50            |                 7.66 |                0.43 |
+| P2X7     | A-804598        | ![A-804598](../figures/mol_structures/A-804598.svg)         | B            | Ki              |                 8.05 |                0    |
 | P2X7     | JNJ-47965567    | ![JNJ-47965567](../figures/mol_structures/JNJ-47965567.svg) | B            | Ki              |                 7.9  |                0    |
+| P2X7     | JNJ-47965567    | ![JNJ-47965567](../figures/mol_structures/JNJ-47965567.svg) | B            | IC50            |                 7.57 |                0.52 |
 | SLC2A1   | Z211311146      | ![Z211311146](../figures/mol_structures/Z211311146.svg)     | B            | IC50            |                 7.57 |              nan    |
 | SLC2A1   | Z4509024390     | ![Z4509024390](../figures/mol_structures/Z4509024390.svg)   | B            | IC50            |                 8.4  |              nan    |
 
