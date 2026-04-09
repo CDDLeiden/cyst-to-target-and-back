@@ -1,5 +1,5 @@
 # Core scientific computing
-numpy==1.23.5
+numpy==1.26.4
 pandas==2.2.3
 scipy==1.15.1
 scikit-learn==1.4.0
@@ -27,14 +27,15 @@ papyrus-scripts==1.0.2
 papyrus-structure-pipeline==0.0.4
 qsprpred==3.0.2
 selfies==2.2.0
-molbloom==2.2.1
+molbloom==2.2.2
 mols2grid==2.0.0
 pepsift==0.0.2.post1
 prodec==1.0.2.post5
 PubChemPy==1.0.4
 chem-filters @ git+https://github.com/David-Araripe/chemFilters.git
 MolClusterkit @ git+https://github.com/David-Araripe/MolClusterkit.git
-mood @ git+https://github.com/valence-labs/mood-experiments.git
+# mood installed separately (--no-deps) due to overly restrictive numpy<1.24 pin
+# mood @ git+https://github.com/valence-labs/mood-experiments.git
 
 # QSAR / Applicability domain
 mlchemad==1.5.2

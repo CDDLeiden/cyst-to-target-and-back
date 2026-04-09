@@ -17,6 +17,7 @@ Then install all pinned dependencies with **one** of the following options:
 
 ```shell
 python -m pip install -r requirements-gpu.txt
+python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
 
@@ -24,6 +25,7 @@ python -m pip install -e .
 
 ```shell
 python -m pip install -r requirements-cpu.txt
+python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
 

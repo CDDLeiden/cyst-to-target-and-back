@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Raw screening exports (contain internal metadata)
+*_aggr_Fullset.csv
+increase_dead_cells_*.csv
