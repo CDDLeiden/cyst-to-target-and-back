@@ -2,9 +2,39 @@
 
 Repository with the scripts used for the paper XXXX
 
-Install:
+## Installation
+
+Create the conda/micromamba environment:
+
 ```shell
-micromamba env create -n cystToTarget python=3.10 -c conda-forge 
+micromamba env create -f environment.yml
+micromamba activate cystToTarget
+```
+
+Then install all pinned dependencies with **one** of the following options:
+
+### GPU (CUDA 12.4)
+
+```shell
+python -m pip install -r requirements-gpu.txt
+python -m pip install -e .
+```
+
+### CPU only
+
+```shell
+python -m pip install -r requirements-cpu.txt
+python -m pip install -e .
+```
+
+> **Note:** For other CUDA versions, adjust the index URL in `requirements-gpu.txt` following
+> [PyTorch's install guide](https://pytorch.org/get-started/locally/).
+
+<details>
+<summary>Manual installation (without requirements.txt)</summary>
+
+```shell
+micromamba env create -n cystToTarget python=3.10 -c conda-forge
 micromamba activate cystToTarget
 python -m pip install qsprpred==3.0.2 xgboost==2.1.0
 python -m pip install statsmodels venn chembl_webresource_client pubchempy statannotations plotly
@@ -12,6 +42,7 @@ python -m pip install papyrus-scripts==1.0.2 papyrus-structure-pipeline==0.0.4
 python -m pip install git+https://github.com/valence-labs/mood-experiments.git
 python -m pip install -e .
 ```
+</details>
 
 # Structure
 
