@@ -68,28 +68,13 @@ The numbered directories correspond to the workflow described in the paper and s
 
 ## 01_ADPKD_ScreeningProcess
 
-This directory contains the scripts used to process the ADPKD screening data coming from (Booij et al. 2017; Booij et al. 2020).
+This directory contains the scripts used to process the ADPKD screening data coming from (Booij et al. 2017; Booij et al. 2020). The pre-computed outputs are included in the repository under `data/adpkd_screening/`. To re-generate the outputs needed for the following steps, run:
 
-The scripts are:
-
-### 1. screening_process.py
-
-Process the raw screening data, combine with the standardized structures, normalize and save the datasets. The generated files are the following:
-
-- `not_normalized_<dataset_name>.csv` - The dataset with the raw data.
-- `npi_median_normalized_<dataset_name>.csv` - The dataset with the raw data normalized by NPI (normalized percent inhibition) as in the [KNIME node](https://nodepit.com/node/de.mpicbg.knime.hcs.base.nodes.norm.npi.NpiNormalizerNodeFactory).
-- `z-score_median_normalized_<dataset_name>.csv` - The dataset with the raw data normalized by Z-score.
-- `z-prime_median_stats_<dataset_name>.csv` - Z-prime statistics for each feature in the dataset.
- 
-Additionally, the script will perform hit identification analysis, with figures saved under the [identified_hits](figures/hit_analysis/identified_hits/) directory.
-
-### 2. hit_identification.py
-
-Script to identify the hits in the screening data using the NPI-normalized data produced by script `1`. The generated file is used for section [02_TargetID_and_Prioritization](#02_targetid_and_prioritization). The output file is stored in the [identified_hits](figures/hit_analysis/identified_hits/) directory:
-
-- `pkd_HitCompounds_NPI-median-DefaultDistance-hitflag_as-isSMILES_<date>-<hour>.csv`: hits identified per-plate on the NPI-normalized data, according to the `default` distance threshold, with mutual distances of $median(DMSO+FSK) \pm MAD(DMSO+FSK) \times 1.5 $
-
-Both scripts use supporting modules in the same directory: `data_prepare.py` (data loading and normalization) and `feature_manipulation.py` (feature transformations and correlation analysis).
+```shell
+cd 01_ADPKD_ScreeningProcess
+python screening_process.py
+python hit_identification.py
+```
 
 ## 02_TargetID_and_Prioritization
 
