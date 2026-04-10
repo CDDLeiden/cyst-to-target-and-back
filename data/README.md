@@ -22,6 +22,14 @@
 
 **Note**: We only used readouts from 1µM testing concentration on downstream analysis. The reason for this is that it is was the only concentration used across all the different experiments.
 
+## papyrus_data
+
+`ADPKD-Booij-Reanalyzed/`
+
+- [ADPKD-Booij-Reanalyzed.csv](papyrus_data/ADPKD-Booij-Reanalyzed/ADPKD-Booij-Reanalyzed.csv) - Cross-referenced ADPKD screening hits with their Papyrus-reported bioactivities and target annotations.
+- [papyrus_linker_config.json](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_linker_config.json) - Configuration used for the Papyrus compound linking step.
+- [papyrus_subset.csv](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_subset.csv) - Subset of the Papyrus dataset containing bioactivities for compounds matching the ADPKD-screened set (Git LFS tracked).
+
 ## target_validation
 
 - [Scored compounds](target_validation/Scored_th65_Papyrus_targets_of_ADPKD-screened_compounds.csv) - Contains all the targets identified through the [Papyrus Data Linker notebook](../02_TargetID_and_Prioritization/papyrus_data_linker.ipynb) as well as their $CS_{ratio} = N_{active}/(N_{total})$ reported to all bioactivity types: CS reducer, enhancer, inactive and antineoplastic. The targets are scored according to the following criteria:
@@ -55,6 +63,14 @@ _With computed properties_:
 _Selected from computed properties_:
 - [screened_selected_adora1_cpds.csv](vs_datasets/screened_selected_adora1_cpds.csv)
 - [screened_selected_nr3c2_cpds.csv](vs_datasets/screened_selected_nr3c2_cpds.csv)
+
+`vs_datasets/in_stock/`
+
+In-stock availability results from eMolecules and Enamine for the filtered virtual screening candidates:
+- [eMolecules_adora1_stock.csv](virtual_screening/vs_datasets/in_stock/eMolecules_adora1_stock.csv)
+- [eMolecules_nr3c2_stock.csv](virtual_screening/vs_datasets/in_stock/eMolecules_nr3c2_stock.csv)
+- [Enamine_adora1_stock.csv](virtual_screening/vs_datasets/in_stock/Enamine_adora1_stock.csv)
+- [Enamine_nr3c2_stock.csv](virtual_screening/vs_datasets/in_stock/Enamine_nr3c2_stock.csv)
 
 ## compound_exploration
 

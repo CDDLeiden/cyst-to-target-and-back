@@ -3,10 +3,20 @@
 This directory contains:
 - Python [modules](modules) with methods used in this directory
 - The [notebook](modelTrain-adora1_nr3c2.ipynb) for training the $\mathrm{A}_{1}\mathrm{AR}$ and $\mathrm{MR}$ models
-- The hypermarameter optimization studies, stored in the [optuna_studies_dbs](optuna_studies_dbs) directory
+- The hyperparameter optimization studies, stored in the [optuna_studies_dbs](optuna_studies_dbs) directory
 - The optimized $\mathrm{MR}$ and $\mathrm{A}_{1}\mathrm{AR}$ serialized models, found in the [qsprModels](qsprModels) directory
 - The [notebook](virtualScreening.ipynb) for performing the virtual screening
 - The [notebook](ADPKD-ExplorationScreening-analysis.ipynb) for analyzing the spheroid swelling results on the ADPKD phenotypic assay
+
+## Modules
+
+The `modules/` directory contains supporting Python code used by the notebooks:
+
+- `hparam_optimization.py` — Optuna-based hyperparameter optimization for QSPRpred models
+- `knn.py` — k-Nearest Neighbors distance computation for applicability domain analysis
+- `mood_qsprpred_splits.py` — QSPRpred-compatible dataset splitters using MOOD dissimilarity-based strategies
+- `qspr_xgb.py` — XGBoost regression model wrapper for QSPRpred
+- `regression_plot.py` — Predicted vs. observed regression plots
 
 
 # Virtual Screening Results
