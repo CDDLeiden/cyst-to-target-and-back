@@ -1,4 +1,4 @@
-# cyst-to-target-and-back
+# From cyst to target and back
 
 Repository with the scripts used for the paper *"From Phenotypic Screening to Target and Compound Prioritization for Autosomal Dominant Polycystic Kidney Disease"*
 
@@ -88,17 +88,6 @@ This notebooks performs the target identification and prioritization of the iden
 2. [Bar plot with N(compounds) per bioactivity class](figures/ADPKD-Compound_Bioactivity_Counts-Has_Papyrus_Data.svg);
 3. [Bar plot with the prioritized targets](figures/ADPKD-Prioritized_Target_Set-prioritized.svg). On the top part, the number of actives is shown ($N_{active}$), and on the bottom part, the Cyst Swelling (CS) bioactivity ratio: $CS_{ratio} = N_{active}/(N_{total})$, where $N_{total}$ is the total number of ADPKD-screened compounds active for that target on the given threshold (default: $pchembl\_value < 6.5$)
 
-<!-- 
-<div align="left">
-    <img src="figures/ADPKD-Bioactivity_and_TargetSpace.png" alt="ADPKD Bioactivity and Target Space" width="10%">
-</div>
-<div align="left">
-    <img src="figures/ADPKD-Compound_Bioactivity_Counts-Has_Papyrus_Data.png" alt="ADPKD Bioactivity and Target Space" width="10%">
-</div>
-<div align="left">
-    <img src="figures/ADPKD-Prioritized_Target_Set.png" alt="ADPKD Bioactivity and Target Space" width="10%">
-</div> -->
-
 To reproduce the results and analysis, follow the steps in the notebook [papyrus_data_linker.ipynb](02_TargetID_and_Prioritization/papyrus_data_linker.ipynb).
 
 ### 2. gene_expression/gene_plotting.ipynb
@@ -111,10 +100,6 @@ This directory contains the notebook used to visualize the results from the ADPK
 
 1. Boxplots with Mann-Whitney U test results for the different distributions of the treatment and double treatment groups along the three concentration points (0.001, 0.1, and 1 µM).
 2. Point plots with the 95% confidence intervals of the treatment groups along the three concentration points (0.001, 0.1, and 1 µM).
-
-<div align="left">
-    <img src="https://www.frontiersin.org/files/Articles/1397864/fphar-15-1397864-HTML-r1/image_m/fphar-15-1397864-g001.jpg" alt="ADPKD Target Validation Boxplots" width="50%">
-</div>
 
 ## 04_Virtual_Screening
 
