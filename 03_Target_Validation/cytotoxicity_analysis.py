@@ -28,11 +28,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-OUT_FIG = (
-    ROOT
-    / "figures"
-    / "nuclei-based-toxicity-proxy.png"
-)
+OUT_FIG = ROOT / "figures" / "nuclei-toxicity-proxy.svg"
 
 # IBM colorblind-safe palette used throughout the paper's figures.
 BLUE, MAGENTA, ORANGE, GREY = "#648FFF", "#DC267F", "#FE6100", "#9A9A9A"
