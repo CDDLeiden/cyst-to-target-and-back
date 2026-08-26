@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0,<81"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -33,7 +33,7 @@ dependencies = [
     "scipy",
     "chembl-structure-pipeline>=1.2.0",
     "chembl-webresource-client>=0.10.8",
-    "chem-filters @ git+https://github.com/David-Araripe/chemFilters.git#master",
+    "chem-filters @ git+https://github.com/David-Araripe/chemFilters.git@cc4dbc22957ff540880fd13e1ad39aec981004f5",
     ]
 
 [project.optional-dependencies]

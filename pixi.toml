@@ -1,0 +1,83 @@
+[workspace]
+name = "cyst-to-target-and-back"
+version = "0.1.0"
+description = "Reproducibility environment for the cyst-to-target-and-back study"
+authors = ["David Araripe"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64"]
+
+[tasks]
+audit-normalization = "python 03_Target_Validation/normalization_audit.py"
+jupyter-target-identification = { cmd = "jupyter lab papyrus_data_linker.ipynb", cwd = "02_TargetID_and_Prioritization" }
+jupyter-gene-expression = { cmd = "jupyter lab gene_plotting.ipynb", cwd = "02_TargetID_and_Prioritization/gene_expression" }
+jupyter-target-validation = { cmd = "jupyter lab ADPKD-TargetValidationScreening-analysis.ipynb", cwd = "03_Target_Validation" }
+jupyter-virtual-screening = { cmd = "jupyter lab", cwd = "04_Virtual_Screening" }
+
+# Binary scientific packages are installed from conda-forge. This avoids local
+# compilation and lets Pixi lock platform-specific artifacts for Linux and macOS.
+[dependencies]
+python = "3.10.*"
+git = "*"
+setuptools = "80.9.0.*"
+pip = "*"
+wheel = "*"
+numpy = "1.26.4.*"
+pandas = "2.2.3.*"
+scipy = "1.15.1.*"
+scikit-learn = "1.4.0.*"
+statsmodels = "0.14.4.*"
+xgboost = "2.1.0.*"
+rdkit = "2024.09.4.*"
+matplotlib = "3.10.0.*"
+seaborn = "0.13.2.*"
+pyarrow = "19.0.0.*"
+pillow = "12.2.0.*"
+joblib = "1.5.3.*"
+networkx = "2.8.8.*"
+sympy = "1.13.1.*"
+jupyterlab = "4.3.5.*"
+ipykernel = "6.29.5.*"
+ipywidgets = "7.8.5.*"
+requests = "2.32.3.*"
+beautifulsoup4 = "4.13.0.*"
+
+# Packages unavailable (or not available at the required version) on
+# conda-forge are resolved by Pixi's uv-based PyPI solver.
+[pypi-dependencies]
+statannotations = "==0.7.1"
+optuna = "==4.2.0"
+boruta = "==0.4.3"
+mordred = "==1.2.0"
+chembl-structure-pipeline = "==1.2.2"
+chembl-webresource-client = "==0.10.9"
+papyrus-scripts = "==1.0.2"
+papyrus-structure-pipeline = "==0.0.4"
+qsprpred = "==3.0.2"
+selfies = "==2.2.0"
+molbloom = "==2.2.2"
+mols2grid = "==2.0.0"
+pepsift = "==0.0.2.post1"
+prodec = "==1.0.2.post5"
+pubchempy = "==1.0.4"
+mlchemad = "==1.5.2"
+ml2json = "==0.4.0"
+gbmtsplits = "==0.0.8"
+plotly = "==6.0.0"
+venn = "==0.1.3"
+fastparquet = "==2024.11.0"
+dask = "==2025.1.0"
+swifter = "==1.4.0"
+requests-cache = "==1.2.1"
+httpx = "==0.28.1"
+tqdm = "==4.67.1"
+loguru = "==0.7.3"
+tabulate = "==0.9.0"
+easydict = "==1.13"
+pulp = "==2.9.0"
+pystow = "==0.7.0"
+uniprot-id-mapper = "==1.1.4"
+fuzzywuzzy = "==0.18.0"
+black = "==23.1.0"
+chem-filters = { git = "https://github.com/David-Araripe/chemFilters.git", rev = "cc4dbc22957ff540880fd13e1ad39aec981004f5" }
+molclusterkit = { git = "https://github.com/David-Araripe/MolClusterkit.git", rev = "66753c6251a3b73b22c39cee44ce98f9f692a63a" }
+papyrus-bioactivity-linker = { path = ".", editable = true }
