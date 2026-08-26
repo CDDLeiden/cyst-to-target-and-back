@@ -14,7 +14,7 @@ The `modules/` directory contains supporting Python code used by the notebooks:
 
 - `hparam_optimization.py` — Optuna-based hyperparameter optimization for QSPRpred models
 - `knn.py` — k-Nearest Neighbors distance computation for applicability domain analysis
-- `mood_qsprpred_splits.py` — QSPRpred-compatible dataset splitters using MOOD dissimilarity-based strategies
+- `mood_qsprpred_splits.py` — QSPRpred-compatible split adapters retained from model development. The committed notebook uses only the exported scikit-learn `ShuffleSplit`; optional MOOD adapters are not part of the locked environment.
 - `qspr_xgb.py` — XGBoost regression model wrapper for QSPRpred
 - `regression_plot.py` — Predicted vs. observed regression plots
 
