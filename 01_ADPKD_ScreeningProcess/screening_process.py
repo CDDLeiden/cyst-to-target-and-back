@@ -287,7 +287,9 @@ class selleck_chem:
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         print(f"    Loading {self.name} screening under: {self.file_path}")
         self.chemstructs = None
-        self.chemstructs_path = self.root_dir / "data/adpkd_screening/chem_structurs/sel_chem_structures.tsv"
+        self.chemstructs_path = (
+            self.root_dir / "data/adpkd_screening/chemical_structures/sel_chem_structures.tsv"
+        )
         self.dropped_comps = dict()
         self.comp_mapping = dict()
         self.df = pd.read_csv(self.file_path)
@@ -2736,7 +2738,7 @@ class spectrum(selleck_chem):
         super().__init__(name=name)  # __init__ content from selleck_chem class
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         self.chemstructs_path = (
-            self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
+            self.root_dir / "data/adpkd_screening/chemical_structures/combined_SPECTRUM_structures.sdf"
         )
         self.df = pd.read_csv(self.file_path)
         # id_cols are not the same; there's only available compound concentration.
@@ -2936,7 +2938,7 @@ class spectrum_validation(spectrum):
     def __init__(self, name="spectrum-validation") -> None:
         super().__init__(name=name)  # __init__ content from selleck_chem class
         self.chemstructs_path = (
-            self.root_dir / "data/adpkd_screening/chem_structurs/combined_SPECTRUM_structures.sdf"
+            self.root_dir / "data/adpkd_screening/chemical_structures/combined_SPECTRUM_structures.sdf"
         )
         self.file_path = list(self.file_root.glob(f"*{self.name}_Batch*.csv.gz"))[0]
         self.df = pd.read_csv(self.file_path)
