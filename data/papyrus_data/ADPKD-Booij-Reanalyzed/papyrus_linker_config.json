@@ -1854,7 +1854,7 @@
     ],
     "bioactivity_col": "Activity",
     "smiles_col": "std_smiles",
-    "papyrus_path": "/zfsdata/data/david/cyst-to-target-and-back/data/papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_subset.csv",
-    "user_data_path": "/zfsdata/data/david/cyst-to-target-and-back/data/papyrus_data/ADPKD-Booij-Reanalyzed/ADPKD-Booij-Reanalyzed.csv",
+    "papyrus_path": "../data/papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_subset.csv",
+    "user_data_path": "../data/papyrus_data/ADPKD-Booij-Reanalyzed/ADPKD-Booij-Reanalyzed.csv",
     "njobs": 8
 }
