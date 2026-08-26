@@ -33,6 +33,8 @@ DATA = ROOT / "data"
 OUT = DATA / "normalization_audit"
 READOUT = "obj.Mean(area).um2.meas"
 NORMALIZED = "normalized_cyst_swelling_pct"
+EXPECTED_WELL_ROWS = 1_265
+EXPECTED_PAIRWISE_TESTS = 4_485
 
 
 def load_target_validation() -> pd.DataFrame:
@@ -169,6 +171,15 @@ def main() -> None:
     combined = pd.concat([load_target_validation(), load_compound_exploration()], ignore_index=True)
     normalized = normalize_within_plate(combined)
     audit = audit_pairwise_tests(normalized)
+
+    if len(normalized) != EXPECTED_WELL_ROWS:
+        raise AssertionError(
+            f"Expected {EXPECTED_WELL_ROWS:,} QC-filtered wells, found {len(normalized):,}"
+        )
+    if len(audit) != EXPECTED_PAIRWISE_TESTS:
+        raise AssertionError(
+            f"Expected {EXPECTED_PAIRWISE_TESTS:,} within-plate comparisons, found {len(audit):,}"
+        )
 
     OUT.mkdir(parents=True, exist_ok=True)
     values_path = OUT / "per_well_raw_and_normalized.csv"

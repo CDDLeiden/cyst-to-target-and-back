@@ -114,33 +114,39 @@ def get_molecules_png(
     images = list()
     if match_substructs:
         images = smilist_to_matching_img(smiles, size=img_size)
+    elif n_jobs == 1:
+        images = [smi_to_img(smiles_string, size=img_size) for smiles_string in smiles]
     else:
         with Pool(n_jobs) as pool:
             images = pool.map(partial(smi_to_img, size=img_size), smiles)
 
     if labels is not None:
-        # Setting the configuration of the font
-        if font_path is None:
-            font_path = Path(
-                "/mnt/c/Users/david/AppData/Local/Microsoft"
-                "/Windows/Fonts/JetBrains Mono Light Italic Nerd Font Complete.ttf"
-            )
-        assert font_path.exists(), "Font path does not exist. "
+        def load_font(size):
+            if font_path is None:
+                return ImageFont.load_default(size=size)
+            path = Path(font_path)
+            if not path.exists():
+                raise FileNotFoundError(f"Font path does not exist: {path}")
+            return ImageFont.truetype(str(path), size)
 
-        font = ImageFont.truetype(str(font_path), font_size)
+        def text_size(font, text):
+            left, top, right, bottom = font.getbbox(text)
+            return right - left, bottom - top
+
+        font = load_font(font_size)
         img_width, img_height = images[0].size
 
         # Writing the labels to each of the images
         for img, text in zip(images, labels):
-            # Getting the size of the text to center the loation of the text
-            font_width, font_height = font.getsize(text)
+            # Getting the size of the text to center the location of the text
+            font_width, font_height = text_size(font, text)
 
             # TODO: improve this so we can instead separate the text in two lines
             if font_width > img_width:
                 while True:
                     font_size -= 1
-                    font = ImageFont.truetype(str(font_path), font_size)
-                    font_width, font_height = font.getsize(text)
+                    font = load_font(font_size)
+                    font_width, font_height = text_size(font, text)
                     if font_width < img_width:
                         break
 
