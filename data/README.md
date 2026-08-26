@@ -1,89 +1,107 @@
-# Summary
+# Data inventory
 
-## 1. adpkd_screening
+Paths below are relative to this `data/` directory. The repository includes the
+processed inputs needed to inspect and rerun the computational analyses. Four
+large CSV files are stored with Git LFS; run `git lfs pull` after cloning.
 
-`chemical_structures/`
+## `adpkd_screening/`
 
-- [SPECTRUM library](adpkd_screening/chemical_structures/combined_SPECTRUM_structures.sdf) containing the chemical structures of the compounds in the SPECTRUM library.
-- [SelleckChem library](adpkd_screening/chemical_structures/sel_chem_structures.tsv) containing the chemical structures of the compounds in the SelleckChem library.
+### `chemical_structures/`
 
-`identified_hits/`
+- [`combined_SPECTRUM_structures.sdf`](adpkd_screening/chemical_structures/combined_SPECTRUM_structures.sdf) — structures in the SPECTRUM library.
+- [`sel_chem_structures.tsv`](adpkd_screening/chemical_structures/sel_chem_structures.tsv) — structures in the SelleckChem library.
 
-- [Hit Compounds](adpkd_screening/identified_hits/pkd_HitCompounds_NPI-median-DefaultDistance-hitflag_as-isSMILES_20221222-150846.csv) - hits identified per-plate on the NPI-normalized data, according to the `default` distance threshold, with mutual distances of $median(DMSO+FSK) \pm MAD(DMSO+FSK) \times 1.5 $.
+### `screening_data/`
 
-`screening_data/`
+- [`Booij-reanalyzed_selleckchem_Batch2650_2022-11-06.csv.gz`](adpkd_screening/screening_data/Booij-reanalyzed_selleckchem_Batch2650_2022-11-06.csv.gz) — reanalysis of the SelleckChem screen from Booij et al. (2017), [DOI: 10.1177/2472555217716056](https://doi.org/10.1177/2472555217716056).
+- [`Booij-reanalyzed_spectrum_Batch2686_2022-11-07.csv.gz`](adpkd_screening/screening_data/Booij-reanalyzed_spectrum_Batch2686_2022-11-07.csv.gz) — reanalysis of the SPECTRUM screen from Booij et al. (2020), [DOI: 10.1093/jmcb/mjz029](https://doi.org/10.1093/jmcb/mjz029).
+- [`Booij-reanalyzed_spectrum-validation_Batch2880_2022-11-17.csv.gz`](adpkd_screening/screening_data/Booij-reanalyzed_spectrum-validation_Batch2880_2022-11-17.csv.gz) — reanalysis of the validation screen from Booij et al. (2020).
+- `chembl_antineostructs.json` — cached antineoplastic compound annotations used by the screening workflow.
 
-*SelleckChem library*:
-- [Re-analyzed data from Booij et al. 2017](Booij-reanalyzed_selleckchem_Batch2650_2022-11-06.csv.gz) - All non-normalized features extracted from the image analysis workflow. For the manuscript, refer to the original publication: Booij et al. 2017, [DOI: 10.1177/2472555217716056](https://doi.org/10.1177/2472555217716056).
+Only the 1 µM readout was used downstream because it was the concentration
+shared by all three source experiments.
 
-*SPECTRUM library*
-- [Re-analyzed data from Booij et al. 2020](Booij-reanalyzed_spectrum_Batch2686_2022-11-07.csv.gz) - All non-normalized features extracted from the image analysis workflow. For the manuscript, refer to the original publication: Booij et al. 2020, [DOI: 10.1093/jmcb/mjz029](https://doi.org/10.1093/jmcb/mjz029).
-- Validation Screening [Re-analyzed data from Booij et al. 2020](Booij-reanalyzed_spectrum-validation_Batch2880_2022-11-17.csv.gz) - All non-normalized features extracted from the image analysis workflow. For the manuscript, refer to the original publication: Booij et al. 2020, [DOI: 10.1093/jmcb/mjz029](https://doi.org/10.1093/jmcb/mjz029). This validation screening was performed to validate some of the hits identified in the original screening.
+### `identified_hits/`
 
-**Note**: We only used readouts from 1µM testing concentration on downstream analysis. The reason for this is that it is was the only concentration used across all the different experiments.
+- [`pkd_HitCompounds_NPI-median-DefaultDistance-hitflag_as-isSMILES_20221222-150846.csv`](adpkd_screening/identified_hits/pkd_HitCompounds_NPI-median-DefaultDistance-hitflag_as-isSMILES_20221222-150846.csv) — exact precomputed hit table used by the target-identification notebook. Hit assignment is performed by `01_ADPKD_ScreeningProcess/hit_identification.py` using treatment/control distribution separation as documented in that script.
 
-## papyrus_data
+## `papyrus_data/`
 
-`ADPKD-Booij-Reanalyzed/`
+### `ADPKD-Booij-Reanalyzed/`
 
-- [ADPKD-Booij-Reanalyzed.csv](papyrus_data/ADPKD-Booij-Reanalyzed/ADPKD-Booij-Reanalyzed.csv) - Cross-referenced ADPKD screening hits with their Papyrus-reported bioactivities and target annotations.
-- [papyrus_linker_config.json](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_linker_config.json) - Configuration used for the Papyrus compound linking step.
-- [papyrus_subset.csv](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_subset.csv) - Subset of the Papyrus dataset containing bioactivities for compounds matching the ADPKD-screened set (Git LFS tracked).
+- [`ADPKD-Booij-Reanalyzed.csv`](papyrus_data/ADPKD-Booij-Reanalyzed/ADPKD-Booij-Reanalyzed.csv) — ADPKD-screened compounds linked to Papyrus bioactivities and targets.
+- [`papyrus_linker_config.json`](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_linker_config.json) — linker configuration and saved-file references.
+- [`papyrus_subset.csv`](papyrus_data/ADPKD-Booij-Reanalyzed/papyrus_subset.csv) — Papyrus 05.6 bioactivities matching the screened compounds (**Git LFS**, 37,099 rows).
 
-## normalization_audit
+These files allow the saved-data route in
+`02_TargetID_and_Prioritization/papyrus_data_linker.ipynb` without downloading
+the complete Papyrus release.
 
-- [Per-well raw and normalized values](normalization_audit/per_well_raw_and_normalized.csv) - Machine-readable, audit-ready source data for the target-evaluation and compound-exploration cyst-swelling figures. Each row reports the physical plate and well, treatment, raw mean cyst area, plate control medians, and exact normalized value.
-- [Within-plate Mann–Whitney audit](normalization_audit/within_plate_mann_whitney_audit.csv) - Raw and normalized two-sided Mann–Whitney p-values for every pair of experimental conditions on each physical plate. All 4,485 pairs have identical p-values because both groups in each comparison undergo the same strictly increasing affine transformation.
+## `target_validation/`
 
-Both files are generated by [`03_Target_Validation/normalization_audit.py`](../03_Target_Validation/normalization_audit.py).
+- [`ADPKD-TargetValidationScreen_Batch3791_and_Batch3753.csv`](target_validation/ADPKD-TargetValidationScreen_Batch3791_and_Batch3753.csv) — per-well target-validation screen used by `03_Target_Validation/ADPKD-TargetValidationScreening-analysis.ipynb` (648 rows).
+- [`Scored_th65_Papyrus_targets_of_ADPKD-screened_compounds.csv`](target_validation/Scored_th65_Papyrus_targets_of_ADPKD-screened_compounds.csv) — complete target scoring table generated by the Papyrus notebook. It contains activity-class counts and the cyst-swelling ratio, `CSratio = N_active / N_total`. The paper's prioritization additionally considers `CSratio >= 0.2`, at least 200 ChEMBL bioactivities, and suitability for chronic-use compound exploration.
+- [`compound_data/target_validation_cpds.csv`](target_validation/compound_data/target_validation_cpds.csv) — identifiers and target/modulation annotations for validation compounds.
+- [`compound_data/chembl_data_validation_compounds.csv`](target_validation/compound_data/chembl_data_validation_compounds.csv) — ChEMBL affinity records used for the validation-compound summary.
+- `aggregate_both.py` — provenance script for combining the original internal batch exports into the public analysis table. The internal exports are intentionally not distributed; the combined per-well table above is the public input.
 
-## target_validation
+Relevant per-well image-analysis readouts include:
 
-- [Scored compounds](target_validation/Scored_th65_Papyrus_targets_of_ADPKD-screened_compounds.csv) - Contains all the targets identified through the [Papyrus Data Linker notebook](../02_TargetID_and_Prioritization/papyrus_data_linker.ipynb) as well as their $CS_{ratio} = N_{active}/(N_{total})$ reported to all bioactivity types: CS reducer, enhancer, inactive and antineoplastic. The targets are scored according to the following criteria:
-- [Validation experiment results](target_validation/ADPKD-TargetValidationScreen_Batch3791_and_Batch3753.csv) - This data is used by the notebook [ADPKD-TargetValidationScreening-analysis](../03_Target_Validation/ADPKD-TargetValidationScreening-analysis.ipynb) to show the results of our validation screening experiment. The data contains the following readouts:
+- `obj.Sum(area).meas` — total segmented cyst area;
+- `obj.Count.meas` — segmented cyst count;
+- `obj.Mean(area).um2.meas` — mean cyst area used for phenotype profiling;
+- `Fraction_dead_cells` — nuclei-without-corresponding-actin-signal proxy used to assess cytotoxicity, with staurosporine as toxic control.
 
-    - obj.Sum(area).meas - the sum of areas occupied by the cystic spheroids in the respective well.
-    - obj.Count.meas - the number of cystic spheroids in the respective well.
-    - obj.Mean(area).um2.meas - the mean area occupied by the cystic spheroids in the respective well. **Used for hit profiling**.
-    - Fraction_dead_cells - a proxy to detect cytotoxicity calculated based on nuclei signal intensity in the absence of a respective spheroid segmentation, indicating apoptosis. Staurosporine (STS) is used as positive control for cytotoxicity.
+## `compound_exploration/`
 
-## virtual_screening
+- [`ADPKD-CpdExplorationScreen_Batch4042_and_Batch4064.csv`](compound_exploration/ADPKD-CpdExplorationScreen_Batch4042_and_Batch4064.csv) — per-well phenotypic results for the QSAR/virtual-screening compound panel (624 rows). It is analyzed by `04_Virtual_Screening/ADPKD-ExplorationScreening-analysis.ipynb` and contains the same principal cyst-area and cell-death-proxy readouts described above.
 
-`modeling/`
+## `normalization_audit/`
 
-- [emolecules_sw_virtual_screening.csv](vs_datasets/emolecules_sw_virtual_screening.csv): eMolecules compounds fetched from SmallWorld database, which were used for virtual screening. This file contains the following columns:
-    - qrySmiles: the SMILES representation of the compound used to query this entry.
-    - hitSmiles: the SMILES representation of the analogue found by SmallWorld and the identifier of the compound.
-    - atomScore, atomMap, qryMappedSmiles, hitMappedSmiles: columns outlining internal atom mappings & scores used by SmallWorld to find the analogue through graph edit distances.
-    - anonIdx: anonymous graph index of the compound in the SmallWorld database.
-    - mf: molecular formula of the compound.
-    - mw: molecular weight of the compound.
-    - moleculeID (*added post-query*): ChEMBL ID of the compound used to query this entry (qrySmiles).
-    - target_id (*added post-query*): Identified of the target for which the ChEMBL compound was screened (e.g. NR3C2, ADORA1).
-    - provider (*added post-query*): The provider of the compound, which is either `emolecules` or `enamine`.
-- [enamine_sw_virtual_screening.csv](vs_datasets/enamine_sw_virtual_screening.csv) - Enamine compounds fetched from SmallWorld database, which were used for virtual screening. This file contains the same columns as `emolecules_sw_virtual_screening.csv`.
+- [`per_well_raw_and_normalized.csv`](normalization_audit/per_well_raw_and_normalized.csv) — audit-ready values for both follow-up phenotypic experiments. Each row reports the physical plate/well, treatment, raw mean cyst area, plate-control medians, and exact normalized value (1,265 rows after documented QC filtering).
+- [`within_plate_mann_whitney_audit.csv`](normalization_audit/within_plate_mann_whitney_audit.csv) — raw and normalized two-sided Mann–Whitney p-values for every testable pair of conditions within each physical plate (4,485 pairs).
 
-_With computed properties_:
-- [screened_adora1_computed_properties.csv](vs_datasets/screened_adora1_computed_properties.csv) - Same as `emolecules_sw_virtual_screening.csv`, but for the ADORA1 target. Contains computed properties of the compounds that are used for the virtual screening.
-- [screened_nr3c2_computed_properties.csv](vs_datasets/screened_nr3c2_computed_properties.csv) - Same as `screened_adora1_computed_properties.csv`, but for the NR3C2 target. Contains computed properties of the compounds that are used for the virtual screening.
+Both files are regenerated by
+[`03_Target_Validation/normalization_audit.py`](../03_Target_Validation/normalization_audit.py).
+All audited raw/normalized p-values are identical because both groups in each
+comparison undergo the same strictly increasing affine transformation.
 
-_Selected from computed properties_:
-- [screened_selected_adora1_cpds.csv](vs_datasets/screened_selected_adora1_cpds.csv)
-- [screened_selected_nr3c2_cpds.csv](vs_datasets/screened_selected_nr3c2_cpds.csv)
+## `virtual_screening/`
 
-`vs_datasets/in_stock/`
+### `modeling/`
 
-In-stock availability results from eMolecules and Enamine for the filtered virtual screening candidates:
-- [eMolecules_adora1_stock.csv](virtual_screening/vs_datasets/in_stock/eMolecules_adora1_stock.csv)
-- [eMolecules_nr3c2_stock.csv](virtual_screening/vs_datasets/in_stock/eMolecules_nr3c2_stock.csv)
-- [Enamine_adora1_stock.csv](virtual_screening/vs_datasets/in_stock/Enamine_adora1_stock.csv)
-- [Enamine_nr3c2_stock.csv](virtual_screening/vs_datasets/in_stock/Enamine_nr3c2_stock.csv)
+- [`ADORA1_assayB_Ki_confidence89.csv`](virtual_screening/modeling/ADORA1_assayB_Ki_confidence89.csv) — curated A1AR binding/Ki model data.
+- [`NR3C2_assayBF_KiIC50_confidence789.csv`](virtual_screening/modeling/NR3C2_assayBF_KiIC50_confidence789.csv) — curated MR binding/functional Ki/IC50 model data.
 
-## compound_exploration
+The train/validation subsets, trained models, and Optuna databases are committed
+under `04_Virtual_Screening/` rather than duplicated here.
 
-- [Compound exploration experiment results](compound_exploration/-ADPKD-CpdExplorationScreen_Batch4042_and_Batch4064.csv) - Contains the results for compounds selected as part of the `04_Virtual_Screening` section of the main [README.md](../README.md) file. Different from the data reported in `screening_data/`, this file only contains a few readouts, which are:
+### `vs_datasets/`
 
-    - obj.Sum(area).meas - the sum of areas occupied by the cystic spheroids in the respective well.
-    - obj.Count.meas - the number of cystic spheroids in the respective well.
-    - obj.Mean(area).um2.meas - the mean area occupied by the cystic spheroids in the respective well. **Used for hit profiling**.
-    - Fraction_dead_cells - a proxy to detect cytotoxicity calculated based on nuclei signal intensity in the absence of a respective spheroid segmentation, indicating apoptosis. Staurosporine (STS) is used as positive control for cytotoxicity.
+Supplier analogue tables returned by SmallWorld:
+
+- [`emolecules_sw_virtual_screening.csv`](virtual_screening/vs_datasets/emolecules_sw_virtual_screening.csv) (**Git LFS**)
+- [`enamine_sw_virtual_screening.csv`](virtual_screening/vs_datasets/enamine_sw_virtual_screening.csv) (**Git LFS**)
+
+The tables contain query/hit SMILES, graph-search fields, supplier identifiers,
+and target/query annotations. The commercial SmallWorld queries are not replayed
+by this repository; these exact returned tables are the reproducible inputs.
+
+Computed and selected candidate tables:
+
+- [`screened_adora1_computed_properties.csv`](virtual_screening/vs_datasets/screened_adora1_computed_properties.csv) (**Git LFS**)
+- [`screened_nr3c2_computed_properties.csv`](virtual_screening/vs_datasets/screened_nr3c2_computed_properties.csv)
+- [`screened_selected_adora1_cpds.csv`](virtual_screening/vs_datasets/screened_selected_adora1_cpds.csv)
+- [`screened_selected_nr3c2_cpds.csv`](virtual_screening/vs_datasets/screened_selected_nr3c2_cpds.csv)
+
+### `vs_datasets/in_stock/`
+
+Saved supplier stock-search results used during candidate selection:
+
+- [`eMolecules_adora1_stock.csv`](virtual_screening/vs_datasets/in_stock/eMolecules_adora1_stock.csv)
+- [`eMolecules_nr3c2_stock.csv`](virtual_screening/vs_datasets/in_stock/eMolecules_nr3c2_stock.csv)
+- [`Enamine_adora1_stock.csv`](virtual_screening/vs_datasets/in_stock/Enamine_adora1_stock.csv)
+- [`Enamine_nr3c2_stock.csv`](virtual_screening/vs_datasets/in_stock/Enamine_nr3c2_stock.csv)
+
+Stock status is time-dependent; these files preserve the results used at the
+time of compound selection.
