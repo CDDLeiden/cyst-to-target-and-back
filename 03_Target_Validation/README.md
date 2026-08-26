@@ -1,10 +1,10 @@
 # Summary
 
-This directory contains the results of the target validation screening experiement, where we screened compounds with high affinities to our targets of interest in the ADPKD phenotypic assay. The analysis of the obtained data is performed in the notebook [ADPKD-TargetValidationScreening-analysis](ADPKD-TargetValidationScreening-analysis.ipynb).
+This directory contains the results of the target-evaluation screening experiment, in which compounds with high affinities for targets of interest were screened in the ADPKD phenotypic assay. The analysis is performed in [ADPKD-TargetValidationScreening-analysis.ipynb](ADPKD-TargetValidationScreening-analysis.ipynb). Launch Jupyter from this directory so the notebook's relative paths resolve correctly.
 
 Compounds listed herein were prioritized as described in the manuscript and on the notebooks within [02_TargetID_and_Prioritization](../02_TargetID_and_Prioritization/). For further transparency, we also report the affinity values of these screened compounds on our target of interest. The data used here is from ChEMBL.
 
-For the full data, refer to [chembl_data_validation_compounds.csv](../figures/mol_structures/chembl_data_validation_compounds.csv).
+For the full affinity data, refer to [chembl_data_validation_compounds.csv](../data/target_validation/compound_data/chembl_data_validation_compounds.csv).
 
 # Known affinities of the screened compounds to targets of interest
 
